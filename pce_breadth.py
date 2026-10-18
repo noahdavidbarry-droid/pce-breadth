@@ -160,10 +160,16 @@ def main():
         lines = json.loads(sel_path.read_text())["lines"]
         tuned = "components.json"
     else:
-        nominal, _ = build_series(fetch_table(key, "U20405", years_back=1))
+        nominal, ncat = build_series(fetch_table(key, "U20405", years_back=1))
         order = sorted(catalog)
         nmonths = sorted({m for s in nominal.values() for m in s})
-        lines, root_end = find_leaves(nominal, order, nmonths[-1]) if nmonths else ([], 0)
+        DATA.mkdir(exist_ok=True)
+        (DATA / "nominal_latest.json").write_text(json.dumps(
+            [{"line": ln, "description": ncat.get(ln, {}).get("description"),
+              "value": nominal.get(ln, {}).get(nmonths[-1]) if nmonths else None}
+             for ln in sorted(set(ncat) | set(order))], indent=1) + "\n")
+        found, root_end = find_leaves(nominal, order, nmonths[-1]) if nmonths else ([], 0)
+        lines = found
         if len(lines) >= 50:
             tuned = "leaf components (aggregates excluded via 2.4.5U nominal sums)"
             selection_note = {"leaf_lines": len(lines), "lines_in_tree": root_end,
@@ -174,7 +180,7 @@ def main():
         else:
             lines = sorted(series)
             tuned = False
-            selection_note = {"warning": f"leaf detection found only {len(lines)} lines; using all lines"}
+            selection_note = {"warning": f"leaf detection found only {len(found)} lines; using all lines"}
 
     months = sorted({m for s in series.values() for m in s})
     history = [h for m in months if (h := shares_for(m, series, lines))]
