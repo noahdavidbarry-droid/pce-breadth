@@ -73,7 +73,7 @@ def build_series(rows: list):
     return series, catalog
 
 
-def find_leaves(nominal: dict, order: list, month: str):
+def find_leaves(nominal: dict, order: list, month: str, descs: dict = None):
     """Identify the most granular components using nominal spending (table 2.4.5U).
 
     In current dollars an aggregate equals the sum of its direct children, and
@@ -81,7 +81,11 @@ def find_leaves(nominal: dict, order: list, month: str):
     aggregate if the subtrees immediately after it sum to its value; otherwise
     it is a leaf. Lines after the root's subtree (addenda) are excluded.
     """
-    vals = [nominal.get(ln, {}).get(month) for ln in order]
+    descs = descs or {}
+    raw = [nominal.get(ln, {}).get(month) for ln in order]
+    # "Less:" lines are subtracted from their parent.
+    sign = [-1 if str(descs.get(ln, "")).strip().lower().startswith("less") else 1 for ln in order]
+    vals = raw
     n = len(order)
     memo = {}
 
@@ -94,14 +98,16 @@ def find_leaves(nominal: dict, order: list, month: str):
             s, k, kids = 0.0, i + 1, 0
             while k < n and kids < 80 and vals[k] is not None:
                 e, _ = parse(k)
-                s += vals[k]
+                s += sign[k] * vals[k]
                 kids += 1
                 k = e
                 tol = max(1.0, 0.0005 * abs(v)) + 0.5 * kids
-                if abs(s - v) <= tol and kids >= 2 or (kids == 1 and abs(s - v) <= 0.5 and e > i + 2):
+                if abs(s - v) <= tol and kids >= 2 or (kids == 1 and abs(s - v) <= 0.5):
                     result = (k, True)
                     break
-                if s > v + tol and all(x is None or x >= 0 for x in vals[i + 1:k]):
+                # Stop once past the target, unless the next line would subtract.
+                nxt_neg = k < n and vals[k] is not None and sign[k] * vals[k] < 0
+                if s > v + tol and not nxt_neg:
                     break
         memo[i] = result
         return result
@@ -161,20 +167,28 @@ def main():
         tuned = "components.json"
     else:
         nominal, ncat = build_series(fetch_table(key, "U20405", years_back=1))
-        order = sorted(catalog)
+        order = sorted(set(ncat) | set(catalog))
+        descs = {ln: (ncat.get(ln) or catalog.get(ln))["description"] for ln in order}
         nmonths = sorted({m for s in nominal.values() for m in s})
         DATA.mkdir(exist_ok=True)
         (DATA / "nominal_latest.json").write_text(json.dumps(
             [{"line": ln, "description": ncat.get(ln, {}).get("description"),
               "value": nominal.get(ln, {}).get(nmonths[-1]) if nmonths else None}
              for ln in sorted(set(ncat) | set(order))], indent=1) + "\n")
-        found, root_end = find_leaves(nominal, order, nmonths[-1]) if nmonths else ([], 0)
+        found, root_end = find_leaves(nominal, order, nmonths[-1], descs) if nmonths else ([], 0)
+        # Nonprofit (NPISH) detail is gross output and sales, not household spending
+        # categories: count "Final consumption expenditures of NPISHs" as one component.
+        npish = [ln for ln in order if descs[ln].lower().startswith("final consumption expenditures of nonprofit")]
+        if npish and found:
+            found = [ln for ln in found if ln < npish[0]] + [npish[0]]
         lines = found
         if len(lines) >= 50:
             tuned = "leaf components (aggregates excluded via 2.4.5U nominal sums)"
             selection_note = {"leaf_lines": len(lines), "lines_in_tree": root_end,
                               "excluded_addenda": len(order) - root_end}
             (DATA.mkdir(exist_ok=True))
+            lines = [ln for ln in lines if ln in series]  # leaves that have a price index
+            selection_note["leaf_lines_with_price_index"] = len(lines)
             (DATA / "leaves.json").write_text(json.dumps(
                 [catalog[ln] for ln in lines], indent=2) + "\n")
         else:
