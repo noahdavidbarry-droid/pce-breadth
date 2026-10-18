@@ -30,14 +30,14 @@ THRESHOLD = 3.0
 BACKTEST = {"month": "2026-07", "share_12m": 54.0, "share_6m": 49.0, "tolerance": 1.5}
 
 
-def fetch_table(api_key: str) -> list:
+def fetch_table(api_key: str, table: str = "U20404", years_back: int = 3) -> list:
     year_now = datetime.now(timezone.utc).year
-    years = ",".join(str(y) for y in range(year_now - 3, year_now + 1))
+    years = ",".join(str(y) for y in range(year_now - years_back, year_now + 1))
     params = {
         "UserID": api_key,
         "method": "GetData",
         "DatasetName": "NIUnderlyingDetail",
-        "TableName": "U20404",
+        "TableName": table,
         "Frequency": "M",
         "Year": years,
         "ResultFormat": "JSON",
@@ -73,6 +73,57 @@ def build_series(rows: list):
     return series, catalog
 
 
+def find_leaves(nominal: dict, order: list, month: str):
+    """Identify the most granular components using nominal spending (table 2.4.5U).
+
+    In current dollars an aggregate equals the sum of its direct children, and
+    children follow their parent in table order. A line is treated as an
+    aggregate if the subtrees immediately after it sum to its value; otherwise
+    it is a leaf. Lines after the root's subtree (addenda) are excluded.
+    """
+    vals = [nominal.get(ln, {}).get(month) for ln in order]
+    n = len(order)
+    memo = {}
+
+    def parse(i):  # returns (end_exclusive, is_aggregate)
+        if i in memo:
+            return memo[i]
+        v = vals[i]
+        result = (i + 1, False)
+        if v is not None and abs(v) > 0:
+            s, k, kids = 0.0, i + 1, 0
+            while k < n and kids < 80 and vals[k] is not None:
+                e, _ = parse(k)
+                s += vals[k]
+                kids += 1
+                k = e
+                tol = max(1.0, 0.0005 * abs(v)) + 0.5 * kids
+                if abs(s - v) <= tol and kids >= 2 or (kids == 1 and abs(s - v) <= 0.5 and e > i + 2):
+                    result = (k, True)
+                    break
+                if s > v + tol and all(x is None or x >= 0 for x in vals[i + 1:k]):
+                    break
+        memo[i] = result
+        return result
+
+    sys.setrecursionlimit(10000)
+    end, is_agg = parse(0)
+    leaves = []
+
+    def collect(i, stop):
+        while i < stop:
+            e, agg = parse(i)
+            if agg:
+                collect(i + 1, e)
+            else:
+                leaves.append(order[i])
+            i = e
+
+    if is_agg:
+        collect(1, end)
+    return leaves, end
+
+
 def shift(month: str, k: int) -> str:
     y, m = map(int, month.split("-"))
     idx = y * 12 + (m - 1) - k
@@ -104,12 +155,26 @@ def main():
     series, catalog = build_series(fetch_table(key))
 
     sel_path = ROOT / "components.json"
+    selection_note = None
     if sel_path.exists():
         lines = json.loads(sel_path.read_text())["lines"]
-        tuned = True
+        tuned = "components.json"
     else:
-        lines = sorted(series)
-        tuned = False
+        nominal, _ = build_series(fetch_table(key, "U20405", years_back=1))
+        order = sorted(catalog)
+        nmonths = sorted({m for s in nominal.values() for m in s})
+        lines, root_end = find_leaves(nominal, order, nmonths[-1]) if nmonths else ([], 0)
+        if len(lines) >= 50:
+            tuned = "leaf components (aggregates excluded via 2.4.5U nominal sums)"
+            selection_note = {"leaf_lines": len(lines), "lines_in_tree": root_end,
+                              "excluded_addenda": len(order) - root_end}
+            (DATA.mkdir(exist_ok=True))
+            (DATA / "leaves.json").write_text(json.dumps(
+                [catalog[ln] for ln in lines], indent=2) + "\n")
+        else:
+            lines = sorted(series)
+            tuned = False
+            selection_note = {"warning": f"leaf detection found only {len(lines)} lines; using all lines"}
 
     months = sorted({m for s in series.values() for m in s})
     history = [h for m in months if (h := shares_for(m, series, lines))]
@@ -128,7 +193,8 @@ def main():
         "generated_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source": "BEA NIPA table 2.4.4U (NIUnderlyingDetail/U20404), monthly",
         "threshold_pct": THRESHOLD,
-        "selection_tuned": tuned,
+        "selection": tuned,
+        "selection_detail": selection_note,
         "latest": latest,
         "prior": prior,
         "change_vs_prior": None if not prior else {
