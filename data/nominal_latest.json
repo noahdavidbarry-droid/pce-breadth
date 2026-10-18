@@ -1,0 +1,2002 @@
+[
+ {
+  "line": 1,
+  "description": "Personal consumption expenditures",
+  "value": 22308527.0
+ },
+ {
+  "line": 2,
+  "description": "Goods",
+  "value": 6949625.0
+ },
+ {
+  "line": 3,
+  "description": "Durable goods",
+  "value": 2443556.0
+ },
+ {
+  "line": 4,
+  "description": "Motor vehicles and parts",
+  "value": 814907.0
+ },
+ {
+  "line": 5,
+  "description": "New motor vehicles (55)",
+  "value": 436264.0
+ },
+ {
+  "line": 6,
+  "description": "New autos",
+  "value": 46690.0
+ },
+ {
+  "line": 7,
+  "description": "New domestic autos",
+  "value": 29802.0
+ },
+ {
+  "line": 8,
+  "description": "New foreign autos",
+  "value": 16888.0
+ },
+ {
+  "line": 9,
+  "description": "New light trucks",
+  "value": 389574.0
+ },
+ {
+  "line": 10,
+  "description": "New domestic light trucks",
+  "value": 311025.0
+ },
+ {
+  "line": 11,
+  "description": "New foreign light trucks",
+  "value": 78550.0
+ },
+ {
+  "line": 12,
+  "description": "Net purchases of used motor vehicles (56)",
+  "value": 239408.0
+ },
+ {
+  "line": 13,
+  "description": "Used autos",
+  "value": 47545.0
+ },
+ {
+  "line": 14,
+  "description": "Net transactions in used autos",
+  "value": 12531.0
+ },
+ {
+  "line": 15,
+  "description": "Used auto margin",
+  "value": 36749.0
+ },
+ {
+  "line": 16,
+  "description": "Employee reimbursement",
+  "value": -1735.0
+ },
+ {
+  "line": 17,
+  "description": "Used light trucks",
+  "value": 191863.0
+ },
+ {
+  "line": 18,
+  "description": "Net transactions in used trucks",
+  "value": 129070.0
+ },
+ {
+  "line": 19,
+  "description": "Used truck margin",
+  "value": 62793.0
+ },
+ {
+  "line": 20,
+  "description": "Motor vehicle parts and accessories (58)",
+  "value": 139235.0
+ },
+ {
+  "line": 21,
+  "description": "Tires",
+  "value": 59004.0
+ },
+ {
+  "line": 22,
+  "description": "Accessories and parts",
+  "value": 80230.0
+ },
+ {
+  "line": 23,
+  "description": "Furnishings and durable household equipment",
+  "value": 536571.0
+ },
+ {
+  "line": 24,
+  "description": "Furniture and furnishings (parts of 31 and 32)",
+  "value": 308944.0
+ },
+ {
+  "line": 25,
+  "description": "Furniture",
+  "value": 173629.0
+ },
+ {
+  "line": 26,
+  "description": "Clocks, lamps, lighting fixtures, and other household decorative items",
+  "value": 69399.0
+ },
+ {
+  "line": 27,
+  "description": "Carpets and other floor coverings",
+  "value": 30338.0
+ },
+ {
+  "line": 28,
+  "description": "Window coverings",
+  "value": 35578.0
+ },
+ {
+  "line": 29,
+  "description": "Household appliances (part of 33)",
+  "value": 95446.0
+ },
+ {
+  "line": 30,
+  "description": "Major household appliances",
+  "value": 82454.0
+ },
+ {
+  "line": 31,
+  "description": "Small electric household appliances",
+  "value": 12992.0
+ },
+ {
+  "line": 32,
+  "description": "Glassware, tableware, and household utensils (34)",
+  "value": 66018.0
+ },
+ {
+  "line": 33,
+  "description": "Dishes and flatware",
+  "value": 33483.0
+ },
+ {
+  "line": 34,
+  "description": "Nonelectric cookware and tableware",
+  "value": 32535.0
+ },
+ {
+  "line": 35,
+  "description": "Tools and equipment for house and garden (35)",
+  "value": 66163.0
+ },
+ {
+  "line": 36,
+  "description": "Tools, hardware, and supplies",
+  "value": 55217.0
+ },
+ {
+  "line": 37,
+  "description": "Outdoor equipment and supplies",
+  "value": 10947.0
+ },
+ {
+  "line": 38,
+  "description": "Recreational goods and vehicles",
+  "value": 767248.0
+ },
+ {
+  "line": 39,
+  "description": "Video, audio, photographic, and information processing equipment and media (75, 76, and part of 93)",
+  "value": 473201.0
+ },
+ {
+  "line": 40,
+  "description": "Video and audio equipment",
+  "value": 101023.0
+ },
+ {
+  "line": 41,
+  "description": "Televisions",
+  "value": 38577.0
+ },
+ {
+  "line": 42,
+  "description": "Other video equipment",
+  "value": 11756.0
+ },
+ {
+  "line": 43,
+  "description": "Audio equipment",
+  "value": 32804.0
+ },
+ {
+  "line": 44,
+  "description": "Recording media",
+  "value": 17886.0
+ },
+ {
+  "line": 45,
+  "description": "Audio discs, tapes, vinyl, and permanent digital downloads",
+  "value": 2942.0
+ },
+ {
+  "line": 46,
+  "description": "Video discs, tapes, and permanent digital downloads",
+  "value": 14944.0
+ },
+ {
+  "line": 47,
+  "description": "Photographic equipment",
+  "value": 5897.0
+ },
+ {
+  "line": 48,
+  "description": "Information processing equipment",
+  "value": 366280.0
+ },
+ {
+  "line": 49,
+  "description": "Personal computers/tablets and peripheral equipment",
+  "value": 115084.0
+ },
+ {
+  "line": 50,
+  "description": "Computer software and accessories",
+  "value": 250780.0
+ },
+ {
+  "line": 51,
+  "description": "Calculators, typewriters, and other information processing equipment",
+  "value": 416.0
+ },
+ {
+  "line": 52,
+  "description": "Sporting equipment, supplies, guns, and ammunition (part of 80)",
+  "value": 139957.0
+ },
+ {
+  "line": 53,
+  "description": "Sports and recreational vehicles (79)",
+  "value": 107565.0
+ },
+ {
+  "line": 54,
+  "description": "Motorcycles",
+  "value": 22737.0
+ },
+ {
+  "line": 55,
+  "description": "Bicycles and accessories",
+  "value": 7875.0
+ },
+ {
+  "line": 56,
+  "description": "Pleasure boats, aircraft, and other recreational vehicles",
+  "value": 76953.0
+ },
+ {
+  "line": 57,
+  "description": "Pleasure boats",
+  "value": 37914.0
+ },
+ {
+  "line": 58,
+  "description": "Pleasure aircraft",
+  "value": 2715.0
+ },
+ {
+  "line": 59,
+  "description": "Other recreational vehicles",
+  "value": 36324.0
+ },
+ {
+  "line": 60,
+  "description": "Recreational books (part of 90)",
+  "value": 36663.0
+ },
+ {
+  "line": 61,
+  "description": "Musical instruments (part of 80)",
+  "value": 9863.0
+ },
+ {
+  "line": 62,
+  "description": "Other durable goods",
+  "value": 324829.0
+ },
+ {
+  "line": 63,
+  "description": "Jewelry and watches (part of 119)",
+  "value": 113838.0
+ },
+ {
+  "line": 64,
+  "description": "Jewelry",
+  "value": 94208.0
+ },
+ {
+  "line": 65,
+  "description": "Watches",
+  "value": 19630.0
+ },
+ {
+  "line": 66,
+  "description": "Therapeutic appliances and equipment (42)",
+  "value": 106778.0
+ },
+ {
+  "line": 67,
+  "description": "Therapeutic medical equipment",
+  "value": 54896.0
+ },
+ {
+  "line": 68,
+  "description": "Corrective eyeglasses and contact lenses",
+  "value": 51882.0
+ },
+ {
+  "line": 69,
+  "description": "Educational books (96)",
+  "value": 9846.0
+ },
+ {
+  "line": 70,
+  "description": "Luggage and similar personal items (part of 119)",
+  "value": 55440.0
+ },
+ {
+  "line": 71,
+  "description": "Telephone and related communication equipment",
+  "value": 38926.0
+ },
+ {
+  "line": 72,
+  "description": "Nondurable goods",
+  "value": 4506069.0
+ },
+ {
+  "line": 73,
+  "description": "Food and beverages purchased for off-premises consumption",
+  "value": 1572279.0
+ },
+ {
+  "line": 74,
+  "description": "Food and nonalcoholic beverages purchased for off-premises consumption (4)",
+  "value": 1328371.0
+ },
+ {
+  "line": 75,
+  "description": "Food purchased for off-premises consumption",
+  "value": 1178195.0
+ },
+ {
+  "line": 76,
+  "description": "Cereals and bakery products",
+  "value": 215650.0
+ },
+ {
+  "line": 77,
+  "description": "Cereals",
+  "value": 83337.0
+ },
+ {
+  "line": 78,
+  "description": "Bakery products",
+  "value": 132312.0
+ },
+ {
+  "line": 79,
+  "description": "Meats and poultry",
+  "value": 250429.0
+ },
+ {
+  "line": 80,
+  "description": "Beef and veal",
+  "value": 68131.0
+ },
+ {
+  "line": 81,
+  "description": "Pork",
+  "value": 50640.0
+ },
+ {
+  "line": 82,
+  "description": "Other meats",
+  "value": 50490.0
+ },
+ {
+  "line": 83,
+  "description": "Poultry",
+  "value": 81168.0
+ },
+ {
+  "line": 84,
+  "description": "Fish and seafood",
+  "value": 23893.0
+ },
+ {
+  "line": 85,
+  "description": "Milk, dairy products, and eggs",
+  "value": 126284.0
+ },
+ {
+  "line": 86,
+  "description": "Fresh milk",
+  "value": 32578.0
+ },
+ {
+  "line": 87,
+  "description": "Processed dairy products",
+  "value": 75848.0
+ },
+ {
+  "line": 88,
+  "description": "Eggs",
+  "value": 17857.0
+ },
+ {
+  "line": 89,
+  "description": "Fats and oils",
+  "value": 32987.0
+ },
+ {
+  "line": 90,
+  "description": "Fresh fruits and vegetables",
+  "value": 135790.0
+ },
+ {
+  "line": 91,
+  "description": "Fruit (fresh)",
+  "value": 64541.0
+ },
+ {
+  "line": 92,
+  "description": "Vegetables (fresh)",
+  "value": 71249.0
+ },
+ {
+  "line": 93,
+  "description": "Processed fruits and vegetables",
+  "value": 49920.0
+ },
+ {
+  "line": 94,
+  "description": "Sugar and sweets",
+  "value": 80998.0
+ },
+ {
+  "line": 95,
+  "description": "Food products, not elsewhere classified",
+  "value": 262245.0
+ },
+ {
+  "line": 96,
+  "description": "Nonalcoholic beverages purchased for off-premises consumption",
+  "value": 150176.0
+ },
+ {
+  "line": 97,
+  "description": "Coffee, tea, and other beverage materials",
+  "value": 28106.0
+ },
+ {
+  "line": 98,
+  "description": "Mineral waters, soft drinks, and vegetable juices",
+  "value": 122070.0
+ },
+ {
+  "line": 99,
+  "description": "Alcoholic beverages purchased for off-premises consumption (5)",
+  "value": 242926.0
+ },
+ {
+  "line": 100,
+  "description": "Spirits",
+  "value": 57522.0
+ },
+ {
+  "line": 101,
+  "description": "Wine",
+  "value": 75860.0
+ },
+ {
+  "line": 102,
+  "description": "Beer",
+  "value": 109543.0
+ },
+ {
+  "line": 103,
+  "description": "Food produced and consumed on farms (6)",
+  "value": 983.0
+ },
+ {
+  "line": 104,
+  "description": "Clothing and footwear",
+  "value": 608124.0
+ },
+ {
+  "line": 105,
+  "description": "Garments",
+  "value": 473728.0
+ },
+ {
+  "line": 106,
+  "description": "Women's and girls' clothing (10)",
+  "value": 275210.0
+ },
+ {
+  "line": 107,
+  "description": "Men's and boys' clothing (11)",
+  "value": 168497.0
+ },
+ {
+  "line": 108,
+  "description": "Children's and infants' clothing (12)",
+  "value": 30022.0
+ },
+ {
+  "line": 109,
+  "description": "Other clothing materials and footwear (13 and 17)",
+  "value": 134396.0
+ },
+ {
+  "line": 110,
+  "description": "Clothing materials",
+  "value": 3098.0
+ },
+ {
+  "line": 111,
+  "description": "Standard clothing issued to military personnel",
+  "value": 528.0
+ },
+ {
+  "line": 112,
+  "description": "Shoes and other footwear",
+  "value": 130770.0
+ },
+ {
+  "line": 113,
+  "description": "Gasoline and other energy goods",
+  "value": 503882.0
+ },
+ {
+  "line": 114,
+  "description": "Motor vehicle fuels, lubricants, and fluids (59)",
+  "value": 472411.0
+ },
+ {
+  "line": 115,
+  "description": "Gasoline and other motor fuel",
+  "value": 458724.0
+ },
+ {
+  "line": 116,
+  "description": "Lubricants and fluids",
+  "value": 13687.0
+ },
+ {
+  "line": 117,
+  "description": "Fuel oil and other fuels (29)",
+  "value": 31471.0
+ },
+ {
+  "line": 118,
+  "description": "Fuel oil",
+  "value": 25519.0
+ },
+ {
+  "line": 119,
+  "description": "Other fuels",
+  "value": 5952.0
+ },
+ {
+  "line": 120,
+  "description": "Other nondurable goods",
+  "value": 1821783.0
+ },
+ {
+  "line": 121,
+  "description": "Pharmaceutical and other medical products (40 and 41)",
+  "value": 756210.0
+ },
+ {
+  "line": 122,
+  "description": "Pharmaceutical products",
+  "value": 746354.0
+ },
+ {
+  "line": 123,
+  "description": "Prescription drugs",
+  "value": 612167.0
+ },
+ {
+  "line": 124,
+  "description": "Nonprescription drugs",
+  "value": 134187.0
+ },
+ {
+  "line": 125,
+  "description": "Other medical products",
+  "value": 9856.0
+ },
+ {
+  "line": 126,
+  "description": "Recreational items (parts of 80, 92, and 93)",
+  "value": 365664.0
+ },
+ {
+  "line": 127,
+  "description": "Games, toys, and hobbies",
+  "value": 155708.0
+ },
+ {
+  "line": 128,
+  "description": "Pets and related products",
+  "value": 123253.0
+ },
+ {
+  "line": 129,
+  "description": "Flowers, seeds, and potted plants",
+  "value": 85170.0
+ },
+ {
+  "line": 130,
+  "description": "Film and photographic supplies",
+  "value": 1534.0
+ },
+ {
+  "line": 131,
+  "description": "Household supplies (parts of 32 and 36)",
+  "value": 209478.0
+ },
+ {
+  "line": 132,
+  "description": "Household cleaning products",
+  "value": 43612.0
+ },
+ {
+  "line": 133,
+  "description": "Household paper products",
+  "value": 65803.0
+ },
+ {
+  "line": 134,
+  "description": "Household linens",
+  "value": 75649.0
+ },
+ {
+  "line": 135,
+  "description": "Sewing items",
+  "value": 1254.0
+ },
+ {
+  "line": 136,
+  "description": "Miscellaneous household products",
+  "value": 23160.0
+ },
+ {
+  "line": 137,
+  "description": "Personal care products (part of 118)",
+  "value": 227120.0
+ },
+ {
+  "line": 138,
+  "description": "Hair, dental, shaving, and miscellaneous personal care products except electrical products",
+  "value": 131953.0
+ },
+ {
+  "line": 139,
+  "description": "Cosmetic / perfumes / bath / nail preparations and implements",
+  "value": 81687.0
+ },
+ {
+  "line": 140,
+  "description": "Electric appliances for personal care",
+  "value": 13479.0
+ },
+ {
+  "line": 141,
+  "description": "Tobacco (127)",
+  "value": 110517.0
+ },
+ {
+  "line": 142,
+  "description": "Magazines, newspapers, and stationery (part of 90)",
+  "value": 139297.0
+ },
+ {
+  "line": 143,
+  "description": "Newspapers and periodicals",
+  "value": 104706.0
+ },
+ {
+  "line": 144,
+  "description": "Stationery and miscellaneous printed materials",
+  "value": 34591.0
+ },
+ {
+  "line": 145,
+  "description": "Net expenditures abroad by U.S. residents (131)",
+  "value": 13497.0
+ },
+ {
+  "line": 146,
+  "description": "Expenditures abroad by U.S. residents",
+  "value": 14252.0
+ },
+ {
+  "line": 147,
+  "description": "Government employees' expenditures abroad",
+  "value": 11912.0
+ },
+ {
+  "line": 148,
+  "description": "Private employees' expenditures abroad",
+  "value": 2341.0
+ },
+ {
+  "line": 149,
+  "description": "Less: Personal remittances in kind to nonresidents",
+  "value": 755.0
+ },
+ {
+  "line": 150,
+  "description": "Services",
+  "value": 15358902.0
+ },
+ {
+  "line": 151,
+  "description": "Household consumption expenditures (for services)",
+  "value": 14709604.0
+ },
+ {
+  "line": 152,
+  "description": "Housing and utilities",
+  "value": 3999517.0
+ },
+ {
+  "line": 153,
+  "description": "Housing",
+  "value": 3489904.0
+ },
+ {
+  "line": 154,
+  "description": "Rental of tenant-occupied nonfarm housing (20)",
+  "value": 805204.0
+ },
+ {
+  "line": 155,
+  "description": "Tenant-occupied mobile homes",
+  "value": 15515.0
+ },
+ {
+  "line": 156,
+  "description": "Tenant-occupied stationary homes and landlord durables",
+  "value": 789689.0
+ },
+ {
+  "line": 159,
+  "description": "Tenant-occupied, including landlord durables",
+  "value": 789689.0
+ },
+ {
+  "line": 160,
+  "description": "Imputed rental of owner-occupied nonfarm housing (21)",
+  "value": 2650488.0
+ },
+ {
+  "line": 161,
+  "description": "Owner-occupied mobile homes",
+  "value": 98541.0
+ },
+ {
+  "line": 162,
+  "description": "Owner-occupied stationary homes",
+  "value": 2551947.0
+ },
+ {
+  "line": 163,
+  "description": "Rental value of farm dwellings (22)",
+  "value": 30642.0
+ },
+ {
+  "line": 164,
+  "description": "Group housing (23)",
+  "value": 3570.0
+ },
+ {
+  "line": 165,
+  "description": "Household utilities",
+  "value": 509613.0
+ },
+ {
+  "line": 166,
+  "description": "Water supply and sanitation (25)",
+  "value": 147641.0
+ },
+ {
+  "line": 167,
+  "description": "Water supply and sewage maintenance",
+  "value": 103978.0
+ },
+ {
+  "line": 168,
+  "description": "Garbage and trash collection",
+  "value": 43662.0
+ },
+ {
+  "line": 169,
+  "description": "Electricity and gas",
+  "value": 361972.0
+ },
+ {
+  "line": 170,
+  "description": "Electricity (27)",
+  "value": 285467.0
+ },
+ {
+  "line": 171,
+  "description": "Natural gas (28)",
+  "value": 76505.0
+ },
+ {
+  "line": 172,
+  "description": "Health care",
+  "value": 3861305.0
+ },
+ {
+  "line": 173,
+  "description": "Outpatient services",
+  "value": 1811767.0
+ },
+ {
+  "line": 174,
+  "description": "Physician services (44)",
+  "value": 884822.0
+ },
+ {
+  "line": 175,
+  "description": "Dental services (45)",
+  "value": 209363.0
+ },
+ {
+  "line": 176,
+  "description": "Paramedical services (46)",
+  "value": 717582.0
+ },
+ {
+  "line": 177,
+  "description": "Home health care",
+  "value": 235235.0
+ },
+ {
+  "line": 178,
+  "description": "Medical laboratories",
+  "value": 56371.0
+ },
+ {
+  "line": 179,
+  "description": "Other professional medical services",
+  "value": 425976.0
+ },
+ {
+  "line": 180,
+  "description": "Specialty outpatient care facilities and health and allied services",
+  "value": 307083.0
+ },
+ {
+  "line": 181,
+  "description": "All other professional medical services",
+  "value": 118892.0
+ },
+ {
+  "line": 182,
+  "description": "Hospital and nursing home services",
+  "value": 2049538.0
+ },
+ {
+  "line": 183,
+  "description": "Hospitals (51)",
+  "value": 1760649.0
+ },
+ {
+  "line": 184,
+  "description": "Nonprofit hospitals' services to households",
+  "value": 1194752.0
+ },
+ {
+  "line": 185,
+  "description": "Proprietary hospitals",
+  "value": 203474.0
+ },
+ {
+  "line": 186,
+  "description": "Government hospitals",
+  "value": 362423.0
+ },
+ {
+  "line": 187,
+  "description": "Nursing homes (52)",
+  "value": 288889.0
+ },
+ {
+  "line": 188,
+  "description": "Nonprofit nursing homes' services to households",
+  "value": 78722.0
+ },
+ {
+  "line": 189,
+  "description": "Proprietary and government nursing homes",
+  "value": 210167.0
+ },
+ {
+  "line": 190,
+  "description": "Transportation services",
+  "value": 769008.0
+ },
+ {
+  "line": 191,
+  "description": "Motor vehicle services",
+  "value": 424572.0
+ },
+ {
+  "line": 192,
+  "description": "Motor vehicle maintenance and repair (60)",
+  "value": 300985.0
+ },
+ {
+  "line": 193,
+  "description": "Other motor vehicle services (61)",
+  "value": 123588.0
+ },
+ {
+  "line": 194,
+  "description": "Motor vehicle leasing",
+  "value": 58734.0
+ },
+ {
+  "line": 195,
+  "description": "Auto leasing",
+  "value": 18874.0
+ },
+ {
+  "line": 196,
+  "description": "Truck leasing",
+  "value": 39860.0
+ },
+ {
+  "line": 197,
+  "description": "Motor vehicle rental",
+  "value": 33530.0
+ },
+ {
+  "line": 198,
+  "description": "Parking fees and tolls",
+  "value": 31323.0
+ },
+ {
+  "line": 199,
+  "description": "Public transportation",
+  "value": 344436.0
+ },
+ {
+  "line": 200,
+  "description": "Ground transportation (63)",
+  "value": 112063.0
+ },
+ {
+  "line": 201,
+  "description": "Railway transportation",
+  "value": 1560.0
+ },
+ {
+  "line": 202,
+  "description": "Road transportation",
+  "value": 110504.0
+ },
+ {
+  "line": 203,
+  "description": "Intercity buses",
+  "value": 1263.0
+ },
+ {
+  "line": 204,
+  "description": "Taxicabs and ride sharing services",
+  "value": 44174.0
+ },
+ {
+  "line": 205,
+  "description": "Intracity mass transit",
+  "value": 21508.0
+ },
+ {
+  "line": 206,
+  "description": "Other road transportation service",
+  "value": 43559.0
+ },
+ {
+  "line": 207,
+  "description": "Air transportation (64)",
+  "value": 224379.0
+ },
+ {
+  "line": 208,
+  "description": "Water transportation (65)",
+  "value": 7994.0
+ },
+ {
+  "line": 209,
+  "description": "Recreation services",
+  "value": 858631.0
+ },
+ {
+  "line": 210,
+  "description": "Membership clubs, sports centers, parks, theaters, and museums (82)",
+  "value": 332706.0
+ },
+ {
+  "line": 211,
+  "description": "Membership clubs and participant sports centers",
+  "value": 86889.0
+ },
+ {
+  "line": 212,
+  "description": "Amusement parks, campgrounds, and related recreational services",
+  "value": 95028.0
+ },
+ {
+  "line": 213,
+  "description": "Admissions to specified spectator amusements",
+  "value": 130435.0
+ },
+ {
+  "line": 214,
+  "description": "Motion picture theaters",
+  "value": 18752.0
+ },
+ {
+  "line": 215,
+  "description": "Live entertainment, excluding sports",
+  "value": 62681.0
+ },
+ {
+  "line": 216,
+  "description": "Spectator sports",
+  "value": 49002.0
+ },
+ {
+  "line": 217,
+  "description": "Museums and libraries",
+  "value": 20354.0
+ },
+ {
+  "line": 218,
+  "description": "Audio-video, photographic, and information processing equipment services (parts of 77 and 93)",
+  "value": 179347.0
+ },
+ {
+  "line": 219,
+  "description": "Cable, satellite, and other live television services",
+  "value": 68771.0
+ },
+ {
+  "line": 220,
+  "description": "Photo processing",
+  "value": 1320.0
+ },
+ {
+  "line": 221,
+  "description": "Photo studios",
+  "value": 11879.0
+ },
+ {
+  "line": 222,
+  "description": "Repair and rental of audio-visual, photographic, and information processing equipment",
+  "value": 12410.0
+ },
+ {
+  "line": 223,
+  "description": "Video and audio streaming and rental",
+  "value": 84966.0
+ },
+ {
+  "line": 224,
+  "description": "Video streaming and rental",
+  "value": 72371.0
+ },
+ {
+  "line": 225,
+  "description": "Audio streaming and radio services (including satellite radio)",
+  "value": 12595.0
+ },
+ {
+  "line": 226,
+  "description": "Gambling (91)",
+  "value": 228981.0
+ },
+ {
+  "line": 227,
+  "description": "Casino gambling",
+  "value": 168058.0
+ },
+ {
+  "line": 228,
+  "description": "Lotteries",
+  "value": 54163.0
+ },
+ {
+  "line": 229,
+  "description": "Pari-mutuel net receipts",
+  "value": 6759.0
+ },
+ {
+  "line": 230,
+  "description": "Other recreational services (81, 94, and part of 92)",
+  "value": 117598.0
+ },
+ {
+  "line": 231,
+  "description": "Veterinary and other services for pets",
+  "value": 81581.0
+ },
+ {
+  "line": 232,
+  "description": "Package tours",
+  "value": 27111.0
+ },
+ {
+  "line": 233,
+  "description": "Maintenance and repair of recreational vehicles and sports equipment",
+  "value": 8905.0
+ },
+ {
+  "line": 234,
+  "description": "Food services and accommodations",
+  "value": 1588004.0
+ },
+ {
+  "line": 235,
+  "description": "Food services",
+  "value": 1375094.0
+ },
+ {
+  "line": 236,
+  "description": "Purchased meals and beverages (102)",
+  "value": 1336528.0
+ },
+ {
+  "line": 237,
+  "description": "Meals and nonalcoholic beverages",
+  "value": 1154247.0
+ },
+ {
+  "line": 238,
+  "description": "Meals at schools",
+  "value": 31392.0
+ },
+ {
+  "line": 239,
+  "description": "Elementary and secondary school lunches",
+  "value": 7352.0
+ },
+ {
+  "line": 240,
+  "description": "Higher education school lunches",
+  "value": 24040.0
+ },
+ {
+  "line": 241,
+  "description": "Other purchased meals",
+  "value": 1122855.0
+ },
+ {
+  "line": 242,
+  "description": "Meals at limited service eating places",
+  "value": 585257.0
+ },
+ {
+  "line": 243,
+  "description": "Meals at other eating places",
+  "value": 528765.0
+ },
+ {
+  "line": 244,
+  "description": "Meals at drinking places",
+  "value": 8833.0
+ },
+ {
+  "line": 245,
+  "description": "Alcohol in purchased meals",
+  "value": 182281.0
+ },
+ {
+  "line": 246,
+  "description": "Food furnished to employees (including military) (103)",
+  "value": 38566.0
+ },
+ {
+  "line": 247,
+  "description": "Food supplied to civilians",
+  "value": 35809.0
+ },
+ {
+  "line": 248,
+  "description": "Food supplied to military",
+  "value": 2757.0
+ },
+ {
+  "line": 249,
+  "description": "Accommodations (104)",
+  "value": 212910.0
+ },
+ {
+  "line": 250,
+  "description": "Hotels and motels",
+  "value": 163719.0
+ },
+ {
+  "line": 251,
+  "description": "Housing at schools",
+  "value": 49191.0
+ },
+ {
+  "line": 252,
+  "description": "Financial services and insurance",
+  "value": 1795945.0
+ },
+ {
+  "line": 253,
+  "description": "Financial services",
+  "value": 1230210.0
+ },
+ {
+  "line": 254,
+  "description": "Financial services furnished without payment (107)",
+  "value": 634166.0
+ },
+ {
+  "line": 255,
+  "description": "Commercial banks",
+  "value": 280636.0
+ },
+ {
+  "line": 256,
+  "description": "Other depository institutions and regulated investment companies",
+  "value": 267382.0
+ },
+ {
+  "line": 257,
+  "description": "Pension funds",
+  "value": 86147.0
+ },
+ {
+  "line": 258,
+  "description": "Financial service charges, fees, and commissions (108)",
+  "value": 596044.0
+ },
+ {
+  "line": 259,
+  "description": "Financial service charges and fees",
+  "value": 146878.0
+ },
+ {
+  "line": 260,
+  "description": "Securities commissions",
+  "value": 42207.0
+ },
+ {
+  "line": 261,
+  "description": "Direct commissions",
+  "value": 15423.0
+ },
+ {
+  "line": 262,
+  "description": "Exchange-listed equities",
+  "value": 10652.0
+ },
+ {
+  "line": 263,
+  "description": "Other direct commissions",
+  "value": 4771.0
+ },
+ {
+  "line": 264,
+  "description": "Indirect commissions",
+  "value": 16356.0
+ },
+ {
+  "line": 265,
+  "description": "Over-the-counter equity securities",
+  "value": 6840.0
+ },
+ {
+  "line": 266,
+  "description": "Other imputed commissions",
+  "value": 9516.0
+ },
+ {
+  "line": 267,
+  "description": "Mutual fund sales charges",
+  "value": 10428.0
+ },
+ {
+  "line": 268,
+  "description": "Portfolio management and investment advice services",
+  "value": 377628.0
+ },
+ {
+  "line": 269,
+  "description": "Trust, fiduciary, and custody activities",
+  "value": 29331.0
+ },
+ {
+  "line": 270,
+  "description": "Insurance",
+  "value": 565735.0
+ },
+ {
+  "line": 271,
+  "description": "Life insurance (110)",
+  "value": 130199.0
+ },
+ {
+  "line": 272,
+  "description": "Net household insurance (111)",
+  "value": 17971.0
+ },
+ {
+  "line": 273,
+  "description": "Household insurance premiums and premium supplements",
+  "value": 41977.0
+ },
+ {
+  "line": 274,
+  "description": "Less: Household insurance normal losses",
+  "value": 24006.0
+ },
+ {
+  "line": 275,
+  "description": "Net health insurance (112)",
+  "value": 304047.0
+ },
+ {
+  "line": 276,
+  "description": "Medical care and hospitalization",
+  "value": 263142.0
+ },
+ {
+  "line": 277,
+  "description": "Income loss",
+  "value": 5071.0
+ },
+ {
+  "line": 278,
+  "description": "Workers' compensation",
+  "value": 35834.0
+ },
+ {
+  "line": 279,
+  "description": "Net motor vehicle and other transportation insurance (116)",
+  "value": 113517.0
+ },
+ {
+  "line": 280,
+  "description": "Other services",
+  "value": 1837194.0
+ },
+ {
+  "line": 281,
+  "description": "Communication",
+  "value": 330228.0
+ },
+ {
+  "line": 282,
+  "description": "Telecommunication services (71)",
+  "value": 190271.0
+ },
+ {
+  "line": 283,
+  "description": "Land-line telephone services, local charges",
+  "value": 6975.0
+ },
+ {
+  "line": 284,
+  "description": "Land-line telephone services, long-distance charges",
+  "value": 4582.0
+ },
+ {
+  "line": 285,
+  "description": "Cellular telephone services",
+  "value": 178713.0
+ },
+ {
+  "line": 286,
+  "description": "Postal and delivery services (68)",
+  "value": 16034.0
+ },
+ {
+  "line": 287,
+  "description": "First-class postal service (by U.S. Postal Service)",
+  "value": 4670.0
+ },
+ {
+  "line": 288,
+  "description": "Other delivery services (by non-U.S. postal facilities)",
+  "value": 11364.0
+ },
+ {
+  "line": 289,
+  "description": "Internet access (72)",
+  "value": 123923.0
+ },
+ {
+  "line": 290,
+  "description": "Education services",
+  "value": 373292.0
+ },
+ {
+  "line": 291,
+  "description": "Higher education (97)",
+  "value": 211119.0
+ },
+ {
+  "line": 292,
+  "description": "Proprietary and public higher education",
+  "value": 122181.0
+ },
+ {
+  "line": 293,
+  "description": "Nonprofit private higher education services to households",
+  "value": 88937.0
+ },
+ {
+  "line": 294,
+  "description": "Nursery, elementary, and secondary schools (98)",
+  "value": 70940.0
+ },
+ {
+  "line": 295,
+  "description": "Elementary and secondary schools",
+  "value": 48250.0
+ },
+ {
+  "line": 296,
+  "description": "Day care and nursery schools",
+  "value": 22691.0
+ },
+ {
+  "line": 297,
+  "description": "Commercial and vocational schools (99)",
+  "value": 91233.0
+ },
+ {
+  "line": 298,
+  "description": "Professional and other services (121)",
+  "value": 320193.0
+ },
+ {
+  "line": 299,
+  "description": "Legal services",
+  "value": 170167.0
+ },
+ {
+  "line": 300,
+  "description": "Accounting and other business services",
+  "value": 82681.0
+ },
+ {
+  "line": 301,
+  "description": "Tax preparation and other related services",
+  "value": 54346.0
+ },
+ {
+  "line": 302,
+  "description": "Employment agency services",
+  "value": 1697.0
+ },
+ {
+  "line": 303,
+  "description": "Other personal business services",
+  "value": 26638.0
+ },
+ {
+  "line": 304,
+  "description": "Labor organization dues",
+  "value": 19383.0
+ },
+ {
+  "line": 305,
+  "description": "Professional association dues",
+  "value": 15581.0
+ },
+ {
+  "line": 306,
+  "description": "Funeral and burial services",
+  "value": 32381.0
+ },
+ {
+  "line": 307,
+  "description": "Personal care and clothing services (14 and parts of 17 and 118)",
+  "value": 260298.0
+ },
+ {
+  "line": 308,
+  "description": "Personal care services",
+  "value": 237223.0
+ },
+ {
+  "line": 309,
+  "description": "Hairdressing salons and personal grooming establishments",
+  "value": 104172.0
+ },
+ {
+  "line": 310,
+  "description": "Miscellaneous personal care services",
+  "value": 133051.0
+ },
+ {
+  "line": 311,
+  "description": "Clothing and footwear services",
+  "value": 23075.0
+ },
+ {
+  "line": 312,
+  "description": "Laundry and drycleaning services",
+  "value": 15525.0
+ },
+ {
+  "line": 313,
+  "description": "Clothing repair, rental, and alterations",
+  "value": 7105.0
+ },
+ {
+  "line": 314,
+  "description": "Repair and hire of footwear",
+  "value": 446.0
+ },
+ {
+  "line": 315,
+  "description": "Social services and religious activities (120)",
+  "value": 378375.0
+ },
+ {
+  "line": 316,
+  "description": "Child care",
+  "value": 71383.0
+ },
+ {
+  "line": 317,
+  "description": "Social assistance",
+  "value": 257246.0
+ },
+ {
+  "line": 318,
+  "description": "Homes for the elderly",
+  "value": 43382.0
+ },
+ {
+  "line": 319,
+  "description": "Residential mental health and substance abuse",
+  "value": 32982.0
+ },
+ {
+  "line": 320,
+  "description": "Individual and family services",
+  "value": 137983.0
+ },
+ {
+  "line": 321,
+  "description": "Vocational rehabilitation services",
+  "value": 16593.0
+ },
+ {
+  "line": 322,
+  "description": "Community food and housing / emergency / other relief services",
+  "value": 18607.0
+ },
+ {
+  "line": 323,
+  "description": "Other social assistance, not elsewere classified",
+  "value": 7698.0
+ },
+ {
+  "line": 324,
+  "description": "Social advocacy and civic and social organizations",
+  "value": 29005.0
+ },
+ {
+  "line": 325,
+  "description": "Religious organizations' services to households",
+  "value": 9309.0
+ },
+ {
+  "line": 326,
+  "description": "Foundations and grantmaking and giving services to households",
+  "value": 11431.0
+ },
+ {
+  "line": 327,
+  "description": "Household maintenance (parts of 31, 33, and 36)",
+  "value": 121915.0
+ },
+ {
+  "line": 328,
+  "description": "Domestic services",
+  "value": 38873.0
+ },
+ {
+  "line": 329,
+  "description": "Moving, storage, and freight services",
+  "value": 24230.0
+ },
+ {
+  "line": 330,
+  "description": "Repair of furniture, furnishings, and floor coverings",
+  "value": 2049.0
+ },
+ {
+  "line": 331,
+  "description": "Repair of household appliances",
+  "value": 12208.0
+ },
+ {
+  "line": 332,
+  "description": "Other household services",
+  "value": 44554.0
+ },
+ {
+  "line": 333,
+  "description": "Net foreign travel",
+  "value": 52892.0
+ },
+ {
+  "line": 334,
+  "description": "Foreign travel by U.S. residents (129)",
+  "value": 267503.0
+ },
+ {
+  "line": 335,
+  "description": "Passenger fares for foreign travel",
+  "value": 79947.0
+ },
+ {
+  "line": 336,
+  "description": "U.S. travel outside the United States",
+  "value": 173618.0
+ },
+ {
+  "line": 337,
+  "description": "U.S. student expenditures",
+  "value": 13938.0
+ },
+ {
+  "line": 338,
+  "description": "Less: Expenditures in the United States by nonresidents (130)",
+  "value": 214611.0
+ },
+ {
+  "line": 339,
+  "description": "Foreign travel in the United States",
+  "value": 155483.0
+ },
+ {
+  "line": 340,
+  "description": "Medical expenditures of foreigners",
+  "value": 1011.0
+ },
+ {
+  "line": 341,
+  "description": "Expenditures of foreign students in the United States",
+  "value": 58117.0
+ },
+ {
+  "line": 342,
+  "description": "Final consumption expenditures of nonprofit institutions serving households (NPISHs) (132)",
+  "value": 649298.0
+ },
+ {
+  "line": 343,
+  "description": "Gross output of nonprofit institutions (133)",
+  "value": 2485318.0
+ },
+ {
+  "line": 344,
+  "description": "Health, gross output",
+  "value": 1488369.0
+ },
+ {
+  "line": 345,
+  "description": "Outpatient services, gross output",
+  "value": 153079.0
+ },
+ {
+  "line": 346,
+  "description": "Nonprofit hospitals, gross output",
+  "value": 1246829.0
+ },
+ {
+  "line": 347,
+  "description": "Nonprofit nursing homes, gross output",
+  "value": 88461.0
+ },
+ {
+  "line": 348,
+  "description": "Recreation services, gross output",
+  "value": 87943.0
+ },
+ {
+  "line": 349,
+  "description": "Education services, gross output",
+  "value": 284633.0
+ },
+ {
+  "line": 350,
+  "description": "Social services, gross output",
+  "value": 260514.0
+ },
+ {
+  "line": 351,
+  "description": "Religious organizations, gross output",
+  "value": 122956.0
+ },
+ {
+  "line": 352,
+  "description": "Foundations and grantmaking and giving establishments, gross output",
+  "value": 66282.0
+ },
+ {
+  "line": 353,
+  "description": "Social advocacy establishments, gross output",
+  "value": 46045.0
+ },
+ {
+  "line": 354,
+  "description": "Civic and social organizations, gross output",
+  "value": 23060.0
+ },
+ {
+  "line": 355,
+  "description": "Professional advocacy, gross output",
+  "value": 105515.0
+ },
+ {
+  "line": 356,
+  "description": "Less: Receipts from sales of goods and services by nonprofit institutions (134)",
+  "value": 1836020.0
+ },
+ {
+  "line": 357,
+  "description": "Health services to households",
+  "value": 1419869.0
+ },
+ {
+  "line": 358,
+  "description": "Outpatient services to households",
+  "value": 146394.0
+ },
+ {
+  "line": 359,
+  "description": "Nonprofit hospitals services to households",
+  "value": 1194752.0
+ },
+ {
+  "line": 360,
+  "description": "Nonprofit nursing homes services to households",
+  "value": 78722.0
+ },
+ {
+  "line": 361,
+  "description": "Recreation services to households",
+  "value": 44388.0
+ },
+ {
+  "line": 362,
+  "description": "Education services to households",
+  "value": 154580.0
+ },
+ {
+  "line": 363,
+  "description": "Social services to households",
+  "value": 125266.0
+ },
+ {
+  "line": 364,
+  "description": "Religious organizations' services to households",
+  "value": 9309.0
+ },
+ {
+  "line": 365,
+  "description": "Foundations and grantmaking and giving services to households",
+  "value": 11431.0
+ },
+ {
+  "line": 366,
+  "description": "Services of social advocacy establishments to households",
+  "value": 4477.0
+ },
+ {
+  "line": 367,
+  "description": "Civic and social organizations' services to households",
+  "value": 11777.0
+ },
+ {
+  "line": 368,
+  "description": "Professional advocacy services to households",
+  "value": 54924.0
+ },
+ {
+  "line": 369,
+  "description": "Control group",
+  "value": 5698924.0
+ },
+ {
+  "line": 370,
+  "description": "PCE food and energy",
+  "value": 2438134.0
+ },
+ {
+  "line": 371,
+  "description": "PCE energy goods and services",
+  "value": 865854.0
+ },
+ {
+  "line": 372,
+  "description": "PCE excluding food",
+  "value": 20736247.0
+ },
+ {
+  "line": 373,
+  "description": "PCE excluding energy",
+  "value": 21442672.0
+ },
+ {
+  "line": 374,
+  "description": "PCE excluding food and energy",
+  "value": 19870393.0
+ },
+ {
+  "line": 375,
+  "description": "PCE goods excluding food and energy",
+  "value": 4873463.0
+ },
+ {
+  "line": 376,
+  "description": "PCE services excluding energy",
+  "value": 14996930.0
+ },
+ {
+  "line": 377,
+  "description": "Market-based PCE",
+  "value": 19266772.0
+ },
+ {
+  "line": 378,
+  "description": "Market-based PCE motor vehicles and parts",
+  "value": 717100.0
+ },
+ {
+  "line": 379,
+  "description": "Market-based PCE durable goods other than motor vehicles and parts",
+  "value": 1628649.0
+ },
+ {
+  "line": 380,
+  "description": "Market-based PCE food and beverages purchased for off-premises consumption",
+  "value": 1571296.0
+ },
+ {
+  "line": 381,
+  "description": "Market-based PCE clothing and footwear",
+  "value": 607597.0
+ },
+ {
+  "line": 382,
+  "description": "Market-based PCE gasoline and other energy goods",
+  "value": 503882.0
+ },
+ {
+  "line": 383,
+  "description": "Market-based PCE other nondurable goods",
+  "value": 1808286.0
+ },
+ {
+  "line": 384,
+  "description": "Market-based PCE services",
+  "value": 12429962.0
+ },
+ {
+  "line": 385,
+  "description": "Market-based PCE housing services",
+  "value": 3459262.0
+ },
+ {
+  "line": 386,
+  "description": "Market-based PCE household utilities",
+  "value": 509613.0
+ },
+ {
+  "line": 387,
+  "description": "Market-based PCE health care",
+  "value": 3861305.0
+ },
+ {
+  "line": 388,
+  "description": "Market-based PCE transportation services",
+  "value": 769008.0
+ },
+ {
+  "line": 389,
+  "description": "Market-based PCE recreation services",
+  "value": 629651.0
+ },
+ {
+  "line": 390,
+  "description": "Market-based PCE food services and accommodations",
+  "value": 1549438.0
+ },
+ {
+  "line": 391,
+  "description": "Market-based PCE financial services and insurance",
+  "value": 196627.0
+ },
+ {
+  "line": 392,
+  "description": "Market-based PCE other services",
+  "value": 1455058.0
+ },
+ {
+  "line": 393,
+  "description": "Market-based PCE communication services",
+  "value": 330228.0
+ },
+ {
+  "line": 394,
+  "description": "Market-based PCE education",
+  "value": 373292.0
+ },
+ {
+  "line": 395,
+  "description": "Market-based PCE professional services",
+  "value": 300810.0
+ },
+ {
+  "line": 396,
+  "description": "Market-based PCE personal care and clothing services",
+  "value": 260298.0
+ },
+ {
+  "line": 397,
+  "description": "Market-based PCE child care",
+  "value": 71383.0
+ },
+ {
+  "line": 398,
+  "description": "Market-based PCE household maintenance",
+  "value": 119046.0
+ },
+ {
+  "line": 399,
+  "description": "Market-based PCE food and energy",
+  "value": 2437151.0
+ },
+ {
+  "line": 400,
+  "description": "Market-based PCE excluding food",
+  "value": 17695475.0
+ },
+ {
+  "line": 401,
+  "description": "Market-based PCE excluding energy",
+  "value": 18400917.0
+ },
+ {
+  "line": 402,
+  "description": "Market-based PCE excluding food and energy",
+  "value": 16829621.0
+ }
+]

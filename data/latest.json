@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-10-18T20:12:06+00:00",
+  "generated_utc": "2026-10-18T20:16:57+00:00",
   "source": "BEA NIPA table 2.4.4U (NIUnderlyingDetail/U20404), monthly",
   "threshold_pct": 3.0,
   "selection": false,
   "selection_detail": {
-    "warning": "leaf detection found only 398 lines; using all lines"
+    "warning": "leaf detection found only 0 lines; using all lines"
   },
   "latest": {
     "month": "2026-08",
