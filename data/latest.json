@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-10-18T20:08:20+00:00",
+  "source": "BEA NIPA table 2.4.4U (NIUnderlyingDetail/U20404), monthly",
+  "threshold_pct": 3.0,
+  "selection_tuned": false,
+  "latest": {
+    "month": "2026-08",
+    "components": 398,
+    "share_6m": 46.2,
+    "share_12m": 54.8
+  },
+  "prior": {
+    "month": "2026-07",
+    "components": 398,
+    "share_6m": 49.7,
+    "share_12m": 54.8
+  },
+  "change_vs_prior": {
+    "share_6m_pp": -3.5,
+    "share_12m_pp": 0.0
+  },
+  "backtest_july_2026": {
+    "target": {
+      "month": "2026-07",
+      "share_12m": 54.0,
+      "share_6m": 49.0,
+      "tolerance": 1.5
+    },
+    "computed": {
+      "month": "2026-07",
+      "components": 398,
+      "share_6m": 49.7,
+      "share_12m": 54.8
+    },
+    "matches": true
+  }
+}

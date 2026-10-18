@@ -1,0 +1,1992 @@
+[
+  {
+    "line": 1,
+    "series_code": "DPCERG",
+    "description": "Personal consumption expenditures"
+  },
+  {
+    "line": 2,
+    "series_code": "DGDSRG",
+    "description": "Goods"
+  },
+  {
+    "line": 3,
+    "series_code": "DDURRG",
+    "description": "Durable goods"
+  },
+  {
+    "line": 4,
+    "series_code": "DMOTRG",
+    "description": "Motor vehicles and parts"
+  },
+  {
+    "line": 5,
+    "series_code": "DNMVRG",
+    "description": "New motor vehicles (55)"
+  },
+  {
+    "line": 6,
+    "series_code": "DNEARG",
+    "description": "New autos"
+  },
+  {
+    "line": 7,
+    "series_code": "DNDCRG",
+    "description": "New domestic autos"
+  },
+  {
+    "line": 8,
+    "series_code": "DNFCRG",
+    "description": "New foreign autos"
+  },
+  {
+    "line": 9,
+    "series_code": "DNWTRG",
+    "description": "New light trucks"
+  },
+  {
+    "line": 10,
+    "series_code": "IA001081",
+    "description": "New domestic light trucks"
+  },
+  {
+    "line": 11,
+    "series_code": "IA001083",
+    "description": "New foreign light trucks"
+  },
+  {
+    "line": 12,
+    "series_code": "DNPVRG",
+    "description": "Net purchases of used motor vehicles (56)"
+  },
+  {
+    "line": 13,
+    "series_code": "DNPURG",
+    "description": "Used autos"
+  },
+  {
+    "line": 14,
+    "series_code": "DNETRG",
+    "description": "Net transactions in used autos"
+  },
+  {
+    "line": 15,
+    "series_code": "DMARRG",
+    "description": "Used auto margin"
+  },
+  {
+    "line": 16,
+    "series_code": "DREERG",
+    "description": "Employee reimbursement"
+  },
+  {
+    "line": 17,
+    "series_code": "DUTRRG",
+    "description": "Used light trucks"
+  },
+  {
+    "line": 18,
+    "series_code": "DUTNRG",
+    "description": "Net transactions in used trucks"
+  },
+  {
+    "line": 19,
+    "series_code": "DUTMRG",
+    "description": "Used truck margin"
+  },
+  {
+    "line": 20,
+    "series_code": "DMVPRG",
+    "description": "Motor vehicle parts and accessories (58)"
+  },
+  {
+    "line": 21,
+    "series_code": "DTATRG",
+    "description": "Tires"
+  },
+  {
+    "line": 22,
+    "series_code": "DPAARG",
+    "description": "Accessories and parts"
+  },
+  {
+    "line": 23,
+    "series_code": "DFDHRG",
+    "description": "Furnishings and durable household equipment"
+  },
+  {
+    "line": 24,
+    "series_code": "DFFFRG",
+    "description": "Furniture and furnishings (parts of 31 and 32)"
+  },
+  {
+    "line": 25,
+    "series_code": "DFNRRG",
+    "description": "Furniture"
+  },
+  {
+    "line": 26,
+    "series_code": "DCLFRG",
+    "description": "Clocks, lamps, lighting fixtures, and other household decorative items"
+  },
+  {
+    "line": 27,
+    "series_code": "DFLRRG",
+    "description": "Carpets and other floor coverings"
+  },
+  {
+    "line": 28,
+    "series_code": "DWCTRG",
+    "description": "Window coverings"
+  },
+  {
+    "line": 29,
+    "series_code": "DAPPRG",
+    "description": "Household appliances (part of 33)"
+  },
+  {
+    "line": 30,
+    "series_code": "DMHARG",
+    "description": "Major household appliances"
+  },
+  {
+    "line": 31,
+    "series_code": "DSEARG",
+    "description": "Small electric household appliances"
+  },
+  {
+    "line": 32,
+    "series_code": "DUTERG",
+    "description": "Glassware, tableware, and household utensils (34)"
+  },
+  {
+    "line": 33,
+    "series_code": "DCHNRG",
+    "description": "Dishes and flatware"
+  },
+  {
+    "line": 34,
+    "series_code": "DNECRG",
+    "description": "Nonelectric cookware and tableware"
+  },
+  {
+    "line": 35,
+    "series_code": "DTOORG",
+    "description": "Tools and equipment for house and garden (35)"
+  },
+  {
+    "line": 36,
+    "series_code": "DHDWRG",
+    "description": "Tools, hardware, and supplies"
+  },
+  {
+    "line": 37,
+    "series_code": "DLWNRG",
+    "description": "Outdoor equipment and supplies"
+  },
+  {
+    "line": 38,
+    "series_code": "DREQRG",
+    "description": "Recreational goods and vehicles"
+  },
+  {
+    "line": 39,
+    "series_code": "DVAPRG",
+    "description": "Video, audio, photographic, and information processing equipment and media (75, 76, and part of 93)"
+  },
+  {
+    "line": 40,
+    "series_code": "DVAARG",
+    "description": "Video and audio equipment"
+  },
+  {
+    "line": 41,
+    "series_code": "DTVSRG",
+    "description": "Televisions"
+  },
+  {
+    "line": 42,
+    "series_code": "DOVARG",
+    "description": "Other video equipment"
+  },
+  {
+    "line": 43,
+    "series_code": "DAUDRG",
+    "description": "Audio equipment"
+  },
+  {
+    "line": 44,
+    "series_code": "DRECRG",
+    "description": "Recording media"
+  },
+  {
+    "line": 45,
+    "series_code": "DRTDRG",
+    "description": "Audio discs, tapes, vinyl, and permanent digital downloads"
+  },
+  {
+    "line": 46,
+    "series_code": "DOVERG",
+    "description": "Video discs, tapes, and permanent digital downloads"
+  },
+  {
+    "line": 47,
+    "series_code": "DCAMRG",
+    "description": "Photographic equipment"
+  },
+  {
+    "line": 48,
+    "series_code": "DIPERG",
+    "description": "Information processing equipment"
+  },
+  {
+    "line": 49,
+    "series_code": "DCPPRG",
+    "description": "Personal computers/tablets and peripheral equipment"
+  },
+  {
+    "line": 50,
+    "series_code": "DCPSRG",
+    "description": "Computer software and accessories"
+  },
+  {
+    "line": 51,
+    "series_code": "DOIPRG",
+    "description": "Calculators, typewriters, and other information processing equipment"
+  },
+  {
+    "line": 52,
+    "series_code": "DSPGRG",
+    "description": "Sporting equipment, supplies, guns, and ammunition (part of 80)"
+  },
+  {
+    "line": 53,
+    "series_code": "DWHLRG",
+    "description": "Sports and recreational vehicles (79)"
+  },
+  {
+    "line": 54,
+    "series_code": "DMCYRG",
+    "description": "Motorcycles"
+  },
+  {
+    "line": 55,
+    "series_code": "DBCYRG",
+    "description": "Bicycles and accessories"
+  },
+  {
+    "line": 56,
+    "series_code": "DBARRG",
+    "description": "Pleasure boats, aircraft, and other recreational vehicles"
+  },
+  {
+    "line": 57,
+    "series_code": "DBOARG",
+    "description": "Pleasure boats"
+  },
+  {
+    "line": 58,
+    "series_code": "DAIRRG",
+    "description": "Pleasure aircraft"
+  },
+  {
+    "line": 59,
+    "series_code": "DREVRG",
+    "description": "Other recreational vehicles"
+  },
+  {
+    "line": 60,
+    "series_code": "DRBKRG",
+    "description": "Recreational books (part of 90)"
+  },
+  {
+    "line": 61,
+    "series_code": "DMSCRG",
+    "description": "Musical instruments (part of 80)"
+  },
+  {
+    "line": 62,
+    "series_code": "DODGRG",
+    "description": "Other durable goods"
+  },
+  {
+    "line": 63,
+    "series_code": "DJRYRG",
+    "description": "Jewelry and watches (part of 119)"
+  },
+  {
+    "line": 64,
+    "series_code": "DJLYRG",
+    "description": "Jewelry"
+  },
+  {
+    "line": 65,
+    "series_code": "DWTCRG",
+    "description": "Watches"
+  },
+  {
+    "line": 66,
+    "series_code": "DTAERG",
+    "description": "Therapeutic appliances and equipment (42)"
+  },
+  {
+    "line": 67,
+    "series_code": "DTMERG",
+    "description": "Therapeutic medical equipment"
+  },
+  {
+    "line": 68,
+    "series_code": "DEYERG",
+    "description": "Corrective eyeglasses and contact lenses"
+  },
+  {
+    "line": 69,
+    "series_code": "DEBKRG",
+    "description": "Educational books (96)"
+  },
+  {
+    "line": 70,
+    "series_code": "DLUGRG",
+    "description": "Luggage and similar personal items (part of 119)"
+  },
+  {
+    "line": 71,
+    "series_code": "DTCERG",
+    "description": "Telephone and related communication equipment"
+  },
+  {
+    "line": 72,
+    "series_code": "DNDGRG",
+    "description": "Nondurable goods"
+  },
+  {
+    "line": 73,
+    "series_code": "DFXARG",
+    "description": "Food and beverages purchased for off-premises consumption"
+  },
+  {
+    "line": 74,
+    "series_code": "DTFDRG",
+    "description": "Food and nonalcoholic beverages purchased for off-premises consumption (4)"
+  },
+  {
+    "line": 75,
+    "series_code": "DFOFRG",
+    "description": "Food purchased for off-premises consumption"
+  },
+  {
+    "line": 76,
+    "series_code": "DCBPRG",
+    "description": "Cereals and bakery products"
+  },
+  {
+    "line": 77,
+    "series_code": "DGRARG",
+    "description": "Cereals"
+  },
+  {
+    "line": 78,
+    "series_code": "DBAKRG",
+    "description": "Bakery products"
+  },
+  {
+    "line": 79,
+    "series_code": "DMAPRG",
+    "description": "Meats and poultry"
+  },
+  {
+    "line": 80,
+    "series_code": "DBEERG",
+    "description": "Beef and veal"
+  },
+  {
+    "line": 81,
+    "series_code": "DPORRG",
+    "description": "Pork"
+  },
+  {
+    "line": 82,
+    "series_code": "DMEARG",
+    "description": "Other meats"
+  },
+  {
+    "line": 83,
+    "series_code": "DPOURG",
+    "description": "Poultry"
+  },
+  {
+    "line": 84,
+    "series_code": "DFISRG",
+    "description": "Fish and seafood"
+  },
+  {
+    "line": 85,
+    "series_code": "DMDERG",
+    "description": "Milk, dairy products, and eggs"
+  },
+  {
+    "line": 86,
+    "series_code": "DMILRG",
+    "description": "Fresh milk"
+  },
+  {
+    "line": 87,
+    "series_code": "DDAIRG",
+    "description": "Processed dairy products"
+  },
+  {
+    "line": 88,
+    "series_code": "DGGSRG",
+    "description": "Eggs"
+  },
+  {
+    "line": 89,
+    "series_code": "DFATRG",
+    "description": "Fats and oils"
+  },
+  {
+    "line": 90,
+    "series_code": "DFAVRG",
+    "description": "Fresh fruits and vegetables"
+  },
+  {
+    "line": 91,
+    "series_code": "DFRURG",
+    "description": "Fruit (fresh)"
+  },
+  {
+    "line": 92,
+    "series_code": "DVEGRG",
+    "description": "Vegetables (fresh)"
+  },
+  {
+    "line": 93,
+    "series_code": "DPFVRG",
+    "description": "Processed fruits and vegetables"
+  },
+  {
+    "line": 94,
+    "series_code": "DSWERG",
+    "description": "Sugar and sweets"
+  },
+  {
+    "line": 95,
+    "series_code": "DOFDRG",
+    "description": "Food products, not elsewhere classified"
+  },
+  {
+    "line": 96,
+    "series_code": "DNBVRG",
+    "description": "Nonalcoholic beverages purchased for off-premises consumption"
+  },
+  {
+    "line": 97,
+    "series_code": "DCTMRG",
+    "description": "Coffee, tea, and other beverage materials"
+  },
+  {
+    "line": 98,
+    "series_code": "DJNBRG",
+    "description": "Mineral waters, soft drinks, and vegetable juices"
+  },
+  {
+    "line": 99,
+    "series_code": "DAOPRG",
+    "description": "Alcoholic beverages purchased for off-premises consumption (5)"
+  },
+  {
+    "line": 100,
+    "series_code": "DLIQRG",
+    "description": "Spirits"
+  },
+  {
+    "line": 101,
+    "series_code": "DWINRG",
+    "description": "Wine"
+  },
+  {
+    "line": 102,
+    "series_code": "DMLTRG",
+    "description": "Beer"
+  },
+  {
+    "line": 103,
+    "series_code": "DFFDRG",
+    "description": "Food produced and consumed on farms (6)"
+  },
+  {
+    "line": 104,
+    "series_code": "DCLORG",
+    "description": "Clothing and footwear"
+  },
+  {
+    "line": 105,
+    "series_code": "DGARRG",
+    "description": "Garments"
+  },
+  {
+    "line": 106,
+    "series_code": "DWGCRG",
+    "description": "Women's and girls' clothing (10)"
+  },
+  {
+    "line": 107,
+    "series_code": "DMBCRG",
+    "description": "Men's and boys' clothing (11)"
+  },
+  {
+    "line": 108,
+    "series_code": "DCICRG",
+    "description": "Children's and infants' clothing (12)"
+  },
+  {
+    "line": 109,
+    "series_code": "DOCCRG",
+    "description": "Other clothing materials and footwear (13 and 17)"
+  },
+  {
+    "line": 110,
+    "series_code": "DCSMRG",
+    "description": "Clothing materials"
+  },
+  {
+    "line": 111,
+    "series_code": "DMICRG",
+    "description": "Standard clothing issued to military personnel"
+  },
+  {
+    "line": 112,
+    "series_code": "DSHURG",
+    "description": "Shoes and other footwear"
+  },
+  {
+    "line": 113,
+    "series_code": "DGOERG",
+    "description": "Gasoline and other energy goods"
+  },
+  {
+    "line": 114,
+    "series_code": "DMFLRG",
+    "description": "Motor vehicle fuels, lubricants, and fluids (59)"
+  },
+  {
+    "line": 115,
+    "series_code": "DGASRG",
+    "description": "Gasoline and other motor fuel"
+  },
+  {
+    "line": 116,
+    "series_code": "DLUBRG",
+    "description": "Lubricants and fluids"
+  },
+  {
+    "line": 117,
+    "series_code": "DFULRG",
+    "description": "Fuel oil and other fuels (29)"
+  },
+  {
+    "line": 118,
+    "series_code": "DOILRG",
+    "description": "Fuel oil"
+  },
+  {
+    "line": 119,
+    "series_code": "DLPFRG",
+    "description": "Other fuels"
+  },
+  {
+    "line": 120,
+    "series_code": "DONGRG",
+    "description": "Other nondurable goods"
+  },
+  {
+    "line": 121,
+    "series_code": "DPHMRG",
+    "description": "Pharmaceutical and other medical products (40 and 41)"
+  },
+  {
+    "line": 122,
+    "series_code": "DPNPRG",
+    "description": "Pharmaceutical products"
+  },
+  {
+    "line": 123,
+    "series_code": "DRXDRG",
+    "description": "Prescription drugs"
+  },
+  {
+    "line": 124,
+    "series_code": "DNRDRG",
+    "description": "Nonprescription drugs"
+  },
+  {
+    "line": 125,
+    "series_code": "DOMPRG",
+    "description": "Other medical products"
+  },
+  {
+    "line": 126,
+    "series_code": "DREIRG",
+    "description": "Recreational items (parts of 80, 92, and 93)"
+  },
+  {
+    "line": 127,
+    "series_code": "DDOLRG",
+    "description": "Games, toys, and hobbies"
+  },
+  {
+    "line": 128,
+    "series_code": "DPRPRG",
+    "description": "Pets and related products"
+  },
+  {
+    "line": 129,
+    "series_code": "DFLORG",
+    "description": "Flowers, seeds, and potted plants"
+  },
+  {
+    "line": 130,
+    "series_code": "DFLMRG",
+    "description": "Film and photographic supplies"
+  },
+  {
+    "line": 131,
+    "series_code": "DHOURG",
+    "description": "Household supplies (parts of 32 and 36)"
+  },
+  {
+    "line": 132,
+    "series_code": "DCLERG",
+    "description": "Household cleaning products"
+  },
+  {
+    "line": 133,
+    "series_code": "DPAPRG",
+    "description": "Household paper products"
+  },
+  {
+    "line": 134,
+    "series_code": "DLINRG",
+    "description": "Household linens"
+  },
+  {
+    "line": 135,
+    "series_code": "DSEWRG",
+    "description": "Sewing items"
+  },
+  {
+    "line": 136,
+    "series_code": "DMHPRG",
+    "description": "Miscellaneous household products"
+  },
+  {
+    "line": 137,
+    "series_code": "DOPCRG",
+    "description": "Personal care products (part of 118)"
+  },
+  {
+    "line": 138,
+    "series_code": "DOPHRG",
+    "description": "Hair, dental, shaving, and miscellaneous personal care products except electrical products"
+  },
+  {
+    "line": 139,
+    "series_code": "DCOSRG",
+    "description": "Cosmetic / perfumes / bath / nail preparations and implements"
+  },
+  {
+    "line": 140,
+    "series_code": "DEAPRG",
+    "description": "Electric appliances for personal care"
+  },
+  {
+    "line": 141,
+    "series_code": "DTOBRG",
+    "description": "Tobacco (127)"
+  },
+  {
+    "line": 142,
+    "series_code": "DNEWRG",
+    "description": "Magazines, newspapers, and stationery (part of 90)"
+  },
+  {
+    "line": 143,
+    "series_code": "DMAGRG",
+    "description": "Newspapers and periodicals"
+  },
+  {
+    "line": 144,
+    "series_code": "DSTYRG",
+    "description": "Stationery and miscellaneous printed materials"
+  },
+  {
+    "line": 146,
+    "series_code": "DABDRG",
+    "description": "Expenditures abroad by U.S. residents"
+  },
+  {
+    "line": 147,
+    "series_code": "DARTRG",
+    "description": "Government employees' expenditures abroad"
+  },
+  {
+    "line": 148,
+    "series_code": "DARSRG",
+    "description": "Private employees' expenditures abroad"
+  },
+  {
+    "line": 149,
+    "series_code": "DREMRG",
+    "description": "Less: Personal remittances in kind to nonresidents"
+  },
+  {
+    "line": 150,
+    "series_code": "DSERRG",
+    "description": "Services"
+  },
+  {
+    "line": 151,
+    "series_code": "DHCERG",
+    "description": "Household consumption expenditures (for services)"
+  },
+  {
+    "line": 152,
+    "series_code": "DHUTRG",
+    "description": "Housing and utilities"
+  },
+  {
+    "line": 153,
+    "series_code": "DHSGRG",
+    "description": "Housing"
+  },
+  {
+    "line": 154,
+    "series_code": "DTENRG",
+    "description": "Rental of tenant-occupied nonfarm housing (20)"
+  },
+  {
+    "line": 155,
+    "series_code": "DTMHRG",
+    "description": "Tenant-occupied mobile homes"
+  },
+  {
+    "line": 156,
+    "series_code": "IA000629",
+    "description": "Tenant-occupied stationary homes and landlord durables"
+  },
+  {
+    "line": 159,
+    "series_code": "IA000630",
+    "description": "Tenant-occupied, including landlord durables"
+  },
+  {
+    "line": 160,
+    "series_code": "DOWNRG",
+    "description": "Imputed rental of owner-occupied nonfarm housing (21)"
+  },
+  {
+    "line": 161,
+    "series_code": "DOMHRG",
+    "description": "Owner-occupied mobile homes"
+  },
+  {
+    "line": 162,
+    "series_code": "DOSTRG",
+    "description": "Owner-occupied stationary homes"
+  },
+  {
+    "line": 163,
+    "series_code": "DFARRG",
+    "description": "Rental value of farm dwellings (22)"
+  },
+  {
+    "line": 164,
+    "series_code": "DGRHRG",
+    "description": "Group housing (23)"
+  },
+  {
+    "line": 165,
+    "series_code": "DUTLRG",
+    "description": "Household utilities"
+  },
+  {
+    "line": 166,
+    "series_code": "DWRSRG",
+    "description": "Water supply and sanitation (25)"
+  },
+  {
+    "line": 167,
+    "series_code": "DWSMRG",
+    "description": "Water supply and sewage maintenance"
+  },
+  {
+    "line": 168,
+    "series_code": "DREFRG",
+    "description": "Garbage and trash collection"
+  },
+  {
+    "line": 169,
+    "series_code": "DELGRG",
+    "description": "Electricity and gas"
+  },
+  {
+    "line": 170,
+    "series_code": "DELCRG",
+    "description": "Electricity (27)"
+  },
+  {
+    "line": 171,
+    "series_code": "DGHERG",
+    "description": "Natural gas (28)"
+  },
+  {
+    "line": 172,
+    "series_code": "DHLCRG",
+    "description": "Health care"
+  },
+  {
+    "line": 173,
+    "series_code": "DOUTRG",
+    "description": "Outpatient services"
+  },
+  {
+    "line": 174,
+    "series_code": "DPHYRG",
+    "description": "Physician services (44)"
+  },
+  {
+    "line": 175,
+    "series_code": "DDENRG",
+    "description": "Dental services (45)"
+  },
+  {
+    "line": 176,
+    "series_code": "DPMSRG",
+    "description": "Paramedical services (46)"
+  },
+  {
+    "line": 177,
+    "series_code": "DHHCRG",
+    "description": "Home health care"
+  },
+  {
+    "line": 178,
+    "series_code": "DMLBRG",
+    "description": "Medical laboratories"
+  },
+  {
+    "line": 179,
+    "series_code": "DOMDRG",
+    "description": "Other professional medical services"
+  },
+  {
+    "line": 180,
+    "series_code": "DOMSRG",
+    "description": "Specialty outpatient care facilities and health and allied services"
+  },
+  {
+    "line": 181,
+    "series_code": "DOMORG",
+    "description": "All other professional medical services"
+  },
+  {
+    "line": 182,
+    "series_code": "DHPNRG",
+    "description": "Hospital and nursing home services"
+  },
+  {
+    "line": 183,
+    "series_code": "DHSPRG",
+    "description": "Hospitals (51)"
+  },
+  {
+    "line": 184,
+    "series_code": "DNPHRG",
+    "description": "Nonprofit hospitals' services to households"
+  },
+  {
+    "line": 185,
+    "series_code": "DFPHRG",
+    "description": "Proprietary hospitals"
+  },
+  {
+    "line": 186,
+    "series_code": "DGVHRG",
+    "description": "Government hospitals"
+  },
+  {
+    "line": 187,
+    "series_code": "DNRSRG",
+    "description": "Nursing homes (52)"
+  },
+  {
+    "line": 188,
+    "series_code": "DNPNRG",
+    "description": "Nonprofit nursing homes' services to households"
+  },
+  {
+    "line": 189,
+    "series_code": "DFPNRG",
+    "description": "Proprietary and government nursing homes"
+  },
+  {
+    "line": 190,
+    "series_code": "DTRSRG",
+    "description": "Transportation services"
+  },
+  {
+    "line": 191,
+    "series_code": "DMVSRG",
+    "description": "Motor vehicle services"
+  },
+  {
+    "line": 192,
+    "series_code": "DVMRRG",
+    "description": "Motor vehicle maintenance and repair (60)"
+  },
+  {
+    "line": 193,
+    "series_code": "DOVSRG",
+    "description": "Other motor vehicle services (61)"
+  },
+  {
+    "line": 194,
+    "series_code": "DMVLRG",
+    "description": "Motor vehicle leasing"
+  },
+  {
+    "line": 195,
+    "series_code": "DALERG",
+    "description": "Auto leasing"
+  },
+  {
+    "line": 196,
+    "series_code": "DTLERG",
+    "description": "Truck leasing"
+  },
+  {
+    "line": 197,
+    "series_code": "DMVRRG",
+    "description": "Motor vehicle rental"
+  },
+  {
+    "line": 198,
+    "series_code": "DPFTRG",
+    "description": "Parking fees and tolls"
+  },
+  {
+    "line": 199,
+    "series_code": "DPUBRG",
+    "description": "Public transportation"
+  },
+  {
+    "line": 200,
+    "series_code": "DGRDRG",
+    "description": "Ground transportation (63)"
+  },
+  {
+    "line": 201,
+    "series_code": "DIRRRG",
+    "description": "Railway transportation"
+  },
+  {
+    "line": 202,
+    "series_code": "DROTRG",
+    "description": "Road transportation"
+  },
+  {
+    "line": 203,
+    "series_code": "DIBURG",
+    "description": "Intercity buses"
+  },
+  {
+    "line": 204,
+    "series_code": "DTAXRG",
+    "description": "Taxicabs and ride sharing services"
+  },
+  {
+    "line": 205,
+    "series_code": "DIMTRG",
+    "description": "Intracity mass transit"
+  },
+  {
+    "line": 206,
+    "series_code": "DORTRG",
+    "description": "Other road transportation service"
+  },
+  {
+    "line": 207,
+    "series_code": "DAITRG",
+    "description": "Air transportation (64)"
+  },
+  {
+    "line": 208,
+    "series_code": "DWATRG",
+    "description": "Water transportation (65)"
+  },
+  {
+    "line": 209,
+    "series_code": "DRCARG",
+    "description": "Recreation services"
+  },
+  {
+    "line": 210,
+    "series_code": "DRLSRG",
+    "description": "Membership clubs, sports centers, parks, theaters, and museums (82)"
+  },
+  {
+    "line": 211,
+    "series_code": "DMDFRG",
+    "description": "Membership clubs and participant sports centers"
+  },
+  {
+    "line": 212,
+    "series_code": "DORSRG",
+    "description": "Amusement parks, campgrounds, and related recreational services"
+  },
+  {
+    "line": 213,
+    "series_code": "DADMRG",
+    "description": "Admissions to specified spectator amusements"
+  },
+  {
+    "line": 214,
+    "series_code": "DMOVRG",
+    "description": "Motion picture theaters"
+  },
+  {
+    "line": 215,
+    "series_code": "DLIGRG",
+    "description": "Live entertainment, excluding sports"
+  },
+  {
+    "line": 216,
+    "series_code": "DSPERG",
+    "description": "Spectator sports"
+  },
+  {
+    "line": 217,
+    "series_code": "DMUSRG",
+    "description": "Museums and libraries"
+  },
+  {
+    "line": 218,
+    "series_code": "DAVPRG",
+    "description": "Audio-video, photographic, and information processing equipment services (parts of 77 and 93)"
+  },
+  {
+    "line": 219,
+    "series_code": "DCTVRG",
+    "description": "Cable, satellite, and other live television services"
+  },
+  {
+    "line": 220,
+    "series_code": "DFDVRG",
+    "description": "Photo processing"
+  },
+  {
+    "line": 221,
+    "series_code": "DPICRG",
+    "description": "Photo studios"
+  },
+  {
+    "line": 222,
+    "series_code": "DAPIRG",
+    "description": "Repair and rental of audio-visual, photographic, and information processing equipment"
+  },
+  {
+    "line": 223,
+    "series_code": "DVIDRG",
+    "description": "Video and audio streaming and rental"
+  },
+  {
+    "line": 224,
+    "series_code": "IA000233",
+    "description": "Video streaming and rental"
+  },
+  {
+    "line": 225,
+    "series_code": "IA000232",
+    "description": "Audio streaming and radio services (including satellite radio)"
+  },
+  {
+    "line": 226,
+    "series_code": "DGAMRG",
+    "description": "Gambling (91)"
+  },
+  {
+    "line": 227,
+    "series_code": "DCASRG",
+    "description": "Casino gambling"
+  },
+  {
+    "line": 228,
+    "series_code": "DLOTRG",
+    "description": "Lotteries"
+  },
+  {
+    "line": 229,
+    "series_code": "DPARRG",
+    "description": "Pari-mutuel net receipts"
+  },
+  {
+    "line": 230,
+    "series_code": "DOTRRG",
+    "description": "Other recreational services (81, 94, and part of 92)"
+  },
+  {
+    "line": 231,
+    "series_code": "DVETRG",
+    "description": "Veterinary and other services for pets"
+  },
+  {
+    "line": 232,
+    "series_code": "DHOLRG",
+    "description": "Package tours"
+  },
+  {
+    "line": 233,
+    "series_code": "DRRERG",
+    "description": "Maintenance and repair of recreational vehicles and sports equipment"
+  },
+  {
+    "line": 234,
+    "series_code": "DFSARG",
+    "description": "Food services and accommodations"
+  },
+  {
+    "line": 235,
+    "series_code": "DFSERG",
+    "description": "Food services"
+  },
+  {
+    "line": 236,
+    "series_code": "DPMBRG",
+    "description": "Purchased meals and beverages (102)"
+  },
+  {
+    "line": 237,
+    "series_code": "DMABRG",
+    "description": "Meals and nonalcoholic beverages"
+  },
+  {
+    "line": 238,
+    "series_code": "DMSLRG",
+    "description": "Meals at schools"
+  },
+  {
+    "line": 239,
+    "series_code": "DESLRG",
+    "description": "Elementary and secondary school lunches"
+  },
+  {
+    "line": 240,
+    "series_code": "DHSLRG",
+    "description": "Higher education school lunches"
+  },
+  {
+    "line": 241,
+    "series_code": "DOPMRG",
+    "description": "Other purchased meals"
+  },
+  {
+    "line": 242,
+    "series_code": "DMLSRG",
+    "description": "Meals at limited service eating places"
+  },
+  {
+    "line": 243,
+    "series_code": "DMOERG",
+    "description": "Meals at other eating places"
+  },
+  {
+    "line": 244,
+    "series_code": "DMDPRG",
+    "description": "Meals at drinking places"
+  },
+  {
+    "line": 245,
+    "series_code": "DAPMRG",
+    "description": "Alcohol in purchased meals"
+  },
+  {
+    "line": 246,
+    "series_code": "DFOORG",
+    "description": "Food furnished to employees (including military) (103)"
+  },
+  {
+    "line": 247,
+    "series_code": "DCFDRG",
+    "description": "Food supplied to civilians"
+  },
+  {
+    "line": 248,
+    "series_code": "DMFDRG",
+    "description": "Food supplied to military"
+  },
+  {
+    "line": 249,
+    "series_code": "DACCRG",
+    "description": "Accommodations (104)"
+  },
+  {
+    "line": 250,
+    "series_code": "DHOTRG",
+    "description": "Hotels and motels"
+  },
+  {
+    "line": 251,
+    "series_code": "DSCHRG",
+    "description": "Housing at schools"
+  },
+  {
+    "line": 252,
+    "series_code": "DIFSRG",
+    "description": "Financial services and insurance"
+  },
+  {
+    "line": 253,
+    "series_code": "DFNLRG",
+    "description": "Financial services"
+  },
+  {
+    "line": 254,
+    "series_code": "DIMPRG",
+    "description": "Financial services furnished without payment (107)"
+  },
+  {
+    "line": 255,
+    "series_code": "DIMCRG",
+    "description": "Commercial banks"
+  },
+  {
+    "line": 256,
+    "series_code": "DIMNRG",
+    "description": "Other depository institutions and regulated investment companies"
+  },
+  {
+    "line": 257,
+    "series_code": "DPENRG",
+    "description": "Pension funds"
+  },
+  {
+    "line": 258,
+    "series_code": "DOFIRG",
+    "description": "Financial service charges, fees, and commissions (108)"
+  },
+  {
+    "line": 259,
+    "series_code": "DFEERG",
+    "description": "Financial service charges and fees"
+  },
+  {
+    "line": 260,
+    "series_code": "DEQTRG",
+    "description": "Securities commissions"
+  },
+  {
+    "line": 261,
+    "series_code": "DDCTRG",
+    "description": "Direct commissions"
+  },
+  {
+    "line": 262,
+    "series_code": "DDCERG",
+    "description": "Exchange-listed equities"
+  },
+  {
+    "line": 263,
+    "series_code": "DDCORG",
+    "description": "Other direct commissions"
+  },
+  {
+    "line": 264,
+    "series_code": "DICTRG",
+    "description": "Indirect commissions"
+  },
+  {
+    "line": 265,
+    "series_code": "DICVRG",
+    "description": "Over-the-counter equity securities"
+  },
+  {
+    "line": 266,
+    "series_code": "DICORG",
+    "description": "Other imputed commissions"
+  },
+  {
+    "line": 267,
+    "series_code": "DMUTRG",
+    "description": "Mutual fund sales charges"
+  },
+  {
+    "line": 268,
+    "series_code": "DPMIRG",
+    "description": "Portfolio management and investment advice services"
+  },
+  {
+    "line": 269,
+    "series_code": "DTRURG",
+    "description": "Trust, fiduciary, and custody activities"
+  },
+  {
+    "line": 270,
+    "series_code": "DINSRG",
+    "description": "Insurance"
+  },
+  {
+    "line": 271,
+    "series_code": "DLIFRG",
+    "description": "Life insurance (110)"
+  },
+  {
+    "line": 272,
+    "series_code": "DFINRG",
+    "description": "Net household insurance (111)"
+  },
+  {
+    "line": 273,
+    "series_code": "DFIPRG",
+    "description": "Household insurance premiums and premium supplements"
+  },
+  {
+    "line": 274,
+    "series_code": "DFIBRG",
+    "description": "Less: Household insurance normal losses"
+  },
+  {
+    "line": 275,
+    "series_code": "DHINRG",
+    "description": "Net health insurance (112)"
+  },
+  {
+    "line": 276,
+    "series_code": "DMINRG",
+    "description": "Medical care and hospitalization"
+  },
+  {
+    "line": 277,
+    "series_code": "DIINRG",
+    "description": "Income loss"
+  },
+  {
+    "line": 278,
+    "series_code": "DPWCRG",
+    "description": "Workers' compensation"
+  },
+  {
+    "line": 279,
+    "series_code": "DTINRG",
+    "description": "Net motor vehicle and other transportation insurance (116)"
+  },
+  {
+    "line": 280,
+    "series_code": "DOTSRG",
+    "description": "Other services"
+  },
+  {
+    "line": 281,
+    "series_code": "DCOMRG",
+    "description": "Communication"
+  },
+  {
+    "line": 282,
+    "series_code": "DTCSRG",
+    "description": "Telecommunication services (71)"
+  },
+  {
+    "line": 283,
+    "series_code": "DLOCRG",
+    "description": "Land-line telephone services, local charges"
+  },
+  {
+    "line": 284,
+    "series_code": "DLDTRG",
+    "description": "Land-line telephone services, long-distance charges"
+  },
+  {
+    "line": 285,
+    "series_code": "DCELRG",
+    "description": "Cellular telephone services"
+  },
+  {
+    "line": 286,
+    "series_code": "DPSSRG",
+    "description": "Postal and delivery services (68)"
+  },
+  {
+    "line": 287,
+    "series_code": "DPSTRG",
+    "description": "First-class postal service (by U.S. Postal Service)"
+  },
+  {
+    "line": 288,
+    "series_code": "DODSRG",
+    "description": "Other delivery services (by non-U.S. postal facilities)"
+  },
+  {
+    "line": 289,
+    "series_code": "DINTRG",
+    "description": "Internet access (72)"
+  },
+  {
+    "line": 290,
+    "series_code": "DTEDRG",
+    "description": "Education services"
+  },
+  {
+    "line": 291,
+    "series_code": "DHEDRG",
+    "description": "Higher education (97)"
+  },
+  {
+    "line": 292,
+    "series_code": "DGEDRG",
+    "description": "Proprietary and public higher education"
+  },
+  {
+    "line": 293,
+    "series_code": "DPEDRG",
+    "description": "Nonprofit private higher education services to households"
+  },
+  {
+    "line": 294,
+    "series_code": "DNEHRG",
+    "description": "Nursery, elementary, and secondary schools (98)"
+  },
+  {
+    "line": 295,
+    "series_code": "DESCRG",
+    "description": "Elementary and secondary schools"
+  },
+  {
+    "line": 296,
+    "series_code": "DNSCRG",
+    "description": "Day care and nursery schools"
+  },
+  {
+    "line": 297,
+    "series_code": "DVEDRG",
+    "description": "Commercial and vocational schools (99)"
+  },
+  {
+    "line": 298,
+    "series_code": "DPRSRG",
+    "description": "Professional and other services (121)"
+  },
+  {
+    "line": 299,
+    "series_code": "DGALRG",
+    "description": "Legal services"
+  },
+  {
+    "line": 300,
+    "series_code": "DPRORG",
+    "description": "Accounting and other business services"
+  },
+  {
+    "line": 301,
+    "series_code": "DTAPRG",
+    "description": "Tax preparation and other related services"
+  },
+  {
+    "line": 302,
+    "series_code": "DGENRG",
+    "description": "Employment agency services"
+  },
+  {
+    "line": 303,
+    "series_code": "DTHERG",
+    "description": "Other personal business services"
+  },
+  {
+    "line": 304,
+    "series_code": "DUNSRG",
+    "description": "Labor organization dues"
+  },
+  {
+    "line": 305,
+    "series_code": "DAXSRG",
+    "description": "Professional association dues"
+  },
+  {
+    "line": 306,
+    "series_code": "DFUNRG",
+    "description": "Funeral and burial services"
+  },
+  {
+    "line": 307,
+    "series_code": "DPERRG",
+    "description": "Personal care and clothing services (14 and parts of 17 and 118)"
+  },
+  {
+    "line": 308,
+    "series_code": "DPCSRG",
+    "description": "Personal care services"
+  },
+  {
+    "line": 309,
+    "series_code": "DBBBRG",
+    "description": "Hairdressing salons and personal grooming establishments"
+  },
+  {
+    "line": 310,
+    "series_code": "DMPCRG",
+    "description": "Miscellaneous personal care services"
+  },
+  {
+    "line": 311,
+    "series_code": "DCFSRG",
+    "description": "Clothing and footwear services"
+  },
+  {
+    "line": 312,
+    "series_code": "DDRYRG",
+    "description": "Laundry and drycleaning services"
+  },
+  {
+    "line": 313,
+    "series_code": "DLGRRG",
+    "description": "Clothing repair, rental, and alterations"
+  },
+  {
+    "line": 314,
+    "series_code": "DSCLRG",
+    "description": "Repair and hire of footwear"
+  },
+  {
+    "line": 315,
+    "series_code": "DSOCRG",
+    "description": "Social services and religious activities (120)"
+  },
+  {
+    "line": 316,
+    "series_code": "DCHCRG",
+    "description": "Child care"
+  },
+  {
+    "line": 317,
+    "series_code": "DSCWRG",
+    "description": "Social assistance"
+  },
+  {
+    "line": 318,
+    "series_code": "DELDRG",
+    "description": "Homes for the elderly"
+  },
+  {
+    "line": 319,
+    "series_code": "DMENRG",
+    "description": "Residential mental health and substance abuse"
+  },
+  {
+    "line": 320,
+    "series_code": "DFAMRG",
+    "description": "Individual and family services"
+  },
+  {
+    "line": 321,
+    "series_code": "DVOCRG",
+    "description": "Vocational rehabilitation services"
+  },
+  {
+    "line": 322,
+    "series_code": "DCFORG",
+    "description": "Community food and housing / emergency / other relief services"
+  },
+  {
+    "line": 323,
+    "series_code": "DSIARG",
+    "description": "Other social assistance, not elsewere classified"
+  },
+  {
+    "line": 324,
+    "series_code": "DSADRG",
+    "description": "Social advocacy and civic and social organizations"
+  },
+  {
+    "line": 325,
+    "series_code": "DRELRG",
+    "description": "Religious organizations' services to households"
+  },
+  {
+    "line": 326,
+    "series_code": "DGIVRG",
+    "description": "Foundations and grantmaking and giving services to households"
+  },
+  {
+    "line": 327,
+    "series_code": "DHHMRG",
+    "description": "Household maintenance (parts of 31, 33, and 36)"
+  },
+  {
+    "line": 328,
+    "series_code": "DDMSRG",
+    "description": "Domestic services"
+  },
+  {
+    "line": 329,
+    "series_code": "DMSERG",
+    "description": "Moving, storage, and freight services"
+  },
+  {
+    "line": 330,
+    "series_code": "DFRERG",
+    "description": "Repair of furniture, furnishings, and floor coverings"
+  },
+  {
+    "line": 331,
+    "series_code": "DERERG",
+    "description": "Repair of household appliances"
+  },
+  {
+    "line": 332,
+    "series_code": "DMHSRG",
+    "description": "Other household services"
+  },
+  {
+    "line": 334,
+    "series_code": "DFTRRG",
+    "description": "Foreign travel by U.S. residents (129)"
+  },
+  {
+    "line": 335,
+    "series_code": "DAFTRG",
+    "description": "Passenger fares for foreign travel"
+  },
+  {
+    "line": 336,
+    "series_code": "DUSTRG",
+    "description": "U.S. travel outside the United States"
+  },
+  {
+    "line": 337,
+    "series_code": "DUSSRG",
+    "description": "U.S. student expenditures"
+  },
+  {
+    "line": 338,
+    "series_code": "DEXFRG",
+    "description": "Less: Expenditures in the United States by nonresidents (130)"
+  },
+  {
+    "line": 339,
+    "series_code": "DFTURG",
+    "description": "Foreign travel in the United States"
+  },
+  {
+    "line": 340,
+    "series_code": "DMEFRG",
+    "description": "Medical expenditures of foreigners"
+  },
+  {
+    "line": 341,
+    "series_code": "DEFSRG",
+    "description": "Expenditures of foreign students in the United States"
+  },
+  {
+    "line": 342,
+    "series_code": "DNPIRG",
+    "description": "Final consumption expenditures of nonprofit institutions serving households (NPISHs) (132)"
+  },
+  {
+    "line": 343,
+    "series_code": "DNPERG",
+    "description": "Gross output of nonprofit institutions (133)"
+  },
+  {
+    "line": 344,
+    "series_code": "DHLGRG",
+    "description": "Health, gross output"
+  },
+  {
+    "line": 345,
+    "series_code": "DOUGRG",
+    "description": "Outpatient services, gross output"
+  },
+  {
+    "line": 346,
+    "series_code": "DHSORG",
+    "description": "Nonprofit hospitals, gross output"
+  },
+  {
+    "line": 347,
+    "series_code": "DNXORG",
+    "description": "Nonprofit nursing homes, gross output"
+  },
+  {
+    "line": 348,
+    "series_code": "DRCGRG",
+    "description": "Recreation services, gross output"
+  },
+  {
+    "line": 349,
+    "series_code": "DEDGRG",
+    "description": "Education services, gross output"
+  },
+  {
+    "line": 350,
+    "series_code": "DSSGRG",
+    "description": "Social services, gross output"
+  },
+  {
+    "line": 351,
+    "series_code": "DREORG",
+    "description": "Religious organizations, gross output"
+  },
+  {
+    "line": 352,
+    "series_code": "DFXORG",
+    "description": "Foundations and grantmaking and giving establishments, gross output"
+  },
+  {
+    "line": 353,
+    "series_code": "DSAORG",
+    "description": "Social advocacy establishments, gross output"
+  },
+  {
+    "line": 354,
+    "series_code": "DCIORG",
+    "description": "Civic and social organizations, gross output"
+  },
+  {
+    "line": 355,
+    "series_code": "DSNGRG",
+    "description": "Professional advocacy, gross output"
+  },
+  {
+    "line": 356,
+    "series_code": "DNPSRG",
+    "description": "Less: Receipts from sales of goods and services by nonprofit institutions (134)"
+  },
+  {
+    "line": 357,
+    "series_code": "DHLRRG",
+    "description": "Health services to households"
+  },
+  {
+    "line": 358,
+    "series_code": "DOUSRG",
+    "description": "Outpatient services to households"
+  },
+  {
+    "line": 359,
+    "series_code": "DNPHRG",
+    "description": "Nonprofit hospitals services to households"
+  },
+  {
+    "line": 360,
+    "series_code": "DNPNRG",
+    "description": "Nonprofit nursing homes services to households"
+  },
+  {
+    "line": 361,
+    "series_code": "DRCRRG",
+    "description": "Recreation services to households"
+  },
+  {
+    "line": 362,
+    "series_code": "DEDRRG",
+    "description": "Education services to households"
+  },
+  {
+    "line": 363,
+    "series_code": "DSSRRG",
+    "description": "Social services to households"
+  },
+  {
+    "line": 364,
+    "series_code": "DRELRG",
+    "description": "Religious organizations' services to households"
+  },
+  {
+    "line": 365,
+    "series_code": "DGIVRG",
+    "description": "Foundations and grantmaking and giving services to households"
+  },
+  {
+    "line": 366,
+    "series_code": "DSASRG",
+    "description": "Services of social advocacy establishments to households"
+  },
+  {
+    "line": 367,
+    "series_code": "DCISRG",
+    "description": "Civic and social organizations' services to households"
+  },
+  {
+    "line": 368,
+    "series_code": "DSNRRG",
+    "description": "Professional advocacy services to households"
+  },
+  {
+    "line": 369,
+    "series_code": "DCGPRG",
+    "description": "Control group"
+  },
+  {
+    "line": 370,
+    "series_code": "DPFERG",
+    "description": "PCE food and energy"
+  },
+  {
+    "line": 371,
+    "series_code": "DNRGRG",
+    "description": "PCE energy goods and services"
+  },
+  {
+    "line": 372,
+    "series_code": "DPXFRG",
+    "description": "PCE excluding food"
+  },
+  {
+    "line": 373,
+    "series_code": "DPXERG",
+    "description": "PCE excluding energy"
+  },
+  {
+    "line": 374,
+    "series_code": "DPCCRG",
+    "description": "PCE excluding food and energy"
+  },
+  {
+    "line": 375,
+    "series_code": "IA000062",
+    "description": "PCE goods excluding food and energy"
+  },
+  {
+    "line": 376,
+    "series_code": "IA000063",
+    "description": "PCE services excluding energy"
+  },
+  {
+    "line": 377,
+    "series_code": "DPCMRG",
+    "description": "Market-based PCE"
+  },
+  {
+    "line": 378,
+    "series_code": "DMOMRG",
+    "description": "Market-based PCE motor vehicles and parts"
+  },
+  {
+    "line": 379,
+    "series_code": "DDUMRG",
+    "description": "Market-based PCE durable goods other than motor vehicles and parts"
+  },
+  {
+    "line": 380,
+    "series_code": "DMFXRG",
+    "description": "Market-based PCE food and beverages purchased for off-premises consumption"
+  },
+  {
+    "line": 381,
+    "series_code": "DCLMRG",
+    "description": "Market-based PCE clothing and footwear"
+  },
+  {
+    "line": 382,
+    "series_code": "DGOERG",
+    "description": "Market-based PCE gasoline and other energy goods"
+  },
+  {
+    "line": 383,
+    "series_code": "DNDXRG",
+    "description": "Market-based PCE other nondurable goods"
+  },
+  {
+    "line": 384,
+    "series_code": "DSEMRG",
+    "description": "Market-based PCE services"
+  },
+  {
+    "line": 385,
+    "series_code": "DHSMRG",
+    "description": "Market-based PCE housing services"
+  },
+  {
+    "line": 386,
+    "series_code": "DUTLRG",
+    "description": "Market-based PCE household utilities"
+  },
+  {
+    "line": 387,
+    "series_code": "DHLCRG",
+    "description": "Market-based PCE health care"
+  },
+  {
+    "line": 388,
+    "series_code": "DTRSRG",
+    "description": "Market-based PCE transportation services"
+  },
+  {
+    "line": 389,
+    "series_code": "DRCMRG",
+    "description": "Market-based PCE recreation services"
+  },
+  {
+    "line": 390,
+    "series_code": "DFSMRG",
+    "description": "Market-based PCE food services and accommodations"
+  },
+  {
+    "line": 391,
+    "series_code": "DFIMRG",
+    "description": "Market-based PCE financial services and insurance"
+  },
+  {
+    "line": 392,
+    "series_code": "DOTMRG",
+    "description": "Market-based PCE other services"
+  },
+  {
+    "line": 393,
+    "series_code": "DCOMRG",
+    "description": "Market-based PCE communication services"
+  },
+  {
+    "line": 394,
+    "series_code": "DTEDRG",
+    "description": "Market-based PCE education"
+  },
+  {
+    "line": 395,
+    "series_code": "DPRMRG",
+    "description": "Market-based PCE professional services"
+  },
+  {
+    "line": 396,
+    "series_code": "DPERRG",
+    "description": "Market-based PCE personal care and clothing services"
+  },
+  {
+    "line": 397,
+    "series_code": "DCHCRG",
+    "description": "Market-based PCE child care"
+  },
+  {
+    "line": 398,
+    "series_code": "DHMMRG",
+    "description": "Market-based PCE household maintenance"
+  },
+  {
+    "line": 399,
+    "series_code": "DPMFRG",
+    "description": "Market-based PCE food and energy"
+  },
+  {
+    "line": 400,
+    "series_code": "DMXFRG",
+    "description": "Market-based PCE excluding food"
+  },
+  {
+    "line": 401,
+    "series_code": "DPMERG",
+    "description": "Market-based PCE excluding energy"
+  },
+  {
+    "line": 402,
+    "series_code": "DPCXRG",
+    "description": "Market-based PCE excluding food and energy"
+  }
+]
