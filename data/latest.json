@@ -1,25 +1,28 @@
 {
-  "generated_utc": "2026-10-18T20:16:57+00:00",
+  "generated_utc": "2026-10-18T20:25:51+00:00",
   "source": "BEA NIPA table 2.4.4U (NIUnderlyingDetail/U20404), monthly",
   "threshold_pct": 3.0,
-  "selection": false,
+  "selection": "leaf components (aggregates excluded via 2.4.5U nominal sums)",
   "selection_detail": {
-    "warning": "leaf detection found only 0 lines; using all lines"
+    "leaf_lines": 222,
+    "lines_in_tree": 366,
+    "excluded_addenda": 34,
+    "leaf_lines_with_price_index": 222
   },
   "latest": {
     "month": "2026-08",
-    "components": 398,
-    "share_6m": 46.2,
-    "share_12m": 54.8
+    "components": 222,
+    "share_6m": 43.2,
+    "share_12m": 51.4
   },
   "prior": {
     "month": "2026-07",
-    "components": 398,
-    "share_6m": 49.7,
-    "share_12m": 54.8
+    "components": 222,
+    "share_6m": 48.2,
+    "share_12m": 51.4
   },
   "change_vs_prior": {
-    "share_6m_pp": -3.5,
+    "share_6m_pp": -5.0,
     "share_12m_pp": 0.0
   },
   "backtest_july_2026": {
@@ -31,10 +34,10 @@
     },
     "computed": {
       "month": "2026-07",
-      "components": 398,
-      "share_6m": 49.7,
-      "share_12m": 54.8
+      "components": 222,
+      "share_6m": 48.2,
+      "share_12m": 51.4
     },
-    "matches": true
+    "matches": false
   }
 }
