@@ -1,7 +1,21 @@
-FAIL ua_noreply_name HTTP Error 403: Forbidden b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml">\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n<title>SEC.gov | Your Request Originates from an Undeclared Automated Tool</title>\n<style>\nhtml {height: 100%}\nbody {height: 100%; margin:0; padding:0;}\n#hea'
-OK ua_plain_email_gzip 200 len=335289 b"\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x00\xec\xbdms\xeb8v\xb6\xfbWX\xfd%\xddUv\x87x\xe1[\xbe\xed\xec\x99\xce\xe9:\x93\xf4\xcct'O\xa5R\xcf\x07Z\xa6mfd\xc9CJ{\xb7\x93\xca\x7f?\x00%\xd9$\x00\xadE\tX\xa0s\xa6S\xa9d\xb7%\xf1\xbeE.\x01\xe0\xe2\xc2\xb5\xfe\xfb\x9bU\xfb\x97o\xfe\xa1(\xab\x94U7\xdf4\x9b]\xbb{\xfd\x97\xfa\xb9\xf9\xe6\x1f\xbe\xf9\xe7\x1f?\xff"
-OK ua_sample 200 len=4881196 b'{"cik":789019,"entityName":"MICROSOFT CORPORATION","facts":{"dei":{"EntityCommonStockSharesOutstanding":{"label":"Entity'
-FAIL sec_www_tickers HTTP Error 403: Forbidden b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml">\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n<title>SEC.gov | Request Rate Threshold Exceeded</title>\n<style>\nhtml {height: 100%}\nbody {height: 100%; margin:0; padding:0;}\n#header {background-color:#003'
-OK yahoo_fund 200 len=1546 b'{"timeseries":{"result":[{"meta":{"symbol":["MSFT"],"type":["annualCapitalExpenditure"]},"timestamp":[1688083200,1719705'
-   annualCapitalExpenditure 4 [('2023-06-30', -28107000000.0), ('2024-06-30', -44477000000.0), ('2025-06-30', -64551000000.0), ('2026-06-30', -115948000000.0)]
-   quarterlyCapitalExpenditure 5 [('2025-06-30', -17079000000.0), ('2025-09-30', -19394000000.0), ('2025-12-31', -29876000000.0), ('2026-03-31', -30876000000.0), ('2026-06-30', -35802000000.0)]
+keys ['events', 'announcement'] n 2602
+event keys ['days', 'description', 'link', 'live', 'location', 'month', 'time', 'title', 'type']
+warsh events 5
+{"description": "Policy Panel Discussion", "live": "https://www.ecb.europa.eu/home/html/index.en.html", "location": "At the European Central Bank (ECB) Forum on Central Banking 2026, Sintra, Portugal", "title": "Discussion - Chairman Kevin Warsh", "time": "9:00 a.m.", "month": "2026-07", "days": "1", "type": "Speeches"}
+{"description": "Semiannual Monetary Policy Report to Congress", "live": "https://financialservices.house.gov/", "location": "Before the U.S. House Financial Services Committee", "title": "Testimony - Chairman Kevin Warsh", "time": "10:00 a.m.", "month": "2026-07", "days": "14", "type": "Testimony"}
+{"description": "Conversation between IMF Managing Director Georgieva and Federal Reserve Chairman Warsh", "live": "https://www.youtube.com/watch?v=T20jWBJ66X0&list=PLGHsBhoupusk&index=31", "location": "At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina Georgieva, Bangkok, Thailand", "title": "Discussion - Chairman Kevin Warsh", "time": "11:30 p.m.", "month": 
+{"description": "Semiannual Monetary Policy Report to Congress", "live": "https://www.banking.senate.gov/", "location": "Before the U.S. Senate Committee on Banking, Housing, and Urban Affairs", "title": "Testimony - Chairman Kevin Warsh", "time": "10:00 a.m.", "month": "2026-07", "days": "15", "type": "Testimony"}
+{"description": "Keynote Remarks", "live": "https://www.youtube.com/KansasCityFed", "location": "At the 2026 Jackson Hole Economic Policy Symposium, Moran, Wyo.", "title": "Speech - Chairman Kevin Warsh", "time": "10:00 a.m.", "month": "2026-08", "days": "28", "type": "Speeches"}
+types ['Beige', 'Board', 'Conferences', 'FOMC', 'None', 'Other', 'Speeches', 'Stat', 'Testimony', 'events']
+FOMC2026 idx 70831
+2026 FOMC Meetings January 27-28 Statement: PDF | HTML Implementation Note Press Conference Statement on Longer-Run Goals and Monetary Policy Strategy Minutes: PDF | HTML (Released February 18, 2026) March 17-18* Statement: PDF | HTML Implementation Note Press Conference Projection Materials PDF | HTML Minutes: PDF | HTML (Released April 08, 2026) April 28-29 Statement: PDF | HTML Implementation Note Press Conference Minutes: PDF | HTML (Released May 20, 2026) June 16-17* Statement: PDF | HTML Implementation Note Press Conference Projection Materials PDF | HTML Minutes: <a href="/monetarypolicy/files/fomcminutes20260617.pdf
+FOMC2027 idx 144925
+speech items 15
+
+            <title>Bowman, Supervisory Modernization After Silicon Valley Bank</title>
+            <link><![CDATA[https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm]]></link>
+            <guid><![CDATA[https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm]]></guid>            
+            <description><![CDATA[Speech At the Bangkok Economic Festival, Reinventing Bretton Woods Committee, Bangkok, Thailand]]></description>
+            <category>Speech</category>
+            <pubDate><![CDATA[Thu, 15 Oct 2026 02:55:00 GMT]]></pubDate>    
+        
