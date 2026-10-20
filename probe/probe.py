@@ -1,30 +1,25 @@
-import json, urllib.request, http.cookiejar, urllib.parse, re
-B={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"}
-SEC={"User-Agent":"pce-breadth research noahdavidbarry-droid@users.noreply.github.com","Accept-Encoding":"identity"}
-op=urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-def t(name,url,h=B,show=200):
+import json, urllib.request, time
+def t(name,url,h):
     try:
-        r=op.open(urllib.request.Request(url,headers=h),timeout=30); b=r.read().decode('utf-8','replace')
-        print(f"OK {name} {r.status} len={len(b)} {b[:show]!r}"); return b
+        r=urllib.request.urlopen(urllib.request.Request(url,headers=h),timeout=30); b=r.read()
+        print(f"OK {name} {r.status} len={len(b)} {b[:120]!r}"); return b
     except Exception as e:
-        print(f"FAIL {name} {type(e).__name__} {e}")
-b=t("edgar_msft","https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",SEC,80)
+        body=b''
+        try: body=e.read()[:400]
+        except Exception: pass
+        print(f"FAIL {name} {e} {body!r}")
+u="https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json"
+for n,h in [("ua_noreply_name",{"User-Agent":"Noah Barry noahdavidbarry-droid@users.noreply.github.com"}),
+            ("ua_plain_email_gzip",{"User-Agent":"pce-breadth admin@example.com","Accept-Encoding":"gzip, deflate","Host":"data.sec.gov"}),
+            ("ua_sample",{"User-Agent":"Sample Company Name AdminContact@samplecompanydomain.com"})]:
+    t(n,u,h); time.sleep(1)
+t("sec_www_tickers","https://www.sec.gov/files/company_tickers.json",{"User-Agent":"Noah Barry noahdavidbarry-droid@users.noreply.github.com"})
+B={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"}
+import time as T
+p2=int(T.time()); p1=p2-6*365*86400
+b=t("yahoo_fund",f"https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?type=quarterlyCapitalExpenditure,annualCapitalExpenditure&period1={p1}&period2={p2}",B)
 if b:
-    g=json.loads(b)["facts"]["us-gaap"]; print("MSFT concepts "+",".join(k for k in g if "PropertyPlant" in k or "ProductiveAssets" in k))
-for tk,cik in [("AMZN","0001018724"),("META","0001326801"),("GOOGL","0001652044"),("ORCL","0001341439")]:
-    b=t("edgar_"+tk,f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json",SEC,0)
-    if b:
-        g=json.loads(b)["facts"]["us-gaap"]
-        for k in ("PaymentsToAcquirePropertyPlantAndEquipment","PaymentsToAcquireProductiveAssets"):
-            u=g.get(k,{}).get("units",{}).get("USD",[])
-            print(f"{tk} {k} n={len(u)} last_end={max([x['end'] for x in u]) if u else None}")
-for n,u in [("speeches","https://www.federalreserve.gov/feeds/speeches.xml"),("testimony","https://www.federalreserve.gov/feeds/testimony.xml"),("press_all","https://www.federalreserve.gov/feeds/press_all.xml"),("fomccal","https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"),("calendar_htm","https://www.federalreserve.gov/newsevents/calendar.htm")]:
-    b=t(n,u,B,150)
-    if b and n=="calendar_htm":
-        print("calendar json refs "+" ".join(sorted(set(re.findall(r'["\']([^"\']+\.json[^"\']*)',b)))[:10]))
-    if b and n=="speeches":
-        print("speech titles "+" | ".join(re.findall(r"<title>(.*?)</title>",b)[1:6]))
-t("fed_cal_json","https://www.federalreserve.gov/json/calendar.json",B,300)
-t("cnbc_bars","https://ts-api.cnbc.com/harmony/app/bars/@C.1/1D/20250101000000/20261020000000/adjusted/EST5EDT.json",B,300)
-c=t("y_crumb","https://query1.finance.yahoo.com/v1/test/getcrumb")
-t("y_chart","https://query1.finance.yahoo.com/v8/finance/chart/ZC=F?range=2y&interval=1d"+(f"&crumb={c}" if c else ""),B,150)
+    j=json.loads(b)
+    for r in j["timeseries"]["result"]:
+        k=r["meta"]["type"][0]; v=r.get(k) or []
+        print("  ",k,len(v),[ (x["asOfDate"],x["reportedValue"]["raw"]) for x in v if x][:8])
