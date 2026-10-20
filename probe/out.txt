@@ -1,16 +1,7 @@
-FAIL edgar_msft HTTPError HTTP Error 403: Forbidden
-FAIL edgar_AMZN HTTPError HTTP Error 403: Forbidden
-FAIL edgar_META HTTPError HTTP Error 403: Forbidden
-FAIL edgar_GOOGL HTTPError HTTP Error 403: Forbidden
-FAIL edgar_ORCL HTTPError HTTP Error 403: Forbidden
-OK speeches 200 len=9604 '\ufeff<?xml version="1.0" encoding="utf-8" ?>\r\n<rss version="2.0">\r\n    <channel>\r\n        <title>FRB: Speeches</title>\r\n        <link><![CDATA[https://www'
-speech titles Bowman, Supervisory Modernization After Silicon Valley Bank | Waller, The Signaling Value of the Summary of Economic Projections | Bowman, Modernizing the Regulatory and Supervisory Landscape | Bowman, Modernizing Financial Regulation: Initial Observations from eSLR | Jefferson, The U.S. Economy and Monetary Policy
-OK testimony 200 len=9489 '\ufeff<?xml version="1.0" encoding="utf-8" ?>\r\n<rss version="2.0">\r\n    <channel>\r\n        <title>FRB: Testimony</title>\r\n        <link><![CDATA[https://ww'
-OK press_all 200 len=14807 '\ufeff<?xml version="1.0" encoding="utf-8" ?>\r\n<rss version="2.0">\r\n    <channel>\r\n        <title>FRB: Press Release - All Releases</title>\r\n        <link>'
-OK fomccal 200 len=165747 '\ufeff<!doctype html>\r\n<html lang="en" class="no-js">\r\n    <head>\r\n        <meta charset="utf-8">\r\n        <meta http-equiv="X-UA-Compatible" content="IE=e'
-OK calendar_htm 200 len=81756 '\ufeff<!doctype html>\r\n<html lang="en" class="no-js">\r\n<head>\r\n    <meta charset="utf-8">\r\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n    <'
-calendar json refs 
-OK fed_cal_json 200 len=545352 '\ufeff{"events":[{"description":"Conversation between IMF Managing Director Georgieva and Federal Reserve Chairman Warsh","live":"https://www.youtube.com/watch?v=T20jWBJ66X0&list=PLGHsBhoupusk&index=31","location":"At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina G'
-OK cnbc_bars 200 len=68396 '{"barData":{"priceBars":[{"open":"457.2500","high":"459.7500","low":"456.2500","close":"459.5000","volume":163449,"tradeTime":"20250102000000","tradeTimeinMills":1735794000000},{"open":"459.5000","high":"459.7500","low":"449.2500","close":"450.7500","volume":199340,"tradeTime":"20250103000000","trad'
-FAIL y_crumb HTTPError HTTP Error 401: Unauthorized
-OK y_chart 200 len=26240 '{"chart":{"result":[{"meta":{"currency":"USX","symbol":"ZC=F","exchangeName":"CBT","fullExchangeName":"CBOT","instrumentType":"FUTURE","firstTradeDate'
+FAIL ua_noreply_name HTTP Error 403: Forbidden b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml">\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n<title>SEC.gov | Your Request Originates from an Undeclared Automated Tool</title>\n<style>\nhtml {height: 100%}\nbody {height: 100%; margin:0; padding:0;}\n#hea'
+OK ua_plain_email_gzip 200 len=335289 b"\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x00\xec\xbdms\xeb8v\xb6\xfbWX\xfd%\xddUv\x87x\xe1[\xbe\xed\xec\x99\xce\xe9:\x93\xf4\xcct'O\xa5R\xcf\x07Z\xa6mfd\xc9CJ{\xb7\x93\xca\x7f?\x00%\xd9$\x00\xadE\tX\xa0s\xa6S\xa9d\xb7%\xf1\xbeE.\x01\xe0\xe2\xc2\xb5\xfe\xfb\x9bU\xfb\x97o\xfe\xa1(\xab\x94U7\xdf4\x9b]\xbb{\xfd\x97\xfa\xb9\xf9\xe6\x1f\xbe\xf9\xe7\x1f?\xff"
+OK ua_sample 200 len=4881196 b'{"cik":789019,"entityName":"MICROSOFT CORPORATION","facts":{"dei":{"EntityCommonStockSharesOutstanding":{"label":"Entity'
+FAIL sec_www_tickers HTTP Error 403: Forbidden b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml">\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n<title>SEC.gov | Request Rate Threshold Exceeded</title>\n<style>\nhtml {height: 100%}\nbody {height: 100%; margin:0; padding:0;}\n#header {background-color:#003'
+OK yahoo_fund 200 len=1546 b'{"timeseries":{"result":[{"meta":{"symbol":["MSFT"],"type":["annualCapitalExpenditure"]},"timestamp":[1688083200,1719705'
+   annualCapitalExpenditure 4 [('2023-06-30', -28107000000.0), ('2024-06-30', -44477000000.0), ('2025-06-30', -64551000000.0), ('2026-06-30', -115948000000.0)]
+   quarterlyCapitalExpenditure 5 [('2025-06-30', -17079000000.0), ('2025-09-30', -19394000000.0), ('2025-12-31', -29876000000.0), ('2026-03-31', -30876000000.0), ('2026-06-30', -35802000000.0)]
