@@ -33,6 +33,12 @@ INSTRUMENTS = {
 GRAINS = {"corn", "soybeans", "wheat"}
 
 
+def warn(msg):
+    # GitHub Actions annotation (visible in the run summary), plus stderr.
+    print(f"::warning::{msg}")
+    print(msg, file=sys.stderr)
+
+
 def get(url, timeout=20):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -60,12 +66,14 @@ def from_stooq(key):
     try:
         rows = list(csv.DictReader(io.StringIO(get(f"https://stooq.com/q/d/l/?s={sym}&i=d"))))
         rows = [r for r in rows if r.get("Close") not in (None, "", "N/D")]
+        if len(rows) < 2:
+            warn(f"stooq history {sym}: no usable rows")
         if len(rows) >= 2:
             return {"price": normalize(key, rows[-1]["Close"]),
                     "prev_close": normalize(key, rows[-2]["Close"]),
                     "as_of": rows[-1]["Date"], "source": "stooq"}
     except Exception as e:  # noqa: BLE001
-        print(f"stooq history {sym}: {e}", file=sys.stderr)
+        warn(f"stooq history {sym}: {type(e).__name__}: {e}")
     # Light quote: last price only.
     try:
         rows = list(csv.DictReader(io.StringIO(get(f"https://stooq.com/q/l/?s={sym}&f=sd2t2ohlcv&h&e=csv"))))
@@ -73,7 +81,7 @@ def from_stooq(key):
             return {"price": normalize(key, rows[0]["Close"]), "prev_close": None,
                     "as_of": rows[0].get("Date"), "source": "stooq"}
     except Exception as e:  # noqa: BLE001
-        print(f"stooq quote {sym}: {e}", file=sys.stderr)
+        warn(f"stooq quote {sym}: {type(e).__name__}: {e}")
     return None
 
 
@@ -92,7 +100,7 @@ def from_yahoo(key):
             return {"price": normalize(key, price), "prev_close": normalize(key, prev),
                     "as_of": as_of, "source": "yahoo"}
         except Exception as e:  # noqa: BLE001
-            print(f"yahoo {host} {sym}: {e}", file=sys.stderr)
+            warn(f"yahoo {host} {sym}: {type(e).__name__}: {e}")
     return None
 
 
