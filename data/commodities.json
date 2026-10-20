@@ -1,0 +1,94 @@
+{
+  "generated_utc": "2026-10-20T23:08:08Z",
+  "status": "ok",
+  "stale_instruments": [],
+  "missing_instruments": [],
+  "instruments": {
+    "corn": {
+      "label": "Corn",
+      "unit": "$/bu",
+      "price": 4.62,
+      "prev_close": null,
+      "change_pct": null,
+      "as_of": "2026-10-20",
+      "price_type": "settle",
+      "contract": "Corn (Dec'26)",
+      "source": "cnbc",
+      "prev_source": null,
+      "stale": false
+    },
+    "soybeans": {
+      "label": "Soybeans",
+      "unit": "$/bu",
+      "price": 12.4825,
+      "prev_close": null,
+      "change_pct": null,
+      "as_of": "2026-10-20",
+      "price_type": "settle",
+      "contract": "Soybeans (Nov'26)",
+      "source": "cnbc",
+      "prev_source": null,
+      "stale": false
+    },
+    "wheat": {
+      "label": "Wheat",
+      "unit": "$/bu",
+      "price": 6.4325,
+      "prev_close": null,
+      "change_pct": null,
+      "as_of": "2026-10-20",
+      "price_type": "settle",
+      "contract": "Wheat (Dec'26)",
+      "source": "cnbc",
+      "prev_source": null,
+      "stale": false
+    },
+    "wti": {
+      "label": "WTI Crude",
+      "unit": "$/bbl",
+      "price": 101.79,
+      "prev_close": null,
+      "change_pct": null,
+      "as_of": "2026-10-20",
+      "price_type": "settle",
+      "contract": "WTI Crude (Nov'26)",
+      "source": "cnbc",
+      "prev_source": null,
+      "stale": false
+    },
+    "rbob": {
+      "label": "RBOB Gasoline",
+      "unit": "$/gal",
+      "price": 3.1172,
+      "prev_close": null,
+      "change_pct": null,
+      "as_of": "2026-10-20",
+      "price_type": "settle",
+      "contract": "RBOB Gas (Nov'26)",
+      "source": "cnbc",
+      "prev_source": null,
+      "stale": false
+    },
+    "heating_oil": {
+      "label": "Heating Oil",
+      "unit": "$/gal",
+      "price": 4.925,
+      "prev_close": null,
+      "change_pct": null,
+      "as_of": "2026-10-20",
+      "price_type": "settle",
+      "contract": "ULSD Heating Oil (Nov'26)",
+      "source": "cnbc",
+      "prev_source": null,
+      "stale": false
+    }
+  },
+  "crack_321": {
+    "value": 54.44,
+    "prev": null,
+    "change": null,
+    "unit": "$/bbl",
+    "formula": "(2*RBOB*42 + 1*HO*42 - 3*WTI) / 3",
+    "stale": false
+  }
+}
