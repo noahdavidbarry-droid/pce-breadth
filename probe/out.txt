@@ -1,0 +1,16 @@
+FAIL edgar_msft HTTPError HTTP Error 403: Forbidden
+FAIL edgar_AMZN HTTPError HTTP Error 403: Forbidden
+FAIL edgar_META HTTPError HTTP Error 403: Forbidden
+FAIL edgar_GOOGL HTTPError HTTP Error 403: Forbidden
+FAIL edgar_ORCL HTTPError HTTP Error 403: Forbidden
+OK speeches 200 len=9604 '\ufeff<?xml version="1.0" encoding="utf-8" ?>\r\n<rss version="2.0">\r\n    <channel>\r\n        <title>FRB: Speeches</title>\r\n        <link><![CDATA[https://www'
+speech titles Bowman, Supervisory Modernization After Silicon Valley Bank | Waller, The Signaling Value of the Summary of Economic Projections | Bowman, Modernizing the Regulatory and Supervisory Landscape | Bowman, Modernizing Financial Regulation: Initial Observations from eSLR | Jefferson, The U.S. Economy and Monetary Policy
+OK testimony 200 len=9489 '\ufeff<?xml version="1.0" encoding="utf-8" ?>\r\n<rss version="2.0">\r\n    <channel>\r\n        <title>FRB: Testimony</title>\r\n        <link><![CDATA[https://ww'
+OK press_all 200 len=14807 '\ufeff<?xml version="1.0" encoding="utf-8" ?>\r\n<rss version="2.0">\r\n    <channel>\r\n        <title>FRB: Press Release - All Releases</title>\r\n        <link>'
+OK fomccal 200 len=165747 '\ufeff<!doctype html>\r\n<html lang="en" class="no-js">\r\n    <head>\r\n        <meta charset="utf-8">\r\n        <meta http-equiv="X-UA-Compatible" content="IE=e'
+OK calendar_htm 200 len=81756 '\ufeff<!doctype html>\r\n<html lang="en" class="no-js">\r\n<head>\r\n    <meta charset="utf-8">\r\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n    <'
+calendar json refs 
+OK fed_cal_json 200 len=545352 '\ufeff{"events":[{"description":"Conversation between IMF Managing Director Georgieva and Federal Reserve Chairman Warsh","live":"https://www.youtube.com/watch?v=T20jWBJ66X0&list=PLGHsBhoupusk&index=31","location":"At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina G'
+OK cnbc_bars 200 len=68396 '{"barData":{"priceBars":[{"open":"457.2500","high":"459.7500","low":"456.2500","close":"459.5000","volume":163449,"tradeTime":"20250102000000","tradeTimeinMills":1735794000000},{"open":"459.5000","high":"459.7500","low":"449.2500","close":"450.7500","volume":199340,"tradeTime":"20250103000000","trad'
+FAIL y_crumb HTTPError HTTP Error 401: Unauthorized
+OK y_chart 200 len=26240 '{"chart":{"result":[{"meta":{"currency":"USX","symbol":"ZC=F","exchangeName":"CBT","fullExchangeName":"CBOT","instrumentType":"FUTURE","firstTradeDate'
