@@ -3,54 +3,69 @@
 Writes data/commodities.json (read by the Warsh indicators email task) and
 appends one row per trading day to data/commodities_history.csv.
 
-Sources, per instrument: Stooq (primary, free CSV, no key) -> Yahoo Finance
-chart API (fallback). If both fail, the last good value from the previous
+Sources (front-month futures), tried in order, each in a single batch request:
+  1. CNBC's public quote feed (official settlement price once posted)
+  2. Yahoo Finance quote API, using a browser-style cookie + crumb
+If both fail for an instrument, its last good value from the previous
 commodities.json is kept and marked stale, so the email never goes blank.
-Standard library only.
+Day-over-day change uses our own history file first (the prior trading day's
+recorded price), falling back to the source's previous close.
+Standard library only. Source errors are emitted as GitHub Actions warnings.
 """
 import csv
-import io
+import http.cookiejar
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 OUT = os.path.join(DATA, "commodities.json")
 HIST = os.path.join(DATA, "commodities_history.csv")
-UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"}
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/124 Safari/537.36",
+      "Accept": "application/json,text/plain,*/*"}
+ET = timezone(timedelta(hours=-4))  # only used to date-stamp; settle dates come from the source
 
-# key: (label, stooq symbol, yahoo symbol, unit, plausible range in output unit)
+# key: (label, cnbc symbol, yahoo symbol, unit, plausible range in output unit)
 INSTRUMENTS = {
-    "corn":        ("Corn",        "zc.f", "ZC=F", "$/bu",  (1.5, 15)),
-    "soybeans":    ("Soybeans",    "zs.f", "ZS=F", "$/bu",  (4, 30)),
-    "wheat":       ("Wheat",       "zw.f", "ZW=F", "$/bu",  (2, 25)),
-    "wti":         ("WTI Crude",   "cl.f", "CL=F", "$/bbl", (10, 250)),
-    "rbob":        ("RBOB Gasoline", "rb.f", "RB=F", "$/gal", (0.5, 8)),
-    "heating_oil": ("Heating Oil", "ho.f", "HO=F", "$/gal", (0.5, 10)),
+    "corn":        ("Corn",          "@C.1",  "ZC=F", "$/bu",  (1.5, 15)),
+    "soybeans":    ("Soybeans",      "@S.1",  "ZS=F", "$/bu",  (4, 30)),
+    "wheat":       ("Wheat",         "@W.1",  "ZW=F", "$/bu",  (2, 25)),
+    "wti":         ("WTI Crude",     "@CL.1", "CL=F", "$/bbl", (10, 250)),
+    "rbob":        ("RBOB Gasoline", "@RB.1", "RB=F", "$/gal", (0.5, 8)),
+    "heating_oil": ("Heating Oil",   "@HO.1", "HO=F", "$/gal", (0.5, 10)),
 }
 GRAINS = {"corn", "soybeans", "wheat"}
 
+_opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+
 
 def warn(msg):
-    # GitHub Actions annotation (visible in the run summary), plus stderr.
     print(f"::warning::{msg}")
     print(msg, file=sys.stderr)
 
 
 def get(url, timeout=20):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
+    with _opener.open(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
         return r.read().decode("utf-8", "replace")
+
+
+def num(v):
+    if v in (None, "", "UNCH", "N/A"):
+        return None
+    try:
+        return float(str(v).replace(",", "").replace("+", "").replace("%", ""))
+    except ValueError:
+        return None
 
 
 def normalize(key, v):
     """Grain futures are quoted in cents/bu; convert to $/bu."""
-    if v is None:
-        return None
-    v = float(v)
-    if key in GRAINS and v > 50:
+    v = num(v)
+    if v is not None and key in GRAINS and v > 50:
         v /= 100.0
     return v
 
@@ -60,72 +75,109 @@ def plausible(key, v):
     return v is not None and lo <= v <= hi
 
 
-def from_stooq(key):
-    sym = INSTRUMENTS[key][1]
-    # Daily history gives both last close and previous close.
+def from_cnbc():
+    out = {}
+    syms = urllib.parse.quote("|".join(i[1] for i in INSTRUMENTS.values()))
+    url = ("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol"
+           f"?symbols={syms}&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json")
     try:
-        rows = list(csv.DictReader(io.StringIO(get(f"https://stooq.com/q/d/l/?s={sym}&i=d"))))
-        rows = [r for r in rows if r.get("Close") not in (None, "", "N/D")]
-        if len(rows) < 2:
-            warn(f"stooq history {sym}: no usable rows")
-        if len(rows) >= 2:
-            return {"price": normalize(key, rows[-1]["Close"]),
-                    "prev_close": normalize(key, rows[-2]["Close"]),
-                    "as_of": rows[-1]["Date"], "source": "stooq"}
+        rows = json.loads(get(url))["FormattedQuoteResult"]["FormattedQuote"]
     except Exception as e:  # noqa: BLE001
-        warn(f"stooq history {sym}: {type(e).__name__}: {e}")
-    # Light quote: last price only.
-    try:
-        rows = list(csv.DictReader(io.StringIO(get(f"https://stooq.com/q/l/?s={sym}&f=sd2t2ohlcv&h&e=csv"))))
-        if rows and rows[0].get("Close") not in (None, "", "N/D"):
-            return {"price": normalize(key, rows[0]["Close"]), "prev_close": None,
-                    "as_of": rows[0].get("Date"), "source": "stooq"}
-    except Exception as e:  # noqa: BLE001
-        warn(f"stooq quote {sym}: {type(e).__name__}: {e}")
-    return None
+        warn(f"cnbc: {type(e).__name__}: {e}")
+        return out
+    by_sym = {r.get("symbol"): r for r in rows}
+    for key, (_, sym, _, _, _) in INSTRUMENTS.items():
+        r = by_sym.get(sym)
+        if not r or r.get("code") not in (0, "0", None):
+            warn(f"cnbc {sym}: missing or error in response")
+            continue
+        settle, sdate = r.get("settlePrice"), r.get("settleDate")
+        last_date = (r.get("last_time") or "")[:10] or None
+        # Prefer the official settlement once it is posted for the latest session.
+        if num(settle) is not None and sdate and (last_date is None or sdate >= last_date):
+            price, as_of, kind = normalize(key, settle), sdate, "settle"
+        else:
+            price, as_of, kind = normalize(key, r.get("last")), last_date, "last"
+        prev = normalize(key, r.get("previous_day_closing"))
+        if kind == "settle" and prev == price:
+            prev = None  # feed already rolled: previous close == today's settle
+        out[key] = {"price": price, "prev_close": prev, "as_of": as_of, "price_type": kind,
+                    "contract": r.get("name"), "source": "cnbc"}
+    return out
 
 
-def from_yahoo(key):
-    sym = INSTRUMENTS[key][2]
-    for host in ("query1", "query2"):
+def from_yahoo():
+    out = {}
+    try:
         try:
-            j = json.loads(get(f"https://{host}.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=1d"))
-            res = j["chart"]["result"][0]
-            meta = res["meta"]
-            closes = [c for c in res["indicators"]["quote"][0]["close"] if c is not None]
-            price = meta.get("regularMarketPrice") or (closes[-1] if closes else None)
-            prev = closes[-2] if len(closes) >= 2 else meta.get("chartPreviousClose")
-            ts = meta.get("regularMarketTime")
-            as_of = datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d") if ts else None
-            return {"price": normalize(key, price), "prev_close": normalize(key, prev),
-                    "as_of": as_of, "source": "yahoo"}
-        except Exception as e:  # noqa: BLE001
-            warn(f"yahoo {host} {sym}: {type(e).__name__}: {e}")
-    return None
+            get("https://fc.yahoo.com")  # sets the session cookie; returns 404, that's fine
+        except Exception:  # noqa: BLE001
+            pass
+        crumb = get("https://query1.finance.yahoo.com/v1/test/getcrumb").strip()
+        if not crumb or len(crumb) > 40 or "<" in crumb:
+            raise ValueError(f"bad crumb {crumb[:40]!r}")
+        syms = ",".join(i[2] for i in INSTRUMENTS.values())
+        rows = json.loads(get("https://query1.finance.yahoo.com/v7/finance/quote?symbols="
+                              f"{urllib.parse.quote(syms)}&crumb={urllib.parse.quote(crumb)}"))
+        rows = rows["quoteResponse"]["result"]
+    except Exception as e:  # noqa: BLE001
+        warn(f"yahoo: {type(e).__name__}: {e}")
+        return out
+    by_sym = {r.get("symbol"): r for r in rows}
+    for key, (_, _, sym, _, _) in INSTRUMENTS.items():
+        r = by_sym.get(sym)
+        if not r:
+            warn(f"yahoo {sym}: missing from response")
+            continue
+        ts = r.get("regularMarketTime")
+        as_of = datetime.fromtimestamp(ts, ET).strftime("%Y-%m-%d") if ts else None
+        out[key] = {"price": normalize(key, r.get("regularMarketPrice")),
+                    "prev_close": normalize(key, r.get("regularMarketPreviousClose")),
+                    "as_of": as_of, "price_type": "last", "contract": r.get("shortName"),
+                    "source": "yahoo"}
+    return out
 
 
-def fetch(key, previous):
-    primary = from_stooq(key)
-    fallback = None
-    if not primary or not plausible(key, primary["price"]):
-        primary = None
-        fallback = from_yahoo(key)
-    q = primary or (fallback if fallback and plausible(key, fallback["price"]) else None)
-    if q and q["prev_close"] is None:
-        # fill previous close from Yahoo, else from our own last good value
-        y = fallback or from_yahoo(key)
-        if y and plausible(key, y.get("prev_close")):
-            q["prev_close"] = y["prev_close"]
-        elif previous and previous.get("price") and previous.get("as_of") != q["as_of"]:
-            q["prev_close"] = previous["price"]
-    if q:
-        q["stale"] = False
-        return q
-    if previous and previous.get("price") is not None:
-        p = dict(previous)
-        p["stale"] = True
-        return p
-    return None
+def history_prev(key, as_of):
+    """Most recent recorded price for key on a date before as_of."""
+    if not os.path.exists(HIST) or not as_of:
+        return None
+    best = None
+    with open(HIST) as f:
+        for r in csv.DictReader(f):
+            if r["date"] < as_of and num(r.get(key)) is not None:
+                best = num(r[key])
+    return best
+
+
+def fetch_all(previous):
+    cnbc = from_cnbc()
+    need_yahoo = any(not (cnbc.get(k) and plausible(k, cnbc[k]["price"])) for k in INSTRUMENTS)
+    yahoo = from_yahoo() if need_yahoo else {}
+    result = {}
+    for key in INSTRUMENTS:
+        q = None
+        for cand in (cnbc.get(key), yahoo.get(key)):
+            if cand and plausible(key, cand["price"]):
+                q = dict(cand)
+                break
+            if cand:
+                warn(f"{cand['source']} {key}: implausible price {cand['price']}")
+        if q:
+            hp = history_prev(key, q["as_of"])
+            if hp is not None:
+                q["prev_close"], q["prev_source"] = hp, "history"
+            elif plausible(key, q.get("prev_close")):
+                q["prev_source"] = q["source"]
+            else:
+                q["prev_close"] = None
+            q["stale"] = False
+            result[key] = q
+        elif previous.get(key) and previous[key].get("price") is not None:
+            p = dict(previous[key])
+            p["stale"] = True
+            result[key] = p
+    return result
 
 
 def crack(r, h, w):
@@ -144,20 +196,25 @@ def main():
         except Exception:  # noqa: BLE001
             previous = {}
 
+    fetched = fetch_all(previous)
     inst = {}
     for key, (label, _, _, unit, _) in INSTRUMENTS.items():
-        q = fetch(key, previous.get(key))
+        q = fetched.get(key)
         if not q:
             inst[key] = {"label": label, "unit": unit, "price": None, "stale": True, "source": None}
             continue
         chg = None
-        if q.get("prev_close"):
+        if q.get("prev_close") and not q["stale"]:
             chg = round((q["price"] / q["prev_close"] - 1) * 100, 2)
+        elif q["stale"]:
+            chg = q.get("change_pct")
         inst[key] = {"label": label, "unit": unit,
                      "price": round(q["price"], 4),
                      "prev_close": round(q["prev_close"], 4) if q.get("prev_close") else None,
                      "change_pct": chg, "as_of": q.get("as_of"),
-                     "source": q.get("source"), "stale": q["stale"]}
+                     "price_type": q.get("price_type"), "contract": q.get("contract"),
+                     "source": q.get("source"), "prev_source": q.get("prev_source"),
+                     "stale": q["stale"]}
 
     g = lambda k, f: inst.get(k, {}).get(f)  # noqa: E731
     cs = crack(g("rbob", "price"), g("heating_oil", "price"), g("wti", "price"))
