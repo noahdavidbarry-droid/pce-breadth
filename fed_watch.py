@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -143,10 +144,17 @@ def main():
             ("warsh_speeches_30d", f"{BASE}/feeds/speeches.xml", True, 30),
             ("warsh_testimony_90d", f"{BASE}/feeds/testimony.xml", True, 90),
             ("press_releases_7d", f"{BASE}/feeds/press_all.xml", False, 7)):
-        try:
-            out[key] = rss(url, warsh_only, days, today)
-        except Exception as e:  # noqa: BLE001
-            out["errors"][key] = f"{type(e).__name__}: {e}"
+        urls = [url, url]  # one retry; the Fed's feeds occasionally 404 briefly
+        if key == "press_releases_7d":
+            urls.append(f"{BASE}/feeds/press_monetary.xml")
+        for i, u in enumerate(urls):
+            try:
+                out[key] = rss(u, warsh_only, days, today)
+                out["errors"].pop(key, None)
+                break
+            except Exception as e:  # noqa: BLE001
+                out["errors"][key] = f"{type(e).__name__}: {e}"
+                time.sleep(3)
     try:
         nxt, n_total = fomc_meetings(today)
         out["next_fomc_meetings"] = nxt
