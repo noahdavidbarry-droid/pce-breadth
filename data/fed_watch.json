@@ -1,0 +1,60 @@
+{
+  "generated_utc": "2026-10-20T23:19:58Z",
+  "as_of_date_et": "2026-10-20",
+  "source": "federalreserve.gov",
+  "errors": {},
+  "recent_appearances_14d": [
+    {
+      "date": "2026-10-15",
+      "time_et": "11:30 p.m.",
+      "type": "Speeches",
+      "title": "Discussion - Chairman Kevin Warsh",
+      "description": "Conversation between IMF Managing Director Georgieva and Federal Reserve Chairman Warsh",
+      "location": "At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina Georgieva, Bangkok, Thailand",
+      "link": null,
+      "live": "https://www.youtube.com/watch?v=T20jWBJ66X0&list=PLGHsBhoupusk&index=31"
+    }
+  ],
+  "upcoming_appearances_45d": [],
+  "warsh_speeches_30d": [],
+  "warsh_testimony_90d": [],
+  "press_releases_7d": [
+    {
+      "date": "2026-10-16",
+      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "description": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "category": "Enforcement Actions",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "description": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "category": "Monetary Policy",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm"
+    }
+  ],
+  "next_fomc_meetings": [
+    {
+      "start": "2026-10-27",
+      "end": "2026-10-28",
+      "with_projections": false,
+      "label": "October 27-28"
+    },
+    {
+      "start": "2026-12-08",
+      "end": "2026-12-09",
+      "with_projections": true,
+      "label": "December 8-9"
+    },
+    {
+      "start": "2027-01-25",
+      "end": "2027-01-26",
+      "with_projections": false,
+      "label": "January 25-26"
+    }
+  ],
+  "fomc_meetings_parsed": 59,
+  "days_to_next_fomc": 7,
+  "status": "ok"
+}
