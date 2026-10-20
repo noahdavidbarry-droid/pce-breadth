@@ -1,0 +1,48 @@
+name: Daily indicators
+
+# Grains/energy (commodities.py), hyperscaler capex from SEC EDGAR (capex.py) and
+# the Fed's official calendar/feeds (fed_watch.py). Each step runs on its own, so
+# one source failing never blocks the others. Runs after the CBOT grain (1:20 PM CT)
+# and NYMEX energy (1:30 PM CT) closes, ahead of the 1:17 PM Pacific Warsh email.
+# The second run is a retry in case the first fails or GitHub delays it.
+on:
+  schedule:
+    - cron: "35 19 * * 1-5"
+    - cron: "0 20 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: indicators
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Grains, energy and crack spread
+        continue-on-error: true
+        run: python commodities.py
+      - name: Hyperscaler capex (SEC EDGAR)
+        continue-on-error: true
+        env:
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: python capex.py
+      - name: Fed watch (calendar, speeches, FOMC dates)
+        continue-on-error: true
+        run: python fed_watch.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && exit 0
+          git commit -m "Update daily indicators $(date -u +%Y-%m-%d)"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1

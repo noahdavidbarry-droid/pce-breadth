@@ -10,6 +10,10 @@ If both fail for an instrument, its last good value from the previous
 commodities.json is kept and marked stale, so the email never goes blank.
 Day-over-day change uses our own history file first (the prior trading day's
 recorded price), falling back to the source's previous close.
+History is backfilled from CNBC's daily chart feed whenever it holds fewer
+than ~200 days. A "context" block adds 1-year range percentiles, an
+equal-weight grain index, a 20-day grain-vs-crack divergence z-score and a
+60-day correlation of daily changes.
 Standard library only. Source errors are emitted as GitHub Actions warnings.
 """
 import csv
@@ -180,6 +184,130 @@ def fetch_all(previous):
     return result
 
 
+def backfill_from_cnbc(start="20250101000000"):
+    """Daily closes for each contract from CNBC's chart feed -> {date: {key: price}}."""
+    end = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+    rows = {}
+    for key, (_, sym, _, _, _) in INSTRUMENTS.items():
+        url = (f"https://ts-api.cnbc.com/harmony/app/bars/{urllib.parse.quote(sym)}/1D/"
+               f"{start}/{end}/adjusted/EST5EDT.json")
+        try:
+            bars = json.loads(get(url, timeout=40))["barData"]["priceBars"]
+        except Exception as e:  # noqa: BLE001
+            warn(f"backfill {sym}: {type(e).__name__}: {e}")
+            continue
+        for b in bars:
+            dt = str(b.get("tradeTime", ""))[:8]
+            v = normalize(key, b.get("close"))
+            if len(dt) == 8 and plausible(key, v):
+                rows.setdefault(f"{dt[:4]}-{dt[4:6]}-{dt[6:]}", {})[key] = v
+    return rows
+
+
+def read_history():
+    if not os.path.exists(HIST):
+        return []
+    with open(HIST) as f:
+        return list(csv.DictReader(f))
+
+
+def write_history(rows):
+    fields = ["date"] + list(INSTRUMENTS) + ["crack_321"]
+    os.makedirs(DATA, exist_ok=True)
+    with open(HIST, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(sorted(rows, key=lambda r: r["date"]))
+
+
+def ensure_backfill(min_rows=200):
+    rows = read_history()
+    if len(rows) >= min_rows:
+        return 0
+    have = {r["date"]: r for r in rows}
+    added = 0
+    for dt, prices in backfill_from_cnbc().items():
+        if dt in have or len(prices) < len(INSTRUMENTS):
+            continue
+        r = {"date": dt, **{k: round(v, 4) for k, v in prices.items()}}
+        cs = crack(prices["rbob"], prices["heating_oil"], prices["wti"])
+        r["crack_321"] = round(cs, 2)
+        have[dt] = r
+        added += 1
+    write_history(list(have.values()))
+    return added
+
+
+def _stats(xs):
+    n = len(xs)
+    if n < 2:
+        return None, None
+    m = sum(xs) / n
+    sd = (sum((x - m) ** 2 for x in xs) / (n - 1)) ** 0.5
+    return m, sd
+
+
+def _corr(a, b):
+    ma, sa = _stats(a)
+    mb, sb = _stats(b)
+    if not sa or not sb:
+        return None
+    return sum((x - ma) * (y - mb) for x, y in zip(a, b)) / ((len(a) - 1) * sa * sb)
+
+
+def _pctile(window, x):
+    return round(100 * sum(1 for v in window if v <= x) / len(window), 0)
+
+
+def compute_context(lookback=252, horizon=20, corr_days=60):
+    """Range position, grain index vs crack spread divergence, and correlation."""
+    rows = []
+    for r in read_history():
+        try:
+            vals = {k: float(r[k]) for k in list(INSTRUMENTS) + ["crack_321"]}
+        except (TypeError, ValueError, KeyError):
+            continue
+        rows.append((r["date"], vals))
+    if len(rows) < horizon + 30:
+        return {"status": "insufficient_history", "rows": len(rows)}
+    rows = rows[-(lookback + horizon + 1):]
+    base = rows[0][1]
+    grain = [sum(v[k] / base[k] for k in GRAINS) / len(GRAINS) * 100 for _, v in rows]
+    crk = [v["crack_321"] for _, v in rows]
+    dates = [d for d, _ in rows]
+    win = slice(-lookback, None)
+    out = {"status": "ok", "history_rows_used": len(rows), "window_start": dates[win][0],
+           "as_of": dates[-1], "horizon_days": horizon,
+           "grain_index_note": "Equal-weight corn/soybean/wheat index, = 100 at window start",
+           "range_percentile_1y": {k: _pctile([v[k] for _, v in rows][win], rows[-1][1][k])
+                                   for k in list(INSTRUMENTS) + ["crack_321"]}}
+    out["range_percentile_1y"]["grain_index"] = _pctile(grain[win], grain[-1])
+    out["crack_321_1y_range"] = [round(min(crk[win]), 2), round(max(crk[win]), 2)]
+    gchg = [(grain[i] / grain[i - horizon] - 1) * 100 for i in range(horizon, len(grain))]
+    cchg = [crk[i] - crk[i - horizon] for i in range(horizon, len(crk))]  # $/bbl; spreads can sit near 0
+
+    def z_last(xs):
+        m, sd = _stats(xs[-lookback:])
+        return round((xs[-1] - m) / sd, 2) if sd else None
+
+    zg, zc = z_last(gchg), z_last(cchg)
+    out["grain_index_chg_20d_pct"] = round(gchg[-1], 2)
+    out["crack_chg_20d_usd"] = round(cchg[-1], 2)
+    out["grain_move_z"] = zg
+    out["crack_move_z"] = zc
+    out["divergence_z"] = round(zg - zc, 2) if None not in (zg, zc) else None
+    out["divergence_flag"] = bool(out["divergence_z"] is not None and abs(out["divergence_z"]) >= 2)
+    out["divergence_note"] = ("Each side's 20-trading-day move is scored against its own past-year "
+                              "distribution (grain index in %, crack spread in $/bbl). divergence_z = "
+                              "grain_move_z - crack_move_z: positive = grains running hotter than refining "
+                              "margins (ag-led pressure), negative = energy-led. |divergence_z| >= 2 is flagged.")
+    dg = [(grain[i] / grain[i - 1] - 1) for i in range(len(grain) - corr_days, len(grain))]
+    dc = [(crk[i] - crk[i - 1]) for i in range(len(crk) - corr_days, len(crk))]
+    c = _corr(dg, dc)
+    out["corr_60d_daily_changes"] = round(c, 2) if c is not None else None
+    return out
+
+
 def crack(r, h, w):
     """3:2:1 crack spread, $/bbl."""
     if None in (r, h, w):
@@ -196,6 +324,12 @@ def main():
         except Exception:  # noqa: BLE001
             previous = {}
 
+    try:
+        added = ensure_backfill()
+        if added:
+            print(f"backfilled {added} history rows from CNBC")
+    except Exception as e:  # noqa: BLE001
+        warn(f"backfill: {type(e).__name__}: {e}")
     fetched = fetch_all(previous)
     inst = {}
     for key, (label, _, _, unit, _) in INSTRUMENTS.items():
@@ -250,16 +384,16 @@ def main():
     # history: one row per as_of date (WTI's date), only with fresh data
     day = g("wti", "as_of") or out["generated_utc"][:10]
     if status in ("ok", "partial"):
-        rows = []
-        if os.path.exists(HIST):
-            with open(HIST) as f:
-                rows = [r for r in csv.DictReader(f) if r["date"] != day]
-        row = {"date": day, **{k: g(k, "price") for k in INSTRUMENTS}, "crack_321": spread["value"]}
-        rows.append(row)
-        with open(HIST, "w", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=list(row.keys()))
-            w.writeheader()
-            w.writerows(sorted(rows, key=lambda r: r["date"]))
+        rows = [r for r in read_history() if r["date"] != day]
+        rows.append({"date": day, **{k: g(k, "price") for k in INSTRUMENTS}, "crack_321": spread["value"]})
+        write_history(rows)
+    try:
+        out["context"] = compute_context()
+    except Exception as e:  # noqa: BLE001
+        warn(f"context: {type(e).__name__}: {e}")
+        out["context"] = {"status": f"failed: {e}"}
+    with open(OUT, "w") as f:
+        json.dump(out, f, indent=2)
 
     print(json.dumps(out, indent=2))
     if status == "failed":
