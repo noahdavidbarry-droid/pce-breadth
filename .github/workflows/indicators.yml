@@ -32,7 +32,7 @@ jobs:
       - name: Hyperscaler capex (SEC EDGAR)
         continue-on-error: true
         env:
-          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT || 'Noah Barry nbarry27@cmc.edu' }}
         run: python capex.py
       - name: Fed watch (calendar, speeches, FOMC dates)
         continue-on-error: true
