@@ -1,10 +1,8 @@
 {
-  "generated_utc": "2026-10-20T23:22:50Z",
+  "generated_utc": "2026-10-20T23:23:47Z",
   "as_of_date_et": "2026-10-20",
   "source": "federalreserve.gov",
-  "errors": {
-    "press_releases_7d": "HTTPError: HTTP Error 404: Not Found"
-  },
+  "errors": {},
   "recent_appearances_14d": [
     {
       "date": "2026-10-15",
@@ -20,6 +18,22 @@
   "upcoming_appearances_45d": [],
   "warsh_speeches_30d": [],
   "warsh_testimony_90d": [],
+  "press_releases_7d": [
+    {
+      "date": "2026-10-16",
+      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "description": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "category": "Enforcement Actions",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "description": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "category": "Monetary Policy",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm"
+    }
+  ],
   "next_fomc_meetings": [
     {
       "start": "2026-10-27",
@@ -42,5 +56,5 @@
   ],
   "fomc_meetings_parsed": 59,
   "days_to_next_fomc": 7,
-  "status": "partial"
+  "status": "ok"
 }
