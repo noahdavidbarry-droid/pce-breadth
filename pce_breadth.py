@@ -162,6 +162,7 @@ def main():
 
     sel_path = ROOT / "components.json"
     selection_note = None
+    nominal_vals, descs, nmonth = {}, {ln: c["description"] for ln, c in catalog.items()}, None
     if sel_path.exists():
         lines = json.loads(sel_path.read_text())["lines"]
         tuned = "components.json"
@@ -170,6 +171,9 @@ def main():
         order = sorted(set(ncat) | set(catalog))
         descs = {ln: (ncat.get(ln) or catalog.get(ln))["description"] for ln in order}
         nmonths = sorted({m for s in nominal.values() for m in s})
+        if nmonths:
+            nmonth = nmonths[-1]
+            nominal_vals = {ln: s.get(nmonth) for ln, s in nominal.items()}
         DATA.mkdir(exist_ok=True)
         (DATA / "nominal_latest.json").write_text(json.dumps(
             [{"line": ln, "description": ncat.get(ln, {}).get("description"),
@@ -202,6 +206,22 @@ def main():
         sys.exit("No computable months")
 
     latest, prior = history[-1], (history[-2] if len(history) > 1 else None)
+
+    # Drill-down (weights, groups, crossings). Never allowed to break the core output.
+    detail_status = "skipped: no nominal weights"
+    if nominal_vals:
+        try:
+            import pce_detail
+            for h in history:
+                h.update(pce_detail.weighted_history_fields(series, lines, nominal_vals, h["month"]))
+            pce_detail.build(series, lines, descs, nominal_vals, history, latest["month"],
+                             prior["month"] if prior else None, DATA)
+            detail_status = "ok"
+        except Exception as e:  # noqa: BLE001
+            detail_status = f"failed: {type(e).__name__}: {e}"
+            print(f"::warning::pce detail {detail_status}")
+    core_keys = ("month", "components", "share_6m", "share_12m")
+    extra_keys = ("share_3m", "wshare_6m", "wshare_12m")
     bt = next((h for h in history if h["month"] == BACKTEST["month"]), None)
     backtest = None
     if bt:
@@ -222,14 +242,21 @@ def main():
             "share_12m_pp": round(latest["share_12m"] - prior["share_12m"], 1),
         },
         "backtest_july_2026": backtest,
+        "latest_extra": {k: latest.get(k) for k in extra_keys},
+        "detail_file": "data/breadth_detail.json",
+        "detail_status": detail_status,
     }
+    core = lambda h: None if h is None else {k: h[k] for k in core_keys}  # noqa: E731
+    out["latest"], out["prior"] = core(latest), core(prior)
+    if backtest:
+        backtest["computed"] = core(backtest["computed"])
     DATA.mkdir(exist_ok=True)
     (DATA / "latest.json").write_text(json.dumps(out, indent=2) + "\n")
     (DATA / "lines.json").write_text(json.dumps([catalog[k] for k in sorted(catalog)], indent=2) + "\n")
     with open(DATA / "history.csv", "w") as f:
-        f.write("month,components,share_6m,share_12m\n")
+        f.write("month,components,share_6m,share_12m,share_3m,wshare_6m,wshare_12m\n")
         for h in history:
-            f.write(f"{h['month']},{h['components']},{h['share_6m']},{h['share_12m']}\n")
+            f.write(",".join("" if h.get(k) is None else str(h.get(k)) for k in core_keys + extra_keys) + "\n")
     print(json.dumps(out, indent=2))
 
 
