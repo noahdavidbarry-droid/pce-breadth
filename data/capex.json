@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-21T20:22:20Z",
+  "generated_utc": "2026-10-22T20:03:05Z",
   "source": "SEC EDGAR XBRL company facts (10-Q/10-K cash flow: purchases of property & equipment)",
   "status": "ok",
   "errors": {},
@@ -173,14 +173,15 @@
         "ttm_yoy_pct": 75.3,
         "quarters_since_peak": 0
       },
-      "newest_quarter": "2026Q2",
+      "newest_quarter": "2026Q3",
       "newest_quarter_reported_by": [
-        "MSFT",
-        "GOOGL",
-        "AMZN",
         "META"
       ],
-      "newest_quarter_pending": []
+      "newest_quarter_pending": [
+        "MSFT",
+        "GOOGL",
+        "AMZN"
+      ]
     },
     "big4_plus_oracle": {
       "label": "Big 4 + Oracle",
@@ -349,13 +350,13 @@
       },
       "newest_quarter": "2026Q3",
       "newest_quarter_reported_by": [
+        "META",
         "ORCL"
       ],
       "newest_quarter_pending": [
         "MSFT",
         "GOOGL",
-        "AMZN",
-        "META"
+        "AMZN"
       ]
     }
   },
@@ -840,38 +841,27 @@
     "META": {
       "name": "Meta",
       "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "latest_quarter": "2026Q2",
-      "latest_period_end": "2026-06-30",
-      "latest_filed": "2026-07-30",
-      "new_since_last_run": false,
+      "latest_quarter": "2026Q3",
+      "latest_period_end": "2026-09-30",
+      "latest_filed": "2026-10-22",
+      "new_since_last_run": true,
       "latest": {
-        "quarter": "2026Q2",
-        "capex_bn": 30.12,
-        "yoy_pct": 82.1,
-        "qoq_pct": 58.5,
-        "ttm_bn": 89.3,
-        "ttm_yoy_pct": 71.2,
-        "yoy_change_pp": 35.3,
-        "ttm_yoy_change_pp": -1.8,
-        "second_derivative": "accelerating"
+        "quarter": "2026Q3",
+        "capex_bn": 33.94,
+        "yoy_pct": 80.3,
+        "qoq_pct": 12.7,
+        "ttm_bn": 104.4,
+        "ttm_yoy_pct": 66.5,
+        "yoy_change_pp": -1.8,
+        "ttm_yoy_change_pp": -4.7,
+        "second_derivative": "decelerating"
       },
       "yoy_peak_last_12q": {
         "quarter": "2025Q3",
         "yoy_pct": 128.0,
-        "quarters_since_peak": 3
+        "quarters_since_peak": 4
       },
       "quarters": [
-        {
-          "quarter": "2023Q3",
-          "capex_bn": 6.5,
-          "yoy_pct": -30.7,
-          "qoq_pct": 5.9,
-          "ttm_bn": 28.3,
-          "ttm_yoy_pct": 1.7,
-          "yoy_change_pp": -11.7,
-          "ttm_yoy_change_pp": -35.1,
-          "second_derivative": "decelerating"
-        },
         {
           "quarter": "2023Q4",
           "capex_bn": 7.59,
@@ -992,6 +982,17 @@
           "yoy_change_pp": 35.3,
           "ttm_yoy_change_pp": -1.8,
           "second_derivative": "accelerating"
+        },
+        {
+          "quarter": "2026Q3",
+          "capex_bn": 33.94,
+          "yoy_pct": 80.3,
+          "qoq_pct": 12.7,
+          "ttm_bn": 104.4,
+          "ttm_yoy_pct": 66.5,
+          "yoy_change_pp": -1.8,
+          "ttm_yoy_change_pp": -4.7,
+          "second_derivative": "decelerating"
         }
       ],
       "stale": false

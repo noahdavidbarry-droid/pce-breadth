@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-21T20:22:20Z",
-  "as_of_date_et": "2026-10-21",
+  "generated_utc": "2026-10-22T20:03:05Z",
+  "as_of_date_et": "2026-10-22",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [
@@ -48,6 +48,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 6,
+  "days_to_next_fomc": 5,
   "status": "ok"
 }
