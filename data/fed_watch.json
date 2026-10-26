@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-23T20:21:14Z",
-  "as_of_date_et": "2026-10-23",
+  "generated_utc": "2026-10-26T20:04:39Z",
+  "as_of_date_et": "2026-10-26",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [
@@ -18,15 +18,7 @@
   "upcoming_appearances_45d": [],
   "warsh_speeches_30d": [],
   "warsh_testimony_90d": [],
-  "press_releases_7d": [
-    {
-      "date": "2026-10-16",
-      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "description": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "category": "Enforcement Actions",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm"
-    }
-  ],
+  "press_releases_7d": [],
   "next_fomc_meetings": [
     {
       "start": "2026-10-27",
@@ -48,6 +40,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 4,
+  "days_to_next_fomc": 1,
   "status": "ok"
 }
