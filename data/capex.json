@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-28T20:13:44Z",
+  "generated_utc": "2026-10-28T20:31:41Z",
   "source": "SEC EDGAR XBRL company facts (10-Q/10-K cash flow: purchases of property & equipment)",
   "status": "ok",
   "errors": {},
@@ -367,7 +367,7 @@
       "latest_quarter": "2026Q3",
       "latest_period_end": "2026-09-30",
       "latest_filed": "2026-10-28",
-      "new_since_last_run": true,
+      "new_since_last_run": false,
       "latest": {
         "quarter": "2026Q3",
         "capex_bn": 39.37,
