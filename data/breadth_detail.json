@@ -1,6 +1,6 @@
 {
-  "month": "2026-08",
-  "prior_month": "2026-07",
+  "month": "2026-09",
+  "prior_month": "2026-08",
   "threshold_pct": 3.0,
   "weights_note": "Spending weights are each component's nominal PCE (BEA table 2.4.5U) in the latest month; the same weights are applied to the prior month.",
   "groups_note": "Core = excluding food (off-premises) and energy goods and services, matching BEA's 'PCE excluding food and energy'.",
@@ -14,149 +14,149 @@
     "all": {
       "3m": {
         "components": 222,
-        "above": 84,
-        "share": 37.8,
-        "weighted_share": 31.7,
-        "change_pp": -4.5,
-        "weighted_change_pp": -20.8
+        "above": 101,
+        "share": 45.5,
+        "weighted_share": 43.2,
+        "change_pp": 6.8,
+        "weighted_change_pp": 9.2
       },
       "6m": {
         "components": 222,
-        "above": 96,
-        "share": 43.2,
-        "weighted_share": 53.9,
-        "change_pp": -5.0,
-        "weighted_change_pp": -7.1
+        "above": 100,
+        "share": 45.0,
+        "weighted_share": 55.2,
+        "change_pp": 1.8,
+        "weighted_change_pp": 1.1
       },
       "12m": {
         "components": 222,
-        "above": 114,
-        "share": 51.4,
-        "weighted_share": 59.7,
-        "change_pp": 0.0,
-        "weighted_change_pp": -0.2
+        "above": 107,
+        "share": 48.2,
+        "weighted_share": 57.8,
+        "change_pp": -4.1,
+        "weighted_change_pp": -2.3
       }
     },
     "goods": {
       "3m": {
         "components": 98,
-        "above": 31,
-        "share": 31.6,
-        "weighted_share": 21.5,
-        "change_pp": 3.0,
-        "weighted_change_pp": -4.9
+        "above": 38,
+        "share": 38.8,
+        "weighted_share": 36.2,
+        "change_pp": 6.1,
+        "weighted_change_pp": 11.2
       },
       "6m": {
         "components": 98,
-        "above": 29,
-        "share": 29.6,
-        "weighted_share": 30.9,
-        "change_pp": -12.2,
-        "weighted_change_pp": -14.6
+        "above": 28,
+        "share": 28.6,
+        "weighted_share": 31.7,
+        "change_pp": -1.0,
+        "weighted_change_pp": 0.3
       },
       "12m": {
         "components": 98,
-        "above": 41,
-        "share": 41.8,
-        "weighted_share": 41.8,
-        "change_pp": -2.1,
-        "weighted_change_pp": -1.6
+        "above": 33,
+        "share": 33.7,
+        "weighted_share": 35.1,
+        "change_pp": -8.1,
+        "weighted_change_pp": -7.1
       }
     },
     "services": {
       "3m": {
         "components": 124,
-        "above": 53,
-        "share": 42.7,
-        "weighted_share": 36.2,
-        "change_pp": -10.5,
-        "weighted_change_pp": -27.8
+        "above": 63,
+        "share": 50.8,
+        "weighted_share": 46.2,
+        "change_pp": 7.3,
+        "weighted_change_pp": 8.3
       },
       "6m": {
         "components": 124,
-        "above": 67,
-        "share": 54.0,
-        "weighted_share": 63.9,
-        "change_pp": 0.8,
-        "weighted_change_pp": -3.9
+        "above": 72,
+        "share": 58.1,
+        "weighted_share": 65.6,
+        "change_pp": 4.1,
+        "weighted_change_pp": 1.5
       },
       "12m": {
         "components": 124,
-        "above": 73,
-        "share": 58.9,
-        "weighted_share": 67.6,
-        "change_pp": 1.6,
-        "weighted_change_pp": 0.5
+        "above": 74,
+        "share": 59.7,
+        "weighted_share": 67.7,
+        "change_pp": -0.8,
+        "weighted_change_pp": -0.2
       }
     },
     "core": {
       "3m": {
         "components": 194,
-        "above": 75,
-        "share": 38.7,
-        "weighted_share": 33.4,
-        "change_pp": -5.6,
-        "weighted_change_pp": -23.6
+        "above": 91,
+        "share": 46.9,
+        "weighted_share": 44.0,
+        "change_pp": 7.2,
+        "weighted_change_pp": 7.9
       },
       "6m": {
         "components": 194,
-        "above": 87,
-        "share": 44.8,
-        "weighted_share": 55.7,
-        "change_pp": -2.6,
-        "weighted_change_pp": -6.5
+        "above": 89,
+        "share": 45.9,
+        "weighted_share": 56.2,
+        "change_pp": 1.1,
+        "weighted_change_pp": 0.3
       },
       "12m": {
         "components": 194,
-        "above": 100,
-        "share": 51.5,
-        "weighted_share": 60.0,
-        "change_pp": -0.6,
-        "weighted_change_pp": -0.6
+        "above": 95,
+        "share": 49.0,
+        "weighted_share": 58.0,
+        "change_pp": -3.6,
+        "weighted_change_pp": -2.2
       }
     },
     "food": {
       "3m": {
         "components": 22,
-        "above": 8,
-        "share": 36.4,
-        "weighted_share": 25.9,
-        "change_pp": 9.1,
-        "weighted_change_pp": 3.5
+        "above": 6,
+        "share": 27.3,
+        "weighted_share": 22.2,
+        "change_pp": -9.1,
+        "weighted_change_pp": -3.7
       },
       "6m": {
         "components": 22,
-        "above": 4,
-        "share": 18.2,
-        "weighted_share": 8.8,
-        "change_pp": -22.7,
-        "weighted_change_pp": -15.9
+        "above": 6,
+        "share": 27.3,
+        "weighted_share": 21.9,
+        "change_pp": 9.1,
+        "weighted_change_pp": 13.1
       },
       "12m": {
         "components": 22,
-        "above": 9,
-        "share": 40.9,
-        "weighted_share": 35.2,
-        "change_pp": 4.5,
-        "weighted_change_pp": 6.4
+        "above": 7,
+        "share": 31.8,
+        "weighted_share": 30.0,
+        "change_pp": -9.1,
+        "weighted_change_pp": -5.3
       }
     },
     "energy": {
       "3m": {
         "components": 6,
-        "above": 1,
-        "share": 16.7,
-        "weighted_share": 1.6,
-        "change_pp": -16.6,
-        "weighted_change_pp": -0.7
+        "above": 4,
+        "share": 66.7,
+        "weighted_share": 59.2,
+        "change_pp": 50.0,
+        "weighted_change_pp": 57.7
       },
       "6m": {
         "components": 6,
         "above": 5,
         "share": 83.3,
-        "weighted_share": 91.2,
-        "change_pp": -16.7,
-        "weighted_change_pp": -8.8
+        "weighted_share": 91.6,
+        "change_pp": 0.0,
+        "weighted_change_pp": 0.0
       },
       "12m": {
         "components": 6,
@@ -170,267 +170,365 @@
   },
   "crossings_vs_prior": {
     "6m": {
-      "entered_count": 21,
-      "exited_count": 32,
-      "entered_weight_pct": 5.1,
-      "exited_weight_pct": 12.3,
+      "entered_count": 14,
+      "exited_count": 10,
+      "entered_weight_pct": 3.5,
+      "exited_weight_pct": 2.4,
       "entered": [
         {
-          "line": 276,
-          "description": "Medical care and hospitalization",
+          "line": 250,
+          "description": "Hotels and motels",
           "group": "core/services",
-          "weight_pct": 1.15,
-          "rate_now": 3.4,
-          "rate_prior": 2.9
-        },
-        {
-          "line": 285,
-          "description": "Cellular telephone services",
-          "group": "core/services",
-          "weight_pct": 0.78,
-          "rate_now": 8.9,
-          "rate_prior": -2.1
-        },
-        {
-          "line": 292,
-          "description": "Proprietary and public higher education",
-          "group": "core/services",
-          "weight_pct": 0.54,
-          "rate_now": 3.4,
-          "rate_prior": 2.6
-        },
-        {
-          "line": 293,
-          "description": "Nonprofit private higher education services to households",
-          "group": "core/services",
-          "weight_pct": 0.39,
-          "rate_now": 3.4,
-          "rate_prior": 2.6
-        },
-        {
-          "line": 219,
-          "description": "Cable, satellite, and other live television services",
-          "group": "core/services",
-          "weight_pct": 0.3,
-          "rate_now": 4.7,
-          "rate_prior": 0.4
-        },
-        {
-          "line": 341,
-          "description": "Expenditures of foreign students in the United States",
-          "group": "core/services",
-          "weight_pct": 0.26,
-          "rate_now": 3.4,
-          "rate_prior": 2.6
-        },
-        {
-          "line": 70,
-          "description": "Luggage and similar personal items (part of 119)",
-          "group": "core/goods",
-          "weight_pct": 0.24,
-          "rate_now": 4.0,
-          "rate_prior": 1.6
-        },
-        {
-          "line": 251,
-          "description": "Housing at schools",
-          "group": "core/services",
-          "weight_pct": 0.22,
-          "rate_now": 3.7,
-          "rate_prior": 3.0
-        },
-        {
-          "line": 295,
-          "description": "Elementary and secondary schools",
-          "group": "core/services",
-          "weight_pct": 0.21,
+          "weight_pct": 0.72,
           "rate_now": 4.2,
-          "rate_prior": 2.2
-        },
-        {
-          "line": 41,
-          "description": "Televisions",
-          "group": "core/goods",
-          "weight_pct": 0.17,
-          "rate_now": 3.7,
-          "rate_prior": -0.8
-        },
-        {
-          "line": 60,
-          "description": "Recreational books (part of 90)",
-          "group": "core/goods",
-          "weight_pct": 0.16,
-          "rate_now": 4.4,
-          "rate_prior": -7.1
-        },
-        {
-          "line": 144,
-          "description": "Stationery and miscellaneous printed materials",
-          "group": "core/goods",
-          "weight_pct": 0.15,
-          "rate_now": 4.9,
-          "rate_prior": 2.0
-        }
-      ],
-      "exited": [
-        {
-          "line": 242,
-          "description": "Meals at limited service eating places",
-          "group": "core/services",
-          "weight_pct": 2.57,
-          "rate_now": 2.7,
-          "rate_prior": 3.3
-        },
-        {
-          "line": 180,
-          "description": "Specialty outpatient care facilities and health and allied services",
-          "group": "core/services",
-          "weight_pct": 1.35,
-          "rate_now": 1.3,
-          "rate_prior": 3.1
-        },
-        {
-          "line": 106,
-          "description": "Women's and girls' clothing (10)",
-          "group": "core/goods",
-          "weight_pct": 1.21,
-          "rate_now": 1.7,
-          "rate_prior": 5.5
-        },
-        {
-          "line": 52,
-          "description": "Sporting equipment, supplies, guns, and ammunition (part of 80)",
-          "group": "core/goods",
-          "weight_pct": 0.61,
-          "rate_now": 0.1,
-          "rate_prior": 3.6
+          "rate_prior": -0.1
         },
         {
           "line": 320,
           "description": "Individual and family services",
           "group": "core/services",
-          "weight_pct": 0.61,
-          "rate_now": 2.7,
-          "rate_prior": 3.8
-        },
-        {
-          "line": 138,
-          "description": "Hair, dental, shaving, and miscellaneous personal care products except electrical products",
-          "group": "core/goods",
-          "weight_pct": 0.58,
-          "rate_now": 1.4,
-          "rate_prior": 3.4
+          "weight_pct": 0.6,
+          "rate_now": 3.6,
+          "rate_prior": 2.9
         },
         {
           "line": 310,
           "description": "Miscellaneous personal care services",
           "group": "core/services",
-          "weight_pct": 0.58,
-          "rate_now": 1.0,
-          "rate_prior": 7.0
-        },
-        {
-          "line": 271,
-          "description": "Life insurance (110)",
-          "group": "core/services",
-          "weight_pct": 0.57,
-          "rate_now": 2.6,
-          "rate_prior": 4.2
-        },
-        {
-          "line": 128,
-          "description": "Pets and related products",
-          "group": "core/goods",
-          "weight_pct": 0.54,
-          "rate_now": 1.2,
-          "rate_prior": 3.0
-        },
-        {
-          "line": 181,
-          "description": "All other professional medical services",
-          "group": "core/services",
-          "weight_pct": 0.52,
-          "rate_now": 1.3,
-          "rate_prior": 3.1
-        },
-        {
-          "line": 94,
-          "description": "Sugar and sweets",
-          "group": "food/goods",
-          "weight_pct": 0.36,
-          "rate_now": 0.3,
-          "rate_prior": 7.4
-        },
-        {
-          "line": 22,
-          "description": "Accessories and parts",
-          "group": "core/goods",
-          "weight_pct": 0.35,
-          "rate_now": 0.4,
-          "rate_prior": 13.3
-        }
-      ]
-    },
-    "12m": {
-      "entered_count": 11,
-      "exited_count": 11,
-      "entered_weight_pct": 2.9,
-      "exited_weight_pct": 3.0,
-      "entered": [
-        {
-          "line": 299,
-          "description": "Legal services",
-          "group": "core/services",
-          "weight_pct": 0.75,
-          "rate_now": 4.4,
-          "rate_prior": 2.8
-        },
-        {
-          "line": 52,
-          "description": "Sporting equipment, supplies, guns, and ammunition (part of 80)",
-          "group": "core/goods",
-          "weight_pct": 0.61,
-          "rate_now": 3.5,
-          "rate_prior": 2.9
+          "weight_pct": 0.59,
+          "rate_now": 3.2,
+          "rate_prior": 1.0
         },
         {
           "line": 98,
           "description": "Mineral waters, soft drinks, and vegetable juices",
           "group": "food/goods",
           "weight_pct": 0.54,
-          "rate_now": 3.5,
-          "rate_prior": 2.9
+          "rate_now": 4.7,
+          "rate_prior": 1.3
+        },
+        {
+          "line": 309,
+          "description": "Hairdressing salons and personal grooming establishments",
+          "group": "core/services",
+          "weight_pct": 0.46,
+          "rate_now": 3.9,
+          "rate_prior": 2.5
+        },
+        {
+          "line": 77,
+          "description": "Cereals",
+          "group": "food/goods",
+          "weight_pct": 0.36,
+          "rate_now": 3.4,
+          "rate_prior": -0.8
+        },
+        {
+          "line": 42,
+          "description": "Other video equipment",
+          "group": "core/goods",
+          "weight_pct": 0.05,
+          "rate_now": 11.9,
+          "rate_prior": 0.2
+        },
+        {
+          "line": 225,
+          "description": "Audio streaming and radio services (including satellite radio)",
+          "group": "core/services",
+          "weight_pct": 0.05,
+          "rate_now": 3.4,
+          "rate_prior": 0.7
+        },
+        {
+          "line": 326,
+          "description": "Foundations and grantmaking and giving services to households",
+          "group": "core/services",
+          "weight_pct": 0.05,
+          "rate_now": 3.1,
+          "rate_prior": 2.7
+        },
+        {
+          "line": 325,
+          "description": "Religious organizations' services to households",
+          "group": "core/services",
+          "weight_pct": 0.04,
+          "rate_now": 3.2,
+          "rate_prior": -0.5
+        },
+        {
+          "line": 313,
+          "description": "Clothing repair, rental, and alterations",
+          "group": "core/services",
+          "weight_pct": 0.03,
+          "rate_now": 3.2,
+          "rate_prior": 1.0
+        },
+        {
+          "line": 45,
+          "description": "Audio discs, tapes, vinyl, and permanent digital downloads",
+          "group": "core/goods",
+          "weight_pct": 0.01,
+          "rate_now": 3.4,
+          "rate_prior": 0.7
+        }
+      ],
+      "exited": [
+        {
+          "line": 245,
+          "description": "Alcohol in purchased meals",
+          "group": "core/services",
+          "weight_pct": 0.81,
+          "rate_now": 2.8,
+          "rate_prior": 3.5
+        },
+        {
+          "line": 139,
+          "description": "Cosmetic / perfumes / bath / nail preparations and implements",
+          "group": "core/goods",
+          "weight_pct": 0.36,
+          "rate_now": 1.7,
+          "rate_prior": 4.6
+        },
+        {
+          "line": 231,
+          "description": "Veterinary and other services for pets",
+          "group": "core/services",
+          "weight_pct": 0.36,
+          "rate_now": 2.3,
+          "rate_prior": 4.3
         },
         {
           "line": 70,
           "description": "Luggage and similar personal items (part of 119)",
           "group": "core/goods",
           "weight_pct": 0.24,
-          "rate_now": 3.6,
-          "rate_prior": 1.2
+          "rate_now": 0.8,
+          "rate_prior": 4.0
+        },
+        {
+          "line": 41,
+          "description": "Televisions",
+          "group": "core/goods",
+          "weight_pct": 0.17,
+          "rate_now": 1.9,
+          "rate_prior": 3.7
+        },
+        {
+          "line": 328,
+          "description": "Domestic services",
+          "group": "core/services",
+          "weight_pct": 0.17,
+          "rate_now": 0.9,
+          "rate_prior": 3.1
+        },
+        {
+          "line": 319,
+          "description": "Residential mental health and substance abuse",
+          "group": "core/services",
+          "weight_pct": 0.15,
+          "rate_now": 1.5,
+          "rate_prior": 3.2
+        },
+        {
+          "line": 46,
+          "description": "Video discs, tapes, and permanent digital downloads",
+          "group": "core/goods",
+          "weight_pct": 0.07,
+          "rate_now": -23.6,
+          "rate_prior": 7.1
+        },
+        {
+          "line": 69,
+          "description": "Educational books (96)",
+          "group": "core/goods",
+          "weight_pct": 0.04,
+          "rate_now": 1.4,
+          "rate_prior": 3.5
+        },
+        {
+          "line": 323,
+          "description": "Other social assistance, not elsewere classified",
+          "group": "core/services",
+          "weight_pct": 0.03,
+          "rate_now": 0.1,
+          "rate_prior": 4.5
+        }
+      ]
+    },
+    "12m": {
+      "entered_count": 10,
+      "exited_count": 19,
+      "entered_weight_pct": 3.6,
+      "exited_weight_pct": 5.9,
+      "entered": [
+        {
+          "line": 250,
+          "description": "Hotels and motels",
+          "group": "core/services",
+          "weight_pct": 0.72,
+          "rate_now": 4.3,
+          "rate_prior": 2.9
+        },
+        {
+          "line": 127,
+          "description": "Games, toys, and hobbies",
+          "group": "core/goods",
+          "weight_pct": 0.68,
+          "rate_now": 6.6,
+          "rate_prior": 2.3
+        },
+        {
+          "line": 292,
+          "description": "Proprietary and public higher education",
+          "group": "core/services",
+          "weight_pct": 0.54,
+          "rate_now": 4.0,
+          "rate_prior": 2.8
+        },
+        {
+          "line": 293,
+          "description": "Nonprofit private higher education services to households",
+          "group": "core/services",
+          "weight_pct": 0.39,
+          "rate_now": 4.0,
+          "rate_prior": 2.8
+        },
+        {
+          "line": 219,
+          "description": "Cable, satellite, and other live television services",
+          "group": "core/services",
+          "weight_pct": 0.3,
+          "rate_now": 3.3,
+          "rate_prior": 3.0
+        },
+        {
+          "line": 341,
+          "description": "Expenditures of foreign students in the United States",
+          "group": "core/services",
+          "weight_pct": 0.25,
+          "rate_now": 4.0,
+          "rate_prior": 2.8
+        },
+        {
+          "line": 36,
+          "description": "Tools, hardware, and supplies",
+          "group": "core/goods",
+          "weight_pct": 0.24,
+          "rate_now": 3.0,
+          "rate_prior": 2.8
+        },
+        {
+          "line": 301,
+          "description": "Tax preparation and other related services",
+          "group": "core/services",
+          "weight_pct": 0.24,
+          "rate_now": 4.0,
+          "rate_prior": 3.0
+        },
+        {
+          "line": 144,
+          "description": "Stationery and miscellaneous printed materials",
+          "group": "core/goods",
+          "weight_pct": 0.15,
+          "rate_now": 3.7,
+          "rate_prior": 2.9
+        },
+        {
+          "line": 326,
+          "description": "Foundations and grantmaking and giving services to households",
+          "group": "core/services",
+          "weight_pct": 0.05,
+          "rate_now": 3.3,
+          "rate_prior": 2.6
+        }
+      ],
+      "exited": [
+        {
+          "line": 106,
+          "description": "Women's and girls' clothing (10)",
+          "group": "core/goods",
+          "weight_pct": 1.2,
+          "rate_now": 2.4,
+          "rate_prior": 3.6
+        },
+        {
+          "line": 245,
+          "description": "Alcohol in purchased meals",
+          "group": "core/services",
+          "weight_pct": 0.81,
+          "rate_now": 2.6,
+          "rate_prior": 3.0
+        },
+        {
+          "line": 299,
+          "description": "Legal services",
+          "group": "core/services",
+          "weight_pct": 0.74,
+          "rate_now": 3.0,
+          "rate_prior": 4.4
+        },
+        {
+          "line": 52,
+          "description": "Sporting equipment, supplies, guns, and ammunition (part of 80)",
+          "group": "core/goods",
+          "weight_pct": 0.6,
+          "rate_now": 2.8,
+          "rate_prior": 3.5
+        },
+        {
+          "line": 138,
+          "description": "Hair, dental, shaving, and miscellaneous personal care products except electrical products",
+          "group": "core/goods",
+          "weight_pct": 0.58,
+          "rate_now": 2.9,
+          "rate_prior": 3.1
+        },
+        {
+          "line": 271,
+          "description": "Life insurance (110)",
+          "group": "core/services",
+          "weight_pct": 0.57,
+          "rate_now": 2.8,
+          "rate_prior": 3.3
+        },
+        {
+          "line": 70,
+          "description": "Luggage and similar personal items (part of 119)",
+          "group": "core/goods",
+          "weight_pct": 0.24,
+          "rate_now": 2.9,
+          "rate_prior": 3.6
         },
         {
           "line": 93,
           "description": "Processed fruits and vegetables",
           "group": "food/goods",
           "weight_pct": 0.22,
-          "rate_now": 3.2,
-          "rate_prior": 2.4
+          "rate_now": 2.7,
+          "rate_prior": 3.2
         },
         {
-          "line": 197,
-          "description": "Motor vehicle rental",
+          "line": 273,
+          "description": "Household insurance premiums and premium supplements",
           "group": "core/services",
-          "weight_pct": 0.15,
-          "rate_now": 3.5,
-          "rate_prior": -3.9
+          "weight_pct": 0.18,
+          "rate_now": 1.1,
+          "rate_prior": 5.4
+        },
+        {
+          "line": 86,
+          "description": "Fresh milk",
+          "group": "food/goods",
+          "weight_pct": 0.14,
+          "rate_now": 2.3,
+          "rate_prior": 4.1
         },
         {
           "line": 306,
           "description": "Funeral and burial services",
           "group": "core/services",
           "weight_pct": 0.14,
-          "rate_now": 3.0,
+          "rate_now": 2.7,
           "rate_prior": 3.0
         },
         {
@@ -438,122 +536,8 @@
           "description": "Miscellaneous household products",
           "group": "core/goods",
           "weight_pct": 0.1,
-          "rate_now": 3.2,
-          "rate_prior": 2.8
-        },
-        {
-          "line": 305,
-          "description": "Professional association dues",
-          "group": "core/services",
-          "weight_pct": 0.07,
-          "rate_now": 4.4,
-          "rate_prior": 2.8
-        },
-        {
-          "line": 239,
-          "description": "Elementary and secondary school lunches",
-          "group": "core/services",
-          "weight_pct": 0.03,
-          "rate_now": 3.0,
-          "rate_prior": 1.6
-        },
-        {
-          "line": 16,
-          "description": "Employee reimbursement",
-          "group": "core/goods",
-          "weight_pct": 0.01,
-          "rate_now": 3.5,
-          "rate_prior": -3.9
-        }
-      ],
-      "exited": [
-        {
-          "line": 127,
-          "description": "Games, toys, and hobbies",
-          "group": "core/goods",
-          "weight_pct": 0.68,
-          "rate_now": 2.3,
-          "rate_prior": 4.0
-        },
-        {
-          "line": 289,
-          "description": "Internet access (72)",
-          "group": "core/services",
-          "weight_pct": 0.54,
-          "rate_now": 1.5,
-          "rate_prior": 3.4
-        },
-        {
-          "line": 129,
-          "description": "Flowers, seeds, and potted plants",
-          "group": "core/goods",
-          "weight_pct": 0.37,
-          "rate_now": 0.2,
-          "rate_prior": 4.7
-        },
-        {
-          "line": 22,
-          "description": "Accessories and parts",
-          "group": "core/goods",
-          "weight_pct": 0.35,
-          "rate_now": 1.7,
-          "rate_prior": 6.6
-        },
-        {
-          "line": 92,
-          "description": "Vegetables (fresh)",
-          "group": "food/goods",
-          "weight_pct": 0.31,
           "rate_now": 2.6,
-          "rate_prior": 6.3
-        },
-        {
-          "line": 36,
-          "description": "Tools, hardware, and supplies",
-          "group": "core/goods",
-          "weight_pct": 0.24,
-          "rate_now": 2.8,
-          "rate_prior": 3.5
-        },
-        {
-          "line": 132,
-          "description": "Household cleaning products",
-          "group": "core/goods",
-          "weight_pct": 0.19,
-          "rate_now": 2.1,
           "rate_prior": 3.2
-        },
-        {
-          "line": 198,
-          "description": "Parking fees and tolls",
-          "group": "core/services",
-          "weight_pct": 0.14,
-          "rate_now": 2.9,
-          "rate_prior": 3.5
-        },
-        {
-          "line": 324,
-          "description": "Social advocacy and civic and social organizations",
-          "group": "core/services",
-          "weight_pct": 0.13,
-          "rate_now": 2.8,
-          "rate_prior": 3.9
-        },
-        {
-          "line": 61,
-          "description": "Musical instruments (part of 80)",
-          "group": "core/goods",
-          "weight_pct": 0.04,
-          "rate_now": 2.9,
-          "rate_prior": 3.8
-        },
-        {
-          "line": 130,
-          "description": "Film and photographic supplies",
-          "group": "core/goods",
-          "weight_pct": 0.01,
-          "rate_now": -4.7,
-          "rate_prior": 9.9
         }
       ]
     }
@@ -563,64 +547,64 @@
       "line": 162,
       "description": "Owner-occupied stationary homes",
       "group": "core/services",
-      "weight_pct": 11.2,
-      "rate_now": 3.1,
-      "rate_prior": 3.2
+      "weight_pct": 11.18,
+      "rate_now": 3.3,
+      "rate_prior": 3.1
     },
     {
       "line": 184,
       "description": "Nonprofit hospitals' services to households",
       "group": "core/services",
-      "weight_pct": 5.24,
-      "rate_now": 3.5,
-      "rate_prior": 3.4
+      "weight_pct": 5.22,
+      "rate_now": 3.3,
+      "rate_prior": 3.2
     },
     {
       "line": 242,
       "description": "Meals at limited service eating places",
       "group": "core/services",
-      "weight_pct": 2.57,
+      "weight_pct": 2.59,
       "rate_now": 3.2,
-      "rate_prior": 3.3
+      "rate_prior": 3.2
     },
     {
       "line": 243,
       "description": "Meals at other eating places",
       "group": "core/services",
-      "weight_pct": 2.32,
-      "rate_now": 3.5,
-      "rate_prior": 3.4
+      "weight_pct": 2.35,
+      "rate_now": 3.8,
+      "rate_prior": 3.5
     },
     {
       "line": 115,
       "description": "Gasoline and other motor fuel",
       "group": "energy/goods",
-      "weight_pct": 2.01,
-      "rate_now": 27.9,
-      "rate_prior": 24.9
+      "weight_pct": 2.18,
+      "rate_now": 35.0,
+      "rate_prior": 27.9
     },
     {
       "line": 268,
       "description": "Portfolio management and investment advice services",
       "group": "core/services",
       "weight_pct": 1.66,
-      "rate_now": 8.6,
-      "rate_prior": 8.6
+      "rate_now": 8.2,
+      "rate_prior": 8.7
     },
     {
       "line": 186,
       "description": "Government hospitals",
       "group": "core/services",
-      "weight_pct": 1.59,
-      "rate_now": 3.5,
-      "rate_prior": 3.4
+      "weight_pct": 1.58,
+      "rate_now": 3.3,
+      "rate_prior": 3.2
     },
     {
       "line": 180,
       "description": "Specialty outpatient care facilities and health and allied services",
       "group": "core/services",
-      "weight_pct": 1.35,
-      "rate_now": 5.1,
+      "weight_pct": 1.33,
+      "rate_now": 4.6,
       "rate_prior": 5.1
     },
     {
@@ -628,28 +612,19 @@
       "description": "Motor vehicle maintenance and repair (60)",
       "group": "core/services",
       "weight_pct": 1.32,
-      "rate_now": 5.2,
-      "rate_prior": 6.6
+      "rate_now": 5.8,
+      "rate_prior": 5.2
     },
     {
       "line": 170,
       "description": "Electricity (27)",
       "group": "energy/services",
-      "weight_pct": 1.25,
-      "rate_now": 3.8,
-      "rate_prior": 4.2
+      "weight_pct": 1.31,
+      "rate_now": 4.4,
+      "rate_prior": 3.8
     }
   ],
   "trend_last_13_months": [
-    {
-      "month": "2025-08",
-      "components": 222,
-      "share_6m": 45.5,
-      "share_12m": 44.6,
-      "share_3m": 53.2,
-      "wshare_6m": 50.7,
-      "wshare_12m": 54.6
-    },
     {
       "month": "2025-09",
       "components": 222,
@@ -674,7 +649,7 @@
       "share_6m": 42.8,
       "share_12m": 42.8,
       "share_3m": 36.5,
-      "wshare_6m": 36.6,
+      "wshare_6m": 36.7,
       "wshare_12m": 48.4
     },
     {
@@ -683,7 +658,7 @@
       "share_6m": 46.8,
       "share_12m": 45.9,
       "share_3m": 44.1,
-      "wshare_6m": 39.4,
+      "wshare_6m": 39.6,
       "wshare_12m": 49.0
     },
     {
@@ -692,7 +667,7 @@
       "share_6m": 46.4,
       "share_12m": 47.7,
       "share_3m": 45.9,
-      "wshare_6m": 46.0,
+      "wshare_6m": 46.2,
       "wshare_12m": 52.5
     },
     {
@@ -701,8 +676,8 @@
       "share_6m": 49.5,
       "share_12m": 51.4,
       "share_3m": 54.5,
-      "wshare_6m": 39.5,
-      "wshare_12m": 48.8
+      "wshare_6m": 39.6,
+      "wshare_12m": 48.9
     },
     {
       "month": "2026-03",
@@ -710,8 +685,8 @@
       "share_6m": 51.8,
       "share_12m": 54.1,
       "share_3m": 49.5,
-      "wshare_6m": 45.7,
-      "wshare_12m": 59.5
+      "wshare_6m": 45.9,
+      "wshare_12m": 59.6
     },
     {
       "month": "2026-04",
@@ -719,8 +694,8 @@
       "share_6m": 53.6,
       "share_12m": 53.2,
       "share_3m": 49.1,
-      "wshare_6m": 53.9,
-      "wshare_12m": 59.7
+      "wshare_6m": 54.1,
+      "wshare_12m": 59.8
     },
     {
       "month": "2026-05",
@@ -728,8 +703,8 @@
       "share_6m": 55.0,
       "share_12m": 52.7,
       "share_3m": 43.7,
-      "wshare_6m": 61.9,
-      "wshare_12m": 59.2
+      "wshare_6m": 62.1,
+      "wshare_12m": 59.4
     },
     {
       "month": "2026-06",
@@ -737,26 +712,35 @@
       "share_6m": 50.0,
       "share_12m": 52.3,
       "share_3m": 39.2,
-      "wshare_6m": 61.9,
-      "wshare_12m": 60.3
+      "wshare_6m": 62.0,
+      "wshare_12m": 60.4
     },
     {
       "month": "2026-07",
       "components": 222,
-      "share_6m": 48.2,
-      "share_12m": 51.4,
+      "share_6m": 48.6,
+      "share_12m": 50.9,
       "share_3m": 42.3,
-      "wshare_6m": 61.0,
-      "wshare_12m": 59.9
+      "wshare_6m": 62.3,
+      "wshare_12m": 60.0
     },
     {
       "month": "2026-08",
       "components": 222,
       "share_6m": 43.2,
-      "share_12m": 51.4,
-      "share_3m": 37.8,
-      "wshare_6m": 53.9,
-      "wshare_12m": 59.7
+      "share_12m": 52.3,
+      "share_3m": 38.7,
+      "wshare_6m": 54.1,
+      "wshare_12m": 60.1
+    },
+    {
+      "month": "2026-09",
+      "components": 222,
+      "share_6m": 45.0,
+      "share_12m": 48.2,
+      "share_3m": 45.5,
+      "wshare_6m": 55.2,
+      "wshare_12m": 57.8
     }
   ]
 }
