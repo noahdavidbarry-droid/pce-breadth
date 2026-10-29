@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-29T20:14:38Z",
+  "generated_utc": "2026-10-29T20:34:57Z",
   "as_of_date_et": "2026-10-29",
   "source": "federalreserve.gov",
   "errors": {},
@@ -19,6 +19,13 @@
   "warsh_speeches_30d": [],
   "warsh_testimony_90d": [],
   "press_releases_7d": [
+    {
+      "date": "2026-10-29",
+      "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+      "description": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+      "category": "Orders on Banking Applications",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm"
+    },
     {
       "date": "2026-10-28",
       "title": "Federal Reserve issues FOMC statement",
