@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-28T20:31:41Z",
-  "as_of_date_et": "2026-10-28",
+  "generated_utc": "2026-10-29T20:14:38Z",
+  "as_of_date_et": "2026-10-29",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [
@@ -29,12 +29,6 @@
   ],
   "next_fomc_meetings": [
     {
-      "start": "2026-10-27",
-      "end": "2026-10-28",
-      "with_projections": false,
-      "label": "October 27-28"
-    },
-    {
       "start": "2026-12-08",
       "end": "2026-12-09",
       "with_projections": true,
@@ -45,9 +39,15 @@
       "end": "2027-01-26",
       "with_projections": false,
       "label": "January 25-26"
+    },
+    {
+      "start": "2027-01-26",
+      "end": "2027-01-27",
+      "with_projections": false,
+      "label": "January 26-27"
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": -1,
+  "days_to_next_fomc": 40,
   "status": "ok"
 }

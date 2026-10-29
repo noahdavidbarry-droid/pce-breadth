@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-28T20:31:41Z",
+  "generated_utc": "2026-10-29T20:14:38Z",
   "source": "SEC EDGAR XBRL company facts (10-Q/10-K cash flow: purchases of property & equipment)",
   "status": "ok",
   "errors": {},
@@ -176,10 +176,10 @@
       "newest_quarter": "2026Q3",
       "newest_quarter_reported_by": [
         "MSFT",
+        "GOOGL",
         "META"
       ],
       "newest_quarter_pending": [
-        "GOOGL",
         "AMZN"
       ]
     },
@@ -351,11 +351,11 @@
       "newest_quarter": "2026Q3",
       "newest_quarter_reported_by": [
         "MSFT",
+        "GOOGL",
         "META",
         "ORCL"
       ],
       "newest_quarter_pending": [
-        "GOOGL",
         "AMZN"
       ]
     }
@@ -523,38 +523,27 @@
     "GOOGL": {
       "name": "Alphabet",
       "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "latest_quarter": "2026Q2",
-      "latest_period_end": "2026-06-30",
-      "latest_filed": "2026-07-23",
-      "new_since_last_run": false,
+      "latest_quarter": "2026Q3",
+      "latest_period_end": "2026-09-30",
+      "latest_filed": "2026-10-29",
+      "new_since_last_run": true,
       "latest": {
-        "quarter": "2026Q2",
-        "capex_bn": 44.92,
-        "yoy_pct": 100.1,
-        "qoq_pct": 25.9,
-        "ttm_bn": 132.4,
-        "ttm_yoy_pct": 97.7,
-        "yoy_change_pp": -7.3,
-        "ttm_yoy_change_pp": 7.3,
-        "second_derivative": "decelerating"
+        "quarter": "2026Q3",
+        "capex_bn": 51.35,
+        "yoy_pct": 114.4,
+        "qoq_pct": 14.3,
+        "ttm_bn": 159.8,
+        "ttm_yoy_pct": 105.2,
+        "yoy_change_pp": 14.3,
+        "ttm_yoy_change_pp": 7.5,
+        "second_derivative": "accelerating"
       },
       "yoy_peak_last_12q": {
-        "quarter": "2026Q1",
-        "yoy_pct": 107.4,
-        "quarters_since_peak": 1
+        "quarter": "2026Q3",
+        "yoy_pct": 114.4,
+        "quarters_since_peak": 0
       },
       "quarters": [
-        {
-          "quarter": "2023Q3",
-          "capex_bn": 8.05,
-          "yoy_pct": 10.7,
-          "qoq_pct": 16.9,
-          "ttm_bn": 28.8,
-          "ttm_yoy_pct": -4.8,
-          "yoy_change_pp": 9.8,
-          "ttm_yoy_change_pp": 1.1,
-          "second_derivative": "accelerating"
-        },
         {
           "quarter": "2023Q4",
           "capex_bn": 11.02,
@@ -675,6 +664,17 @@
           "yoy_change_pp": -7.3,
           "ttm_yoy_change_pp": 7.3,
           "second_derivative": "decelerating"
+        },
+        {
+          "quarter": "2026Q3",
+          "capex_bn": 51.35,
+          "yoy_pct": 114.4,
+          "qoq_pct": 14.3,
+          "ttm_bn": 159.8,
+          "ttm_yoy_pct": 105.2,
+          "yoy_change_pp": 14.3,
+          "ttm_yoy_change_pp": 7.5,
+          "second_derivative": "accelerating"
         }
       ],
       "stale": false
