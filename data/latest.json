@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-29T18:39:19+00:00",
+  "generated_utc": "2026-10-30T18:37:16+00:00",
   "source": "BEA NIPA table 2.4.4U (NIUnderlyingDetail/U20404), monthly",
   "threshold_pct": 3.0,
   "selection": "leaf components (aggregates excluded via 2.4.5U nominal sums)",
