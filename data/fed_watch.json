@@ -1,20 +1,9 @@
 {
-  "generated_utc": "2026-10-29T20:34:57Z",
-  "as_of_date_et": "2026-10-29",
+  "generated_utc": "2026-10-30T20:10:56Z",
+  "as_of_date_et": "2026-10-30",
   "source": "federalreserve.gov",
   "errors": {},
-  "recent_appearances_14d": [
-    {
-      "date": "2026-10-15",
-      "time_et": "11:30 p.m.",
-      "type": "Speeches",
-      "title": "Discussion - Chairman Kevin Warsh",
-      "description": "Conversation between IMF Managing Director Georgieva and Federal Reserve Chairman Warsh",
-      "location": "At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina Georgieva, Bangkok, Thailand",
-      "link": null,
-      "live": "https://www.youtube.com/watch?v=T20jWBJ66X0&list=PLGHsBhoupusk&index=31"
-    }
-  ],
+  "recent_appearances_14d": [],
   "upcoming_appearances_45d": [],
   "warsh_speeches_30d": [],
   "warsh_testimony_90d": [],
@@ -55,6 +44,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 40,
+  "days_to_next_fomc": 39,
   "status": "ok"
 }

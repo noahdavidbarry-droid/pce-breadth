@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-29T20:34:57Z",
+  "generated_utc": "2026-10-30T20:10:56Z",
   "source": "SEC EDGAR XBRL company facts (10-Q/10-K cash flow: purchases of property & equipment)",
   "status": "ok",
   "errors": {},
@@ -18,17 +18,6 @@
         "META"
       ],
       "quarters": [
-        {
-          "quarter": "2023Q3",
-          "capex_bn": 36.95,
-          "yoy_pct": -6.0,
-          "qoq_pct": 10.6,
-          "ttm_bn": 143.6,
-          "ttm_yoy_pct": -3.3,
-          "yoy_change_pp": 3.7,
-          "ttm_yoy_change_pp": -6.2,
-          "second_derivative": "accelerating"
-        },
         {
           "quarter": "2023Q4",
           "capex_bn": 42.93,
@@ -149,39 +138,49 @@
           "yoy_change_pp": 6.5,
           "ttm_yoy_change_pp": 5.8,
           "second_derivative": "accelerating"
+        },
+        {
+          "quarter": "2026Q3",
+          "capex_bn": 201.92,
+          "yoy_pct": 107.6,
+          "qoq_pct": 22.3,
+          "ttm_bn": 615.4,
+          "ttm_yoy_pct": 86.6,
+          "yoy_change_pp": 20.6,
+          "ttm_yoy_change_pp": 11.3,
+          "second_derivative": "accelerating"
         }
       ],
-      "latest_complete_quarter": "2026Q2",
+      "latest_complete_quarter": "2026Q3",
       "latest": {
-        "quarter": "2026Q2",
-        "capex_bn": 165.05,
-        "yoy_pct": 87.0,
-        "qoq_pct": 27.2,
-        "ttm_bn": 510.7,
-        "ttm_yoy_pct": 75.3,
-        "yoy_change_pp": 6.5,
-        "ttm_yoy_change_pp": 5.8,
+        "quarter": "2026Q3",
+        "capex_bn": 201.92,
+        "yoy_pct": 107.6,
+        "qoq_pct": 22.3,
+        "ttm_bn": 615.4,
+        "ttm_yoy_pct": 86.6,
+        "yoy_change_pp": 20.6,
+        "ttm_yoy_change_pp": 11.3,
         "second_derivative": "accelerating"
       },
       "yoy_peak_last_12q": {
-        "quarter": "2026Q2",
-        "yoy_pct": 87.0,
+        "quarter": "2026Q3",
+        "yoy_pct": 107.6,
         "quarters_since_peak": 0
       },
       "ttm_yoy_peak_last_12q": {
-        "quarter": "2026Q2",
-        "ttm_yoy_pct": 75.3,
+        "quarter": "2026Q3",
+        "ttm_yoy_pct": 86.6,
         "quarters_since_peak": 0
       },
       "newest_quarter": "2026Q3",
       "newest_quarter_reported_by": [
         "MSFT",
         "GOOGL",
+        "AMZN",
         "META"
       ],
-      "newest_quarter_pending": [
-        "AMZN"
-      ]
+      "newest_quarter_pending": []
     },
     "big4_plus_oracle": {
       "label": "Big 4 + Oracle",
@@ -193,17 +192,6 @@
         "ORCL"
       ],
       "quarters": [
-        {
-          "quarter": "2023Q3",
-          "capex_bn": 38.26,
-          "yoy_pct": -6.8,
-          "qoq_pct": 8.3,
-          "ttm_bn": 151.8,
-          "ttm_yoy_pct": -1.1,
-          "yoy_change_pp": 1.2,
-          "ttm_yoy_change_pp": -6.8,
-          "second_derivative": "accelerating"
-        },
         {
           "quarter": "2023Q4",
           "capex_bn": 44.01,
@@ -324,40 +312,50 @@
           "yoy_change_pp": -4.3,
           "ttm_yoy_change_pp": 3.2,
           "second_derivative": "decelerating"
+        },
+        {
+          "quarter": "2026Q3",
+          "capex_bn": 230.42,
+          "yoy_pct": 117.8,
+          "qoq_pct": 26.9,
+          "ttm_bn": 691.0,
+          "ttm_yoy_pct": 93.5,
+          "yoy_change_pp": 31.3,
+          "ttm_yoy_change_pp": 12.3,
+          "second_derivative": "accelerating"
         }
       ],
-      "latest_complete_quarter": "2026Q2",
+      "latest_complete_quarter": "2026Q3",
       "latest": {
-        "quarter": "2026Q2",
-        "capex_bn": 181.54,
-        "yoy_pct": 86.5,
-        "qoq_pct": 22.3,
-        "ttm_bn": 566.4,
-        "ttm_yoy_pct": 81.2,
-        "yoy_change_pp": -4.3,
-        "ttm_yoy_change_pp": 3.2,
-        "second_derivative": "decelerating"
+        "quarter": "2026Q3",
+        "capex_bn": 230.42,
+        "yoy_pct": 117.8,
+        "qoq_pct": 26.9,
+        "ttm_bn": 691.0,
+        "ttm_yoy_pct": 93.5,
+        "yoy_change_pp": 31.3,
+        "ttm_yoy_change_pp": 12.3,
+        "second_derivative": "accelerating"
       },
       "yoy_peak_last_12q": {
-        "quarter": "2026Q1",
-        "yoy_pct": 90.8,
-        "quarters_since_peak": 1
+        "quarter": "2026Q3",
+        "yoy_pct": 117.8,
+        "quarters_since_peak": 0
       },
       "ttm_yoy_peak_last_12q": {
-        "quarter": "2026Q2",
-        "ttm_yoy_pct": 81.2,
+        "quarter": "2026Q3",
+        "ttm_yoy_pct": 93.5,
         "quarters_since_peak": 0
       },
       "newest_quarter": "2026Q3",
       "newest_quarter_reported_by": [
         "MSFT",
         "GOOGL",
+        "AMZN",
         "META",
         "ORCL"
       ],
-      "newest_quarter_pending": [
-        "AMZN"
-      ]
+      "newest_quarter_pending": []
     }
   },
   "companies": {
@@ -682,38 +680,27 @@
     "AMZN": {
       "name": "Amazon",
       "concept": "PaymentsToAcquireProductiveAssets",
-      "latest_quarter": "2026Q2",
-      "latest_period_end": "2026-06-30",
-      "latest_filed": "2026-07-31",
-      "new_since_last_run": false,
+      "latest_quarter": "2026Q3",
+      "latest_period_end": "2026-09-30",
+      "latest_filed": "2026-10-30",
+      "new_since_last_run": true,
       "latest": {
-        "quarter": "2026Q2",
-        "capex_bn": 54.21,
-        "yoy_pct": 68.4,
-        "qoq_pct": 22.6,
-        "ttm_bn": 173.0,
-        "ttm_yoy_pct": 60.7,
-        "yoy_change_pp": -8.3,
-        "ttm_yoy_change_pp": -1.5,
-        "second_derivative": "decelerating"
+        "quarter": "2026Q3",
+        "capex_bn": 77.26,
+        "yoy_pct": 120.1,
+        "qoq_pct": 42.5,
+        "ttm_bn": 215.2,
+        "ttm_yoy_pct": 79.1,
+        "yoy_change_pp": 51.7,
+        "ttm_yoy_change_pp": 18.4,
+        "second_derivative": "accelerating"
       },
       "yoy_peak_last_12q": {
-        "quarter": "2024Q4",
-        "yoy_pct": 90.8,
-        "quarters_since_peak": 6
+        "quarter": "2026Q3",
+        "yoy_pct": 120.1,
+        "quarters_since_peak": 0
       },
       "quarters": [
-        {
-          "quarter": "2023Q3",
-          "capex_bn": 12.48,
-          "yoy_pct": -23.8,
-          "qoq_pct": 8.9,
-          "ttm_bn": 54.7,
-          "ttm_yoy_pct": -17.1,
-          "yoy_change_pp": 3.3,
-          "ttm_yoy_change_pp": -6.8,
-          "second_derivative": "accelerating"
-        },
         {
           "quarter": "2023Q4",
           "capex_bn": 14.59,
@@ -834,6 +821,17 @@
           "yoy_change_pp": -8.3,
           "ttm_yoy_change_pp": -1.5,
           "second_derivative": "decelerating"
+        },
+        {
+          "quarter": "2026Q3",
+          "capex_bn": 77.26,
+          "yoy_pct": 120.1,
+          "qoq_pct": 42.5,
+          "ttm_bn": 215.2,
+          "ttm_yoy_pct": 79.1,
+          "yoy_change_pp": 51.7,
+          "ttm_yoy_change_pp": 18.4,
+          "second_derivative": "accelerating"
         }
       ],
       "stale": false
