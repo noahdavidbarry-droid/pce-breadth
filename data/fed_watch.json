@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-05T20:40:52Z",
-  "as_of_date_et": "2026-11-05",
+  "generated_utc": "2026-11-06T20:16:01Z",
+  "as_of_date_et": "2026-11-06",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [],
@@ -14,13 +14,6 @@
       "description": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
       "category": "Enforcement Actions",
       "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-      "description": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-      "category": "Orders on Banking Applications",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm"
     }
   ],
   "next_fomc_meetings": [
@@ -44,6 +37,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 33,
+  "days_to_next_fomc": 32,
   "status": "ok"
 }
