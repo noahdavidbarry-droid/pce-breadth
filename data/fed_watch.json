@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T21:25:37Z",
-  "as_of_date_et": "2026-11-11",
+  "generated_utc": "2026-11-12T20:21:30Z",
+  "as_of_date_et": "2026-11-12",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [],
@@ -8,6 +8,27 @@
   "warsh_speeches_30d": [],
   "warsh_testimony_90d": [],
   "press_releases_7d": [
+    {
+      "date": "2026-11-12",
+      "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "description": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "category": "Other Announcements",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "description": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "category": "Monetary Policy",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "description": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "category": "Enforcement Actions",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
+    },
     {
       "date": "2026-11-09",
       "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
@@ -44,6 +65,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 27,
+  "days_to_next_fomc": 26,
   "status": "ok"
 }
