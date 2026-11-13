@@ -1,10 +1,21 @@
 {
-  "generated_utc": "2026-11-12T20:41:33Z",
-  "as_of_date_et": "2026-11-12",
+  "generated_utc": "2026-11-13T20:23:54Z",
+  "as_of_date_et": "2026-11-13",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [],
-  "upcoming_appearances_45d": [],
+  "upcoming_appearances_45d": [
+    {
+      "date": "2026-11-16",
+      "time_et": "12:00 p.m.",
+      "type": "Speeches",
+      "title": "Speech - Chairman Kevin Warsh",
+      "description": "Opening Remarks",
+      "location": "At the Federal Reserve&#8217;s Productivity and Jobs Task Force Conference, Federal Reserve Bank of San Francisco, San Francisco, Calif.",
+      "link": null,
+      "live": "https://www.frbsf.org/news-and-media/events/2026/11/productivity-and-jobs-task-force-conference/"
+    }
+  ],
   "warsh_speeches_30d": [],
   "warsh_testimony_90d": [],
   "press_releases_7d": [
@@ -35,13 +46,6 @@
       "description": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
       "category": "Orders on Banking Applications",
       "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm"
-    },
-    {
-      "date": "2026-11-05",
-      "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "description": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "category": "Enforcement Actions",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm"
     }
   ],
   "next_fomc_meetings": [
@@ -65,6 +69,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 26,
+  "days_to_next_fomc": 25,
   "status": "ok"
 }
