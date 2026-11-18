@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-17T20:46:12Z",
-  "as_of_date_et": "2026-11-17",
+  "generated_utc": "2026-11-18T20:26:49Z",
+  "as_of_date_et": "2026-11-18",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [
@@ -27,6 +27,13 @@
   ],
   "warsh_testimony_90d": [],
   "press_releases_7d": [
+    {
+      "date": "2026-11-18",
+      "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "description": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "category": "Monetary Policy",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
+    },
     {
       "date": "2026-11-13",
       "title": "Agencies extend comment period for proposed third-party risk management guidance",
@@ -77,6 +84,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 21,
+  "days_to_next_fomc": 20,
   "status": "ok"
 }
