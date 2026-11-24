@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-21T01:06:33Z",
-  "as_of_date_et": "2026-11-20",
+  "generated_utc": "2026-11-24T04:23:48Z",
+  "as_of_date_et": "2026-11-23",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [
@@ -54,13 +54,6 @@
       "description": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
       "category": "Monetary Policy",
       "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
-    },
-    {
-      "date": "2026-11-13",
-      "title": "Agencies extend comment period for proposed third-party risk management guidance",
-      "description": "Agencies extend comment period for proposed third-party risk management guidance",
-      "category": "Banking and Consumer Regulatory Policy",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm"
     }
   ],
   "next_fomc_meetings": [
@@ -84,6 +77,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 18,
+  "days_to_next_fomc": 15,
   "status": "ok"
 }
