@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-24T04:23:42Z",
+  "generated_utc": "2026-11-24T04:37:58Z",
   "status": "ok",
   "stale_instruments": [],
   "missing_instruments": [],
@@ -20,11 +20,11 @@
     "soybeans": {
       "label": "Soybeans",
       "unit": "$/bu",
-      "price": 12.2975,
+      "price": 12.2875,
       "prev_close": 12.2075,
-      "change_pct": 0.74,
+      "change_pct": 0.66,
       "as_of": "2026-11-23",
-      "price_type": "last",
+      "price_type": "settle",
       "contract": "Soybeans (Jan'27)",
       "source": "cnbc",
       "prev_source": "history",
@@ -102,7 +102,7 @@
     "grain_index_note": "Equal-weight corn/soybean/wheat index, = 100 at window start",
     "range_percentile_1y": {
       "corn": 47.0,
-      "soybeans": 78.0,
+      "soybeans": 77.0,
       "wheat": 43.0,
       "wti": 41.0,
       "rbob": 30.0,
@@ -114,7 +114,7 @@
       19.65,
       75.31
     ],
-    "grain_index_chg_20d_pct": -2.13,
+    "grain_index_chg_20d_pct": -2.16,
     "crack_chg_20d_usd": -18.18,
     "grain_move_z": -0.48,
     "crack_move_z": -1.87,
