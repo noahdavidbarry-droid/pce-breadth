@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-25T03:23:41Z",
-  "as_of_date_et": "2026-11-24",
+  "generated_utc": "2026-11-26T02:23:51Z",
+  "as_of_date_et": "2026-11-25",
   "source": "federalreserve.gov",
   "errors": {},
   "recent_appearances_14d": [
@@ -27,6 +27,20 @@
   ],
   "warsh_testimony_90d": [],
   "press_releases_7d": [
+    {
+      "date": "2026-11-25",
+      "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "description": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "category": "Banking and Consumer Regulatory Policy",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "description": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "category": "Banking and Consumer Regulatory Policy",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm"
+    },
     {
       "date": "2026-11-24",
       "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
@@ -84,6 +98,6 @@
     }
   ],
   "fomc_meetings_parsed": 59,
-  "days_to_next_fomc": 14,
+  "days_to_next_fomc": 13,
   "status": "ok"
 }
