@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-25T01:58:02+00:00",
+  "generated_utc": "2026-11-28T01:13:21+00:00",
   "source": "BEA NIPA table 2.4.4U (NIUnderlyingDetail/U20404), monthly",
   "threshold_pct": 3.0,
   "selection": "leaf components (aggregates excluded via 2.4.5U nominal sums)",
@@ -10,20 +10,20 @@
     "leaf_lines_with_price_index": 222
   },
   "latest": {
-    "month": "2026-09",
+    "month": "2026-10",
     "components": 222,
-    "share_6m": 45.0,
-    "share_12m": 48.2
+    "share_6m": 44.6,
+    "share_12m": 50.9
   },
   "prior": {
-    "month": "2026-08",
+    "month": "2026-09",
     "components": 222,
-    "share_6m": 43.2,
-    "share_12m": 52.3
+    "share_6m": 45.5,
+    "share_12m": 47.7
   },
   "change_vs_prior": {
-    "share_6m_pp": 1.8,
-    "share_12m_pp": -4.1
+    "share_6m_pp": -0.9,
+    "share_12m_pp": 3.2
   },
   "backtest_july_2026": {
     "target": {
@@ -41,9 +41,9 @@
     "matches": false
   },
   "latest_extra": {
-    "share_3m": 45.5,
-    "wshare_6m": 55.2,
-    "wshare_12m": 57.8
+    "share_3m": 55.0,
+    "wshare_6m": 52.6,
+    "wshare_12m": 55.5
   },
   "detail_file": "data/breadth_detail.json",
   "detail_status": "ok"
